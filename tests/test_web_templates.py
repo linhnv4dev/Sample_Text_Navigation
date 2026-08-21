@@ -191,7 +191,7 @@ def test_templates_route_renders_lexicon_with_real_data(
     resp = route("/templates", "", ctx)
     assert resp.status == 200
     body = resp.body.decode("utf-8")
-    assert "xin cho hỏi" in body  # opener thật, chứng minh Opener.text được đọc đúng
+    assert "cho tôi hỏi" in body  # opener thật, chứng minh Opener.text được đọc đúng
     for section in ("openers", "closers", "closers_after_question", "closers_after_particle"):
         assert section in body
 

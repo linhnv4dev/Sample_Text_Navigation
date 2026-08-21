@@ -33,10 +33,10 @@
 # từ lexicon_rates như comment đầu file đã giải thích.
 openers:
   formal:
-    - {text: "xin cho hỏi", heads: [statement, question]}
-    - {text: "làm ơn cho hỏi", heads: [statement, question]}
-    - {text: "xin phép hỏi", heads: [statement, question]}
-    - {text: "cho tôi hỏi một chút", heads: [statement, question]}
+    - {text: "cho tôi hỏi", heads: [statement, question]}
+    - {text: "tôi muốn hỏi", heads: [statement, question]}
+    - {text: "cho hỏi", heads: [statement, question]}
+    - {text: "tôi cần hỏi", heads: [statement, question]}
   neutral:
     - {text: "cho hỏi", heads: [statement, question]}
     - {text: "cho tôi hỏi", heads: [statement, question]}
@@ -52,10 +52,10 @@ openers:
 closers:
   formal:
     - ""
-    - "được không ạ"
-    - "giúp tôi với ạ"
-    - "xin cảm ơn"
-    - "ạ"
+    - "được không"
+    - "giúp tôi"
+    - "giúp tôi được không"
+    - "nhé"
   neutral:
     - ""
     - "nhé"
@@ -66,11 +66,8 @@ closers:
     - ""
     - "với"
     - "đi"
-    - "cái nhé"
     - "được không"
     - "giúp mình"
-    - "nha"
-    - "đi mà"
 
 # Token đứng NGAY TRƯỚC {closer} quyết định câu đã "chốt" theo kiểu nào —
 # templates.py#TailClass suy diễn tự động từ templates.yaml, KHÔNG khai báo
@@ -80,7 +77,6 @@ closers:
 closers_after_particle:  # template đã kết ở "…không{closer}", "…nha{closer}"...
   formal:
     - ""
-    - "ạ"
   neutral:
     - ""
   casual:
@@ -89,7 +85,6 @@ closers_after_particle:  # template đã kết ở "…không{closer}", "…nha{
 closers_after_question:  # template đã kết ở "…ở đâu{closer}", "…đường nào{closer}"...
   formal:
     - ""
-    - "ạ"
   neutral:
     - ""
     - "nhỉ"
@@ -110,7 +105,7 @@ closers_after_question:  # template đã kết ở "…ở đâu{closer}", "…�
 # "nhất" (mức độ) — closer vẫn gắn tự nhiên phía sau các từ này.
 question_words: [đâu, nào, gì]
 sentence_final_particles:
-  [không, hông, hả, chưa, nhỉ, nhé, nha, sao, vậy, ta, nè, cái, đi, với]
+  [không, chưa, nhỉ, nhé, nha, sao, vậy, ta, cái, đi, với]
 
 # Dùng bởi templates.py#_classify_head để phân loại HeadClass (thức của
 # câu: mệnh lệnh/trần thuật/nghi vấn) từ token nội dung ĐẦU TIÊN của
@@ -128,9 +123,9 @@ sentence_final_particles:
 # kiếm giúp tôi chỗ Đà Nẵng").
 head_statement_markers: [mình, tôi, muốn]
 head_imperative_verbs:
-  [xin, tìm, cho, chỉ, kiếm, dẫn, đi, tới, hỏi, dò, tra, nhờ, đến, mong,
-   ghé, chạy, qua, mở, đưa, rẽ, dừng, vui, bật, hướng, lái, phóng, vọt,
-   lục, mò, giúp, về, vào, vòng, tấp, quẹo, lượn, táp, biết, có, làm]
+  [tìm, cho, chỉ, kiếm, dẫn, đi, tới, hỏi, dò, tra, đến,
+   ghé, chạy, qua, mở, đưa, rẽ, dừng, bật, hướng, lái,
+   giúp, về, vào, vòng, biết, có, làm, đặt, đổi, thêm, xuống]
 
 # Fillers CHỈ được nối vào {opener} (đầu câu) — variation.py#apply_variations
 # bỏ qua filler nếu template không có slot {opener}, không nối vào {closer}

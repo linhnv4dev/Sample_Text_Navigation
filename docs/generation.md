@@ -4,6 +4,35 @@ Template architecture, sentence types, variation axes, quy tắc đọc số ti�
 
 ## Template bank
 
+Mọi câu trong bank là câu **người dùng nói vào micro cho trợ lý điều
+hướng** — không phải câu hỏi đường một người khác, và không phải văn viết.
+`register` **không phải mức độ lịch sự liên nhân** (không ai dùng kính ngữ
+với máy) — nó là trục "đầy đủ/rõ ràng ↔ cụt/khẩu ngữ":
+
+- `formal` — câu đầy đủ chủ-vị, rõ ràng, ít khẩu ngữ (`"chỉ đường giúp tôi
+  đến {entity}"`).
+- `neutral` — cách nói mặc định, bỏ chủ ngữ, câu lệnh trần (`"chỉ đường đến
+  {entity}"`) — đây là style trung tâm của bank.
+- `casual` — khẩu ngữ hơn, cụt hơn, dùng "mình" + tiểu từ (`"đưa mình tới
+  {entity}"`), nhưng **không phải slang vùng miền mạnh** (tránh `hông, vô,
+  giùm, lẹ, quẹo, tấp, cua, lượn, phóng, coi, ngó, nè, á` — casual nghĩa là
+  SPOKEN, phải nghe tự nhiên ở cả ba miền, không phải cố tình đặc trưng một
+  vùng).
+
+Ràng buộc áp cho toàn bank, không chỉ một register:
+
+- Không kính ngữ liên nhân (`xin, vui lòng, thưa, kính, mong, nhờ, làm ơn,
+  cảm ơn, ạ`) — không ai nói vậy với máy.
+- Không cầu viện người thứ ba (`có ai biết…`, `hỏi thăm…`) và không dựng
+  hội thoại giả giữa hai người (kịch bản nói với tài xế/người ngồi cạnh) —
+  người nói luôn hướng thẳng về trợ lý.
+- Câu điều khiển thiết bị có thật (mở/bật chỉ đường, đặt/đổi điểm đến, thêm
+  điểm dừng) rải đều 3 register, không chỉ nav_command/route_question.
+
+`scripts/eval_templates.py` (chạy tay, ngoài 12 phase) chấm bank theo đúng
+các tiêu chí trên — dùng để so sánh trước/sau khi sửa bank, xem
+`reports/template_register_review_before.md` và `_after.md`.
+
 `data/templates/templates.yaml`, mỗi entry:
 
 ```yaml
