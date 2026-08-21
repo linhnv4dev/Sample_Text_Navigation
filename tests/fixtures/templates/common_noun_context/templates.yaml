@@ -1,0 +1,20 @@
+# Validator #10: {entity} là tên riêng, không phải danh từ chung — 3 entry
+# dưới đây mỗi entry vi phạm đúng 1 pattern (docs/generation.md#template-bank).
+- template_id: bad_indefinite_quantifier_001
+  sentence_type: contextual
+  register: casual
+  length_class: long
+  slots: [entity, closer]
+  text: "gần đây có {entity} nào không{closer}"
+- template_id: bad_quantifier_before_001
+  sentence_type: search
+  register: casual
+  length_class: short
+  slots: [entity, closer]
+  text: "kiếm cái {entity}{closer}"
+- template_id: bad_superlative_001
+  sentence_type: search
+  register: casual
+  length_class: long
+  slots: [entity, closer]
+  text: "tìm giúp mình {entity} gần đây nhất{closer}"

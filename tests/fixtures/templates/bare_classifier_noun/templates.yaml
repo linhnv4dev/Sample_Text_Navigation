@@ -1,0 +1,36 @@
+# Validator #11: {entity} không được đứng ngay sau danh từ loại đường
+# (đường/lối/hướng/phố) mà không có giới từ — "đường {entity}" đọc thành
+# "con đường tên {entity}", sai nghĩa khi entity không phải street (vd
+# "hỏi đường Tượng Mẹ Nhu" — Tượng Mẹ Nhu là tượng, không phải tên đường).
+# 4 entry dưới đây mỗi entry vi phạm đúng 1 classifier
+# (docs/generation.md#template-bank).
+- template_id: bad_bare_duong_001
+  sentence_type: conversational
+  register: casual
+  length_class: short
+  slots: [entity, closer]
+  text: "hỏi đường {entity}{closer}"
+- template_id: bad_bare_loi_001
+  sentence_type: conversational
+  register: casual
+  length_class: short
+  slots: [entity, closer]
+  text: "hỏi lối {entity}{closer}"
+- template_id: bad_bare_huong_001
+  sentence_type: conversational
+  register: neutral
+  length_class: short
+  slots: [entity, closer]
+  text: "cho hỏi hướng {entity}{closer}"
+- template_id: bad_bare_pho_001
+  sentence_type: conversational
+  register: casual
+  length_class: short
+  slots: [entity, closer]
+  text: "hỏi phố {entity}{closer}"
+- template_id: good_with_preposition_001
+  sentence_type: conversational
+  register: casual
+  length_class: short
+  slots: [entity, closer]
+  text: "hỏi đường đến {entity}{closer}"

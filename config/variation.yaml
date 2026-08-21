@@ -1,0 +1,188 @@
+# Trọng số các trục variation (phase 5) — nguồn sự thật duy nhất cho mọi
+# tỷ trọng ở tầng SAMPLE (hard rule #8: cấm hardcode ngưỡng tỷ trọng trong
+# code). Loader: navtext.variation.load_variation_config(), validator chạy
+# ngay lúc load — xem bảng 9 check trong docs/generation.md#config-variation-yaml.
+#
+# Khác biệt với config/distribution.yaml: distribution.yaml quyết định
+# QUOTA (bao nhiêu sample rơi vào mỗi cell), variation.yaml quyết định BÊN
+# TRONG một cell, generate_cell() rút name_variant/number_style/... theo tỷ
+# lệ nào. `register` và `length_class` KHÔNG xuất hiện ở đây — chúng đã là
+# một phần của variation_profile trong distribution.yaml, quyết định ở tầng
+# plan (cell), không phải tầng sample.
+#
+# Weight là số thô, không cần cộng đúng 1.0 — loader tự normalize theo
+# từng bảng (weights mặc định VÀ từng bảng override), giống cách
+# sampling.normalize_weights() xử lý category_weights/province_weights.
+#
+# APPLICABILITY LÀ LOGIC CỦA CODE, KHÔNG PHẢI CONFIG: alias tỉnh (legacy/
+# spoken) chỉ tồn tại trong data/master/province_alias.csv (63 legacy, 5
+# spoken, 1 abbrev_expanded) — street/POI không có alias. Vì vậy khi entity
+# không phải province và hierarchy_depth=poi_only (không nhắc tới tỉnh
+# trong câu), generator (phase 6) phải ép name_variant=current bất kể
+# weight ở đây nói gì; tương tự number_style bị ép về "none" khi entity
+# không có số nhà, và number_prefix chỉ có ý nghĩa khi number_style khác
+# "none". Config này chỉ giữ SỐ; quy tắc "khi nào áp dụng được" sống trong
+# variation.py/generator.py.
+#
+# HỆ QUẢ TRỰC TIẾP: để đạt PASS 63/63 legacy alias coverage (docs/output.md
+# #statistics-report), câu dùng tên tỉnh cũ bắt buộc phải là câu có nhắc
+# tên tỉnh — category=admin_unit với entity là province, hoặc
+# hierarchy_depth=full_address (đuôi "... ở tỉnh X cũ"). Đó là lý do
+# name_variant.by_category.admin_unit đẩy legacy lên cao hơn default, và vì
+# sao min_legacy_share_per_province tồn tại: nó là sàn để qc/balance.py
+# (phase 11) phát hiện tỉnh nào chưa từng được sinh câu bằng tên cũ và
+# regenerate đúng cell đó, thay vì phát hiện ở cuối pipeline khi đã quá muộn.
+
+schema_version: 1
+
+axes:
+  # current/legacy/spoken_alias — docs/generation.md#variation-axes.
+  # Key phải phủ ĐÚNG NameVariant trong schema.py (không thiếu, không thừa).
+  name_variant:
+    weights:
+      current: 0.78
+      legacy: 0.15
+      spoken_alias: 0.07
+    by_category:
+      # admin_unit là category duy nhất mà mọi entity là tỉnh/huyện/xã —
+      # đây là nơi chính để đạt sàn coverage legacy, nên tỷ trọng cao hơn
+      # hẳn default.
+      admin_unit:
+        current: 0.62
+        legacy: 0.28
+        spoken_alias: 0.10
+    # Sàn theo tỉnh: mỗi tỉnh phải có ít nhất ngần này tỷ lệ sample (trong
+    # số sample có nhắc tên tỉnh) dùng name_variant=legacy, để 63/63 legacy
+    # alias coverage PASS được. qc/balance.find_gaps (phase 11) đọc giá trị
+    # này, không hardcode trong code. Đặt cạnh weights của chính trục mà nó
+    # ràng buộc (validator #8 kiểm tra ngưỡng này khả thi so với
+    # by_category.admin_unit.legacy ngay bên trên).
+    min_legacy_share_per_province: 0.06
+
+  # "cũ" — cách nói phổ biến nhất hiện nay để phân biệt tên tỉnh cũ với tỉnh
+  # mới sau sáp nhập 1/7/2025 (vd "Bình Dương cũ", "Hà Tây cũ"). CHỈ có ý
+  # nghĩa khi name_variant=legacy VỪA được rút (generator ép absent nếu
+  # không) — xem draw_axes()/variation.py. present nghĩa là "cố gắng nối
+  # cũ"; text cuối chỉ thực sự có "cũ" khi alias chọn được KHÔNG fallback về
+  # tên hiện hành (10/34 tỉnh không sáp nhập không bao giờ có "cũ", dù trục
+  # này present — xem aliases.resolve_province()).
+  legacy_marker:
+    weights:
+      present: 0.45
+      absent: 0.55
+
+  # Cách đọc số nhà/số đường — docs/generation.md#numberspy. Key phải phủ
+  # ĐÚNG NumberStyle trong schema.py.
+  number_style:
+    weights:
+      cardinal: 0.50
+      digit_by_digit: 0.18
+      mixed: 0.07
+      none: 0.25
+    by_category:
+      # address luôn có số nhà thật — "none" hiếm, chỉ khi câu chỉ nhắc
+      # tên đường không kèm số.
+      address:
+        cardinal: 0.58
+        digit_by_digit: 0.25
+        mixed: 0.12
+        none: 0.05
+      # admin_unit (tỉnh/huyện/xã) hầu như không có số — "none" chiếm đa số
+      # còn lại là số ít trường hợp có mã hành chính đọc kèm.
+      admin_unit:
+        cardinal: 0.70
+        digit_by_digit: 0.10
+        mixed: 0.05
+        none: 0.15
+
+  # "số một trăm hai ba ..." (present) vs "một trăm hai ba ..." (absent).
+  # Chỉ có ý nghĩa khi number_style != none — generator (phase 6) bỏ qua
+  # trục này khi entity không có số, không phải config quyết định.
+  number_prefix:
+    weights:
+      present: 0.45
+      absent: 0.55
+
+  # "đường Nguyễn Văn Linh" (present) vs "Nguyễn Văn Linh" (absent).
+  admin_prefix:
+    weights:
+      present: 0.60
+      absent: 0.40
+    by_register:
+      # formal hiếm khi lược bỏ tiền tố hành chính; casual thì ngược lại —
+      # đúng tinh thần hard rule #9 (ưu tiên spoken tự nhiên).
+      formal:
+        present: 0.85
+        absent: 0.15
+      casual:
+        present: 0.40
+        absent: 0.60
+    by_category:
+      # by_category THẮNG by_register (Axis.resolve()) — admin_unit (bao cả
+      # ward, đa số pool nhờ wards_osm.csv) cần tiền tố "phường"/"xã" gần
+      # như luôn có, kể cả ở casual: tên xã/phường trần một mình dễ đọc
+      # nhầm thành thứ khác (vd "Bạch Mai" -> bệnh viện, "Hồng Hà" -> sông)
+      # — đo thực tế trước fix: 42% sample ward thiếu tiền tố. province/
+      # district trong cùng category cũng hưởng chung mức này, vô hại (thêm
+      # "tỉnh"/"thành phố" trước tên tỉnh luôn tự nhiên, không như ward).
+      admin_unit:
+        present: 0.85
+        absent: 0.15
+
+  # Mức chi tiết địa chỉ nêu ra trong câu — docs/generation.md#variation-axes.
+  # Key phải phủ ĐÚNG HierarchyDepth trong schema.py.
+  hierarchy_depth:
+    weights:
+      poi_only: 0.55
+      poi_district: 0.30
+      full_address: 0.15
+    by_category:
+      # Tên tỉnh/huyện/xã tự nó đã là đơn vị hành chính — hiếm khi cần kèm
+      # thêm hierarchy phía trên nó trong câu nói.
+      admin_unit:
+        poi_only: 0.75
+        poi_district: 0.20
+        full_address: 0.05
+      # address là category duy nhất mà "chỉ nêu bản thân entity" (poi_only)
+      # thường không đủ nghĩa — người nói có xu hướng kèm thêm ngữ cảnh.
+      address:
+        poi_only: 0.15
+        poi_district: 0.40
+        full_address: 0.45
+
+# Tần suất dùng filler/particle từ data/templates/lexicon.yaml. Mỗi giá
+# trị trong [0, 1] là xác suất slot đó KHÔNG rỗng (present) khi fill. Khi
+# "present", phase 6 chọn đều (rng của cell) trong các giá trị KHÁC RỖNG
+# của list openers/closers[register] tương ứng — "" trong lexicon.yaml vẫn
+# tồn tại làm giá trị dữ liệu, nhưng xác suất rơi vào rỗng đến từ đây, một
+# nguồn sự thật duy nhất, không tính hai lần (xem comment đã cập nhật ở
+# data/templates/lexicon.yaml).
+lexicon_rates:
+  opener:
+    formal: 0.45
+    neutral: 0.40
+    casual: 0.55
+  closer:
+    formal: 0.55
+    neutral: 0.50
+    casual: 0.70
+  filler:
+    formal: 0.00
+    neutral: 0.08
+    casual: 0.25
+
+# Tham số synthesize số nhà cho category=address (phase 6) — không có
+# entity "address" riêng trong master data (docs/sampling.md#entity_pool),
+# số nhà được sinh ngẫu nhiên (rng của cell, hard rule #4) khi compose câu.
+# Sống ở đây (cạnh number_style/number_prefix) chứ không hardcode trong
+# generator.py (hard rule #8) vì đây cũng là một tỷ trọng/dải giá trị của
+# variation, không phải quota — cùng tầng quyết định với các trục khác
+# trong file này.
+address_synthesis:
+  house_number_min: 1
+  house_number_max: 300
+  # Xác suất số nhà có dạng "xx/yy" kiểu ngõ/hẻm (vd "12/3") thay vì một số
+  # nguyên đơn.
+  alley_suffix_rate: 0.30
+  # Xác suất có thêm hậu tố chữ cái (vd "15B") — độc lập với alley_suffix.
+  letter_suffix_rate: 0.15

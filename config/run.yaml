@@ -1,0 +1,33 @@
+# Cấu hình toàn cục cho run — global_seed, đường dẫn, ngưỡng QC.
+# Xem CLAUDE.md#cây-thư-mục và docs/output.md#run-manifest.
+#
+# Phase 2 mới dùng tới admin_invariants (build_master validate coverage
+# 34/63). Các mục còn lại (global_seed, qc_thresholds) là placeholder cho
+# phase 3+ — không hardcode các con số này trong code (hard rule #8).
+
+global_seed: 20260815
+
+paths:
+  raw_dir: "data/raw"
+  master_dir: "data/master"
+  template_dir: "data/templates"
+
+# Bất biến bắt buộc của tập dữ liệu hành chính — build_master.validate() đọc
+# từ đây, không hardcode 34/63 trong build_master.py (hard rule #8).
+admin_invariants:
+  expected_province_count: 34
+  expected_legacy_alias_count: 63
+  # Sàn số POI landmark (source=manual, từ data/raw/admin/landmarks.yaml)
+  # mỗi tỉnh phải có — build_master.validate() raise nếu tỉnh nào dưới
+  # ngưỡng này. Đặt = min thực tế trong landmarks.yaml hiện tại (tỉnh mỏng
+  # nhất có 8, sau đợt curate mở rộng ~8-10/tỉnh) chứ không phải mục tiêu
+  # lý tưởng — nâng dần khi curate thêm.
+  min_landmarks_per_province: 8
+
+# Placeholder cho phase 11 (qc/validators.py) — điền giá trị thật khi tới
+# phase đó, xem docs/qc.md#tầng-1--hard-validators.
+qc_thresholds:
+  length_bounds:
+    short: [5, 40]
+    medium: [30, 90]
+    long: [70, 160]

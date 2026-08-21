@@ -1,0 +1,19 @@
+ward_id,district_id,name,type
+hn_hk_hangbac,hn_hoankiem,Hàng Bạc,phường
+hn_hk_trangtien,hn_hoankiem,Tràng Tiền,phường
+hn_bd_dienbien,hn_badinh,Điện Biên,phường
+hn_bd_ngochoa,hn_badinh,Ngọc Hà,phường
+hn_cg_dichvong,hn_caugiay,Dịch Vọng,phường
+hn_dd_khambuoi,hn_dongda,Khâm Thiên,phường
+hn_hbt_bachmai,hn_haibatrung,Bạch Mai,phường
+hcm_q1_bennghe,hcm_quan1,Bến Nghé,phường
+hcm_q1_denthanh,hcm_quan1,Đa Kao,phường
+hcm_q3_vothiSau,hcm_quan3,Võ Thị Sáu,phường
+hcm_q5_chobonthanh,hcm_quan5,Chợ Quán,phường
+hcm_bt_thanhda,hcm_binhthanh,Thanh Đa,phường
+hcm_td_binhtho,hcm_thuduc,Bình Thọ,phường
+dn_hc_haichau1,dn_haichau,Hải Châu 1,phường
+dn_hc_thachthang,dn_haichau,Thạch Thang,phường
+dn_tk_thanhkhedong,dn_thanhkhe,Thanh Khê Đông,phường
+dn_st_thomay,dn_sontra,Thọ Quang,phường
+dn_tk2_tanthanh,dn_tamky,Tân Thạnh,phường

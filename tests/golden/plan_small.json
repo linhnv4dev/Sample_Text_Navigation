@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "run_id": "golden",
+  "total": 83,
+  "global_seed": 20260815,
+  "config_hash": "golden-fixture",
+  "master_data_hash": "golden-fixture",
+  "generated_at": "2026-08-15T00:00:00+00:00",
+  "cells": [
+    {
+      "province_id": "01",
+      "category": "street",
+      "sentence_type": "nav_command",
+      "variation_profile": "casual_short",
+      "target_count": 12
+    },
+    {
+      "province_id": "01",
+      "category": "address",
+      "sentence_type": "search",
+      "variation_profile": "neutral_medium",
+      "target_count": 10
+    },
+    {
+      "province_id": "01",
+      "category": "admin_unit",
+      "sentence_type": "route_question",
+      "variation_profile": "formal_medium",
+      "target_count": 8
+    },
+    {
+      "province_id": "02",
+      "category": "commercial",
+      "sentence_type": "conversational",
+      "variation_profile": "casual_long",
+      "target_count": 10
+    },
+    {
+      "province_id": "02",
+      "category": "public_facility",
+      "sentence_type": "short_command",
+      "variation_profile": "neutral_short",
+      "target_count": 9
+    },
+    {
+      "province_id": "02",
+      "category": "admin_unit",
+      "sentence_type": "contextual",
+      "variation_profile": "casual_short",
+      "target_count": 7
+    },
+    {
+      "province_id": "04",
+      "category": "landmark",
+      "sentence_type": "nav_command",
+      "variation_profile": "neutral_medium",
+      "target_count": 8
+    },
+    {
+      "province_id": "04",
+      "category": "transport",
+      "sentence_type": "search",
+      "variation_profile": "formal_medium",
+      "target_count": 6
+    },
+    {
+      "province_id": "04",
+      "category": "poi_other",
+      "sentence_type": "route_question",
+      "variation_profile": "casual_short",
+      "target_count": 8
+    },
+    {
+      "province_id": "03",
+      "category": "admin_unit",
+      "sentence_type": "nav_command",
+      "variation_profile": "neutral_short",
+      "target_count": 5
+    }
+  ]
+}

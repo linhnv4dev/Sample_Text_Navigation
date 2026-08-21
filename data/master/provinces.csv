@@ -1,0 +1,35 @@
+province_id,name_current,admin_status,region,is_municipality,popularity_tier
+01,Hà Nội,unchanged,bac_bo,True,1
+02,Hồ Chí Minh,merged,nam_bo,True,1
+03,Hải Phòng,merged,bac_bo,True,2
+04,Đà Nẵng,merged,trung_bo,True,1
+05,Cần Thơ,merged,nam_bo,True,2
+06,Huế,unchanged,trung_bo,True,2
+07,Lai Châu,unchanged,bac_bo,False,3
+08,Điện Biên,unchanged,bac_bo,False,3
+09,Sơn La,unchanged,bac_bo,False,3
+10,Lạng Sơn,unchanged,bac_bo,False,3
+11,Quảng Ninh,unchanged,bac_bo,False,2
+12,Thanh Hóa,unchanged,bac_trung_bo,False,2
+13,Nghệ An,unchanged,bac_trung_bo,False,2
+14,Hà Tĩnh,unchanged,bac_trung_bo,False,3
+15,Cao Bằng,unchanged,bac_bo,False,3
+16,Tuyên Quang,merged,bac_bo,False,3
+17,Lào Cai,merged,bac_bo,False,3
+18,Thái Nguyên,merged,bac_bo,False,3
+19,Phú Thọ,merged,bac_bo,False,3
+20,Bắc Ninh,merged,bac_bo,False,3
+21,Hưng Yên,merged,bac_bo,False,3
+22,Ninh Bình,merged,bac_bo,False,3
+23,Quảng Trị,merged,bac_trung_bo,False,3
+24,Quảng Ngãi,merged,nam_trung_bo,False,3
+25,Gia Lai,merged,tay_nguyen,False,3
+26,Khánh Hòa,merged,nam_trung_bo,False,2
+27,Lâm Đồng,merged,tay_nguyen,False,2
+28,Đắk Lắk,merged,tay_nguyen,False,3
+29,Đồng Nai,merged,nam_bo,False,2
+30,Tây Ninh,merged,nam_bo,False,3
+31,Vĩnh Long,merged,nam_bo,False,3
+32,Đồng Tháp,merged,nam_bo,False,3
+33,Cà Mau,merged,nam_bo,False,3
+34,An Giang,merged,nam_bo,False,3

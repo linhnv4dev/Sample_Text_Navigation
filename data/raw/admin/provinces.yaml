@@ -1,0 +1,490 @@
+# 34 đơn vị hành chính cấp tỉnh hiện hành (sau sáp nhập 1/7/2025) + alias.
+#
+# NGUỒN & ĐỘ TIN CẬY: xem data/raw/admin/SOURCES.md — danh sách sáp nhập
+# dưới đây được tái dựng từ tin tức công khai, CHƯA đối chiếu văn bản pháp
+# lý gốc (Nghị quyết 202/2025/QH15). Cần rà soát trước khi coi là ground
+# truth cho môi trường sản xuất.
+#
+# Quy ước:
+#   province_id      : id ổn định 2 chữ số do dataset này tự gán (KHÔNG phải
+#                       mã GSO chính thức) — chỉ cần duy nhất & ổn định qua
+#                       các lần build.
+#   admin_status      : unchanged | merged  (so với ranh giới trước 1/7/2025)
+#   aliases.legacy    : tên tỉnh cũ thuộc "63 tỉnh/thành" giai đoạn 2008–2025.
+#                       Mỗi tên xuất hiện đúng 1 lần trong TOÀN BỘ file này —
+#                       đây là bất biến hard rule #2, được validate ở
+#                       build_master và test_admin_data.py.
+#   aliases.spoken    : cách gọi dân gian, KHÔNG tính vào invariant 63 (ví dụ
+#                       "Hà Tây" đã sáp nhập vào Hà Nội từ 2008, tức là TRƯỚC
+#                       giai đoạn 63 tỉnh 2008–2025, nên không nằm trong tập
+#                       63 — nhưng vẫn là spoken form hợp lệ nên giữ ở đây).
+#   aliases.abbrev_expanded : dạng đầy đủ đã mở rộng của một viết tắt phổ
+#                       biến (giá trị lưu KHÔNG chứa viết tắt — xem hard rule #1).
+#
+#   Mỗi alias là một mapping {name, admin_prefix}, KHÔNG phải string trần:
+#     name         : tên alias.
+#     admin_prefix : "tỉnh" | "thành phố" | "" — tiền tố hành chính ĐÚNG của
+#                    CHÍNH TÊN ĐÓ tại thời điểm nó còn được dùng, không phải
+#                    tiền tố của tỉnh hiện hành. Ví dụ "Đà Nẵng" hợp nhất
+#                    "tỉnh Quảng Nam" (is_municipality hiện tại = true) —
+#                    nhưng legacy alias "Quảng Nam" mang admin_prefix "tỉnh"
+#                    vì bản thân Quảng Nam trước sáp nhập là một tỉnh, không
+#                    phải thành phố trực thuộc trung ương. "" nghĩa là tên
+#                    đó tự mang nghĩa hành chính rồi (vd "thủ đô", "thành
+#                    phố mang tên Bác") hoặc đã chứa sẵn tiền tố trong chuỗi
+#                    (vd "thành phố Hồ Chí Minh") — không được gắn thêm tiền
+#                    tố khác lên nó (xem aliases.py#resolve_province).
+#
+#   5 tỉnh/thành từng là "thành phố trực thuộc trung ương" trong hệ 63 tỉnh
+#   (2008–2025): Hà Nội, Hồ Chí Minh, Hải Phòng, Đà Nẵng, Cần Thơ — CHỈ 5
+#   tên legacy này mang admin_prefix "thành phố"; mọi legacy khác (kể cả
+#   "Thừa Thiên Huế", vì Huế chỉ thành thành phố trực thuộc TW SAU sáp nhập
+#   2025) mang "tỉnh".
+
+- province_id: "01"
+  name_current: "Hà Nội"
+  admin_status: unchanged
+  region: bac_bo
+  is_municipality: true
+  popularity_tier: 1
+  aliases:
+    legacy:
+      - {name: "Hà Nội", admin_prefix: "thành phố"}
+    spoken:
+      - {name: "thủ đô", admin_prefix: ""}
+      - {name: "Hà Tây", admin_prefix: "tỉnh"}
+    abbrev_expanded: []
+
+- province_id: "02"
+  name_current: "Hồ Chí Minh"
+  admin_status: merged
+  region: nam_bo
+  is_municipality: true
+  popularity_tier: 1
+  aliases:
+    legacy:
+      - {name: "Hồ Chí Minh", admin_prefix: "thành phố"}
+      - {name: "Bình Dương", admin_prefix: "tỉnh"}
+      - {name: "Bà Rịa - Vũng Tàu", admin_prefix: "tỉnh"}
+    spoken:
+      - {name: "Sài Gòn", admin_prefix: "thành phố"}
+      - {name: "thành phố mang tên Bác", admin_prefix: ""}
+    abbrev_expanded:
+      - {name: "thành phố Hồ Chí Minh", admin_prefix: ""}
+
+- province_id: "03"
+  name_current: "Hải Phòng"
+  admin_status: merged
+  region: bac_bo
+  is_municipality: true
+  popularity_tier: 2
+  aliases:
+    legacy:
+      - {name: "Hải Phòng", admin_prefix: "thành phố"}
+      - {name: "Hải Dương", admin_prefix: "tỉnh"}
+    spoken: []
+    abbrev_expanded: []
+
+- province_id: "04"
+  name_current: "Đà Nẵng"
+  admin_status: merged
+  region: trung_bo
+  is_municipality: true
+  # tier 1: thành phố du lịch lớn thứ ba cả nước (Cầu Rồng, Bà Nà, Hội An,
+  # Mỹ Sơn sau sáp nhập Quảng Nam). Mức "nổi bật nhưng chưa ngang Hà
+  # Nội/TP.HCM" được diễn đạt bằng province_weights.overrides trong
+  # config/distribution.yaml, không phải bằng cách hạ tier xuống 2 — thang
+  # tier chỉ có 3 bậc, không đủ để phân biệt mức độ trong cùng một tier.
+  popularity_tier: 1
+  aliases:
+    legacy:
+      - {name: "Đà Nẵng", admin_prefix: "thành phố"}
+      - {name: "Quảng Nam", admin_prefix: "tỉnh"}
+    spoken: []
+    abbrev_expanded: []
+
+- province_id: "05"
+  name_current: "Cần Thơ"
+  admin_status: merged
+  region: nam_bo
+  is_municipality: true
+  popularity_tier: 2
+  aliases:
+    legacy:
+      - {name: "Cần Thơ", admin_prefix: "thành phố"}
+      - {name: "Hậu Giang", admin_prefix: "tỉnh"}
+      - {name: "Sóc Trăng", admin_prefix: "tỉnh"}
+    spoken: []
+    abbrev_expanded: []
+
+- province_id: "06"
+  name_current: "Huế"
+  admin_status: unchanged
+  region: trung_bo
+  is_municipality: true
+  popularity_tier: 2
+  aliases:
+    legacy:
+      - {name: "Thừa Thiên Huế", admin_prefix: "tỉnh"}
+    spoken:
+      - {name: "cố đô", admin_prefix: ""}
+    abbrev_expanded: []
+
+- province_id: "07"
+  name_current: "Lai Châu"
+  admin_status: unchanged
+  region: bac_bo
+  is_municipality: false
+  popularity_tier: 3
+  aliases:
+    legacy:
+      - {name: "Lai Châu", admin_prefix: "tỉnh"}
+    spoken: []
+    abbrev_expanded: []
+
+- province_id: "08"
+  name_current: "Điện Biên"
+  admin_status: unchanged
+  region: bac_bo
+  is_municipality: false
+  popularity_tier: 3
+  aliases:
+    legacy:
+      - {name: "Điện Biên", admin_prefix: "tỉnh"}
+    spoken: []
+    abbrev_expanded: []
+
+- province_id: "09"
+  name_current: "Sơn La"
+  admin_status: unchanged
+  region: bac_bo
+  is_municipality: false
+  popularity_tier: 3
+  aliases:
+    legacy:
+      - {name: "Sơn La", admin_prefix: "tỉnh"}
+    spoken: []
+    abbrev_expanded: []
+
+- province_id: "10"
+  name_current: "Lạng Sơn"
+  admin_status: unchanged
+  region: bac_bo
+  is_municipality: false
+  popularity_tier: 3
+  aliases:
+    legacy:
+      - {name: "Lạng Sơn", admin_prefix: "tỉnh"}
+    spoken: []
+    abbrev_expanded: []
+
+- province_id: "11"
+  name_current: "Quảng Ninh"
+  admin_status: unchanged
+  region: bac_bo
+  is_municipality: false
+  popularity_tier: 2
+  aliases:
+    legacy:
+      - {name: "Quảng Ninh", admin_prefix: "tỉnh"}
+    spoken: []
+    abbrev_expanded: []
+
+- province_id: "12"
+  name_current: "Thanh Hóa"
+  admin_status: unchanged
+  region: bac_trung_bo
+  is_municipality: false
+  popularity_tier: 2
+  aliases:
+    legacy:
+      - {name: "Thanh Hóa", admin_prefix: "tỉnh"}
+    spoken: []
+    abbrev_expanded: []
+
+- province_id: "13"
+  name_current: "Nghệ An"
+  admin_status: unchanged
+  region: bac_trung_bo
+  is_municipality: false
+  popularity_tier: 2
+  aliases:
+    legacy:
+      - {name: "Nghệ An", admin_prefix: "tỉnh"}
+    spoken: []
+    abbrev_expanded: []
+
+- province_id: "14"
+  name_current: "Hà Tĩnh"
+  admin_status: unchanged
+  region: bac_trung_bo
+  is_municipality: false
+  popularity_tier: 3
+  aliases:
+    legacy:
+      - {name: "Hà Tĩnh", admin_prefix: "tỉnh"}
+    spoken: []
+    abbrev_expanded: []
+
+- province_id: "15"
+  name_current: "Cao Bằng"
+  admin_status: unchanged
+  region: bac_bo
+  is_municipality: false
+  popularity_tier: 3
+  aliases:
+    legacy:
+      - {name: "Cao Bằng", admin_prefix: "tỉnh"}
+    spoken: []
+    abbrev_expanded: []
+
+- province_id: "16"
+  name_current: "Tuyên Quang"
+  admin_status: merged
+  region: bac_bo
+  is_municipality: false
+  popularity_tier: 3
+  aliases:
+    legacy:
+      - {name: "Tuyên Quang", admin_prefix: "tỉnh"}
+      - {name: "Hà Giang", admin_prefix: "tỉnh"}
+    spoken: []
+    abbrev_expanded: []
+
+- province_id: "17"
+  name_current: "Lào Cai"
+  admin_status: merged
+  region: bac_bo
+  is_municipality: false
+  popularity_tier: 3
+  aliases:
+    legacy:
+      - {name: "Lào Cai", admin_prefix: "tỉnh"}
+      - {name: "Yên Bái", admin_prefix: "tỉnh"}
+    spoken: []
+    abbrev_expanded: []
+
+- province_id: "18"
+  name_current: "Thái Nguyên"
+  admin_status: merged
+  region: bac_bo
+  is_municipality: false
+  popularity_tier: 3
+  aliases:
+    legacy:
+      - {name: "Thái Nguyên", admin_prefix: "tỉnh"}
+      - {name: "Bắc Kạn", admin_prefix: "tỉnh"}
+    spoken: []
+    abbrev_expanded: []
+
+- province_id: "19"
+  name_current: "Phú Thọ"
+  admin_status: merged
+  region: bac_bo
+  is_municipality: false
+  popularity_tier: 3
+  aliases:
+    legacy:
+      - {name: "Phú Thọ", admin_prefix: "tỉnh"}
+      - {name: "Vĩnh Phúc", admin_prefix: "tỉnh"}
+      - {name: "Hòa Bình", admin_prefix: "tỉnh"}
+    spoken: []
+    abbrev_expanded: []
+
+- province_id: "20"
+  name_current: "Bắc Ninh"
+  admin_status: merged
+  region: bac_bo
+  is_municipality: false
+  popularity_tier: 3
+  aliases:
+    legacy:
+      - {name: "Bắc Ninh", admin_prefix: "tỉnh"}
+      - {name: "Bắc Giang", admin_prefix: "tỉnh"}
+    spoken: []
+    abbrev_expanded: []
+
+- province_id: "21"
+  name_current: "Hưng Yên"
+  admin_status: merged
+  region: bac_bo
+  is_municipality: false
+  popularity_tier: 3
+  aliases:
+    legacy:
+      - {name: "Hưng Yên", admin_prefix: "tỉnh"}
+      - {name: "Thái Bình", admin_prefix: "tỉnh"}
+    spoken: []
+    abbrev_expanded: []
+
+- province_id: "22"
+  name_current: "Ninh Bình"
+  admin_status: merged
+  region: bac_bo
+  is_municipality: false
+  popularity_tier: 3
+  aliases:
+    legacy:
+      - {name: "Ninh Bình", admin_prefix: "tỉnh"}
+      - {name: "Hà Nam", admin_prefix: "tỉnh"}
+      - {name: "Nam Định", admin_prefix: "tỉnh"}
+    spoken: []
+    abbrev_expanded: []
+
+- province_id: "23"
+  name_current: "Quảng Trị"
+  admin_status: merged
+  region: bac_trung_bo
+  is_municipality: false
+  popularity_tier: 3
+  aliases:
+    legacy:
+      - {name: "Quảng Trị", admin_prefix: "tỉnh"}
+      - {name: "Quảng Bình", admin_prefix: "tỉnh"}
+    spoken: []
+    abbrev_expanded: []
+
+- province_id: "24"
+  name_current: "Quảng Ngãi"
+  admin_status: merged
+  region: nam_trung_bo
+  is_municipality: false
+  popularity_tier: 3
+  aliases:
+    legacy:
+      - {name: "Quảng Ngãi", admin_prefix: "tỉnh"}
+      - {name: "Kon Tum", admin_prefix: "tỉnh"}
+    spoken: []
+    abbrev_expanded: []
+
+- province_id: "25"
+  name_current: "Gia Lai"
+  admin_status: merged
+  region: tay_nguyen
+  is_municipality: false
+  popularity_tier: 3
+  aliases:
+    legacy:
+      - {name: "Gia Lai", admin_prefix: "tỉnh"}
+      - {name: "Bình Định", admin_prefix: "tỉnh"}
+    spoken: []
+    abbrev_expanded: []
+
+- province_id: "26"
+  name_current: "Khánh Hòa"
+  admin_status: merged
+  region: nam_trung_bo
+  is_municipality: false
+  popularity_tier: 2
+  aliases:
+    legacy:
+      - {name: "Khánh Hòa", admin_prefix: "tỉnh"}
+      - {name: "Ninh Thuận", admin_prefix: "tỉnh"}
+    spoken: []
+    abbrev_expanded: []
+
+- province_id: "27"
+  name_current: "Lâm Đồng"
+  admin_status: merged
+  region: tay_nguyen
+  is_municipality: false
+  popularity_tier: 2
+  aliases:
+    legacy:
+      - {name: "Lâm Đồng", admin_prefix: "tỉnh"}
+      - {name: "Đắk Nông", admin_prefix: "tỉnh"}
+      - {name: "Bình Thuận", admin_prefix: "tỉnh"}
+    spoken: []
+    abbrev_expanded: []
+
+- province_id: "28"
+  name_current: "Đắk Lắk"
+  admin_status: merged
+  region: tay_nguyen
+  is_municipality: false
+  popularity_tier: 3
+  aliases:
+    legacy:
+      - {name: "Đắk Lắk", admin_prefix: "tỉnh"}
+      - {name: "Phú Yên", admin_prefix: "tỉnh"}
+    spoken: []
+    abbrev_expanded: []
+
+- province_id: "29"
+  name_current: "Đồng Nai"
+  admin_status: merged
+  region: nam_bo
+  is_municipality: false
+  popularity_tier: 2
+  aliases:
+    legacy:
+      - {name: "Đồng Nai", admin_prefix: "tỉnh"}
+      - {name: "Bình Phước", admin_prefix: "tỉnh"}
+    spoken: []
+    abbrev_expanded: []
+
+- province_id: "30"
+  name_current: "Tây Ninh"
+  admin_status: merged
+  region: nam_bo
+  is_municipality: false
+  popularity_tier: 3
+  aliases:
+    legacy:
+      - {name: "Tây Ninh", admin_prefix: "tỉnh"}
+      - {name: "Long An", admin_prefix: "tỉnh"}
+    spoken: []
+    abbrev_expanded: []
+
+- province_id: "31"
+  name_current: "Vĩnh Long"
+  admin_status: merged
+  region: nam_bo
+  is_municipality: false
+  popularity_tier: 3
+  aliases:
+    legacy:
+      - {name: "Vĩnh Long", admin_prefix: "tỉnh"}
+      - {name: "Bến Tre", admin_prefix: "tỉnh"}
+      - {name: "Trà Vinh", admin_prefix: "tỉnh"}
+    spoken: []
+    abbrev_expanded: []
+
+- province_id: "32"
+  name_current: "Đồng Tháp"
+  admin_status: merged
+  region: nam_bo
+  is_municipality: false
+  popularity_tier: 3
+  aliases:
+    legacy:
+      - {name: "Đồng Tháp", admin_prefix: "tỉnh"}
+      - {name: "Tiền Giang", admin_prefix: "tỉnh"}
+    spoken: []
+    abbrev_expanded: []
+
+- province_id: "33"
+  name_current: "Cà Mau"
+  admin_status: merged
+  region: nam_bo
+  is_municipality: false
+  popularity_tier: 3
+  aliases:
+    legacy:
+      - {name: "Cà Mau", admin_prefix: "tỉnh"}
+      - {name: "Bạc Liêu", admin_prefix: "tỉnh"}
+    spoken: []
+    abbrev_expanded: []
+
+- province_id: "34"
+  name_current: "An Giang"
+  admin_status: merged
+  region: nam_bo
+  is_municipality: false
+  popularity_tier: 3
+  aliases:
+    legacy:
+      - {name: "An Giang", admin_prefix: "tỉnh"}
+      - {name: "Kiên Giang", admin_prefix: "tỉnh"}
+    spoken: []
+    abbrev_expanded: []

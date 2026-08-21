@@ -1,0 +1,7 @@
+# Hard rule #6 violation: entity nhúng cứng thay vì đi qua {entity}.
+- template_id: bad_hardcoded_001
+  sentence_type: nav_command
+  register: neutral
+  length_class: short
+  slots: []
+  text: "Chỉ đường đến Hồ Hoàn Kiếm"

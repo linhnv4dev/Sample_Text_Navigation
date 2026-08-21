@@ -1,0 +1,9 @@
+poi_tags:
+  - osm_tag: "amenity=hospital"
+    category: public_facility
+    subcategory: hospital
+
+street_highway_map:
+  residential: street
+
+require_name: true

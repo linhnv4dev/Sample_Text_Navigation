@@ -1,0 +1,27 @@
+# Fixture tí hon cho test_build_master.py / test_loaders.py — KHÔNG phải
+# dữ liệu thật, chỉ dùng để test logic build/load độc lập với snapshot thật.
+- province_id: "01"
+  name_current: "Tỉnh Một"
+  admin_status: unchanged
+  region: test_region
+  is_municipality: false
+  popularity_tier: 1
+  aliases:
+    legacy:
+      - {name: "Tỉnh Một Cũ", admin_prefix: "tỉnh"}
+    spoken:
+      - {name: "Một", admin_prefix: ""}
+    abbrev_expanded: []
+
+- province_id: "02"
+  name_current: "Tỉnh Hai"
+  admin_status: merged
+  region: test_region
+  is_municipality: false
+  popularity_tier: 2
+  aliases:
+    legacy:
+      - {name: "Tỉnh Hai Cũ A", admin_prefix: "tỉnh"}
+      - {name: "Tỉnh Hai Cũ B", admin_prefix: "tỉnh"}
+    spoken: []
+    abbrev_expanded: []

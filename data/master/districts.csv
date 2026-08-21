@@ -1,0 +1,15 @@
+district_id,province_id,name,type,status,legacy_alias
+dn_haichau,04,Hải Châu,quận,abolished,Đà Nẵng
+dn_sontra,04,Sơn Trà,quận,abolished,Đà Nẵng
+dn_tamky,04,Tam Kỳ,thành phố thuộc tỉnh,abolished,Quảng Nam
+dn_thanhkhe,04,Thanh Khê,quận,abolished,Đà Nẵng
+hcm_binhthanh,02,Bình Thạnh,quận,abolished,Hồ Chí Minh
+hcm_quan1,02,Quận 1,quận,abolished,Hồ Chí Minh
+hcm_quan3,02,Quận 3,quận,abolished,Hồ Chí Minh
+hcm_quan5,02,Quận 5,quận,abolished,Hồ Chí Minh
+hcm_thuduc,02,Thủ Đức,thành phố thuộc tỉnh,abolished,Hồ Chí Minh
+hn_badinh,01,Ba Đình,quận,abolished,
+hn_caugiay,01,Cầu Giấy,quận,abolished,
+hn_dongda,01,Đống Đa,quận,abolished,
+hn_haibatrung,01,Hai Bà Trưng,quận,abolished,
+hn_hoankiem,01,Hoàn Kiếm,quận,abolished,

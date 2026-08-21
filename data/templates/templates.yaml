@@ -1,0 +1,1871 @@
+# Template bank — data/templates/templates.yaml
+# Xem docs/generation.md#template-bank cho schema entry và quy tắc cứng.
+#
+# Quy ước:
+# - template_id = "<sentence_type>_<variation_profile>_<nnn>" (profile đã
+#   gộp sẵn register+length_class, xem config/distribution.yaml). Đánh số
+#   riêng trong từng ô — thêm template mới vào một ô không dịch id ô khác.
+# - {opener}/{closer} không có khoảng trắng liền kề trong text: composer ở
+#   phase 6 tự chèn space khi giá trị filled không rỗng, và chuẩn hoá
+#   " ".join(text.split()) — nhờ vậy opener/closer rỗng không để lại
+#   double space. {entity} luôn có mặt (mọi câu chứa location entity) và
+#   dùng space literal bình thường quanh nó vì entity không bao giờ rỗng.
+# - Toàn bộ text viết thường (spoken-form transcript, không dấu câu cuối
+#   câu) — tránh mọi rủi ro "tên riêng viết hoa giữa câu" (hard rule #6);
+#   entity thật (viết hoa) chỉ tới từ {entity} lúc fill, không nằm trong
+#   template text.
+# - 6 sentence_type × 5 variation_profile = 30 ô, mỗi ô đúng 10 template.
+
+# ===========================================================================
+# nav_command — "Chỉ đường đến {entity}."
+# ===========================================================================
+
+- template_id: nav_command_formal_medium_001
+  sentence_type: nav_command
+  register: formal
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}xin chỉ đường đến {entity}{closer}"
+- template_id: nav_command_formal_medium_002
+  sentence_type: nav_command
+  register: formal
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}vui lòng chỉ đường tới {entity}{closer}"
+- template_id: nav_command_formal_medium_003
+  sentence_type: nav_command
+  register: formal
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}nhờ chỉ giúp đường đến {entity}{closer}"
+- template_id: nav_command_formal_medium_004
+  sentence_type: nav_command
+  register: formal
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}xin cho tôi đường đi đến {entity}{closer}"
+- template_id: nav_command_formal_medium_005
+  sentence_type: nav_command
+  register: formal
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}mong được chỉ đường tới {entity}{closer}"
+- template_id: nav_command_formal_medium_006
+  sentence_type: nav_command
+  register: formal
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}xin hướng dẫn đường đến {entity}{closer}"
+- template_id: nav_command_formal_medium_007
+  sentence_type: nav_command
+  register: formal
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}nhờ dẫn đường giúp tôi tới {entity}{closer}"
+- template_id: nav_command_formal_medium_008
+  sentence_type: nav_command
+  register: formal
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}xin chỉ lối đi đến {entity}{closer}"
+- template_id: nav_command_formal_medium_009
+  sentence_type: nav_command
+  register: formal
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}mong chỉ giúp tuyến đường đến {entity}{closer}"
+- template_id: nav_command_formal_medium_010
+  sentence_type: nav_command
+  register: formal
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}xin được chỉ đường đi tới {entity}{closer}"
+
+- template_id: nav_command_neutral_short_001
+  sentence_type: nav_command
+  register: neutral
+  length_class: short
+  slots: [entity, closer]
+  text: "chỉ đường đến {entity}{closer}"
+- template_id: nav_command_neutral_short_002
+  sentence_type: nav_command
+  register: neutral
+  length_class: short
+  slots: [entity, closer]
+  text: "chỉ đường tới {entity}{closer}"
+- template_id: nav_command_neutral_short_003
+  sentence_type: nav_command
+  register: neutral
+  length_class: short
+  slots: [entity, closer]
+  text: "dẫn đường đến {entity}{closer}"
+- template_id: nav_command_neutral_short_004
+  sentence_type: nav_command
+  register: neutral
+  length_class: short
+  slots: [entity, closer]
+  text: "tìm đường đến {entity}{closer}"
+- template_id: nav_command_neutral_short_005
+  sentence_type: nav_command
+  register: neutral
+  length_class: short
+  slots: [entity, closer]
+  text: "đưa tôi đến {entity}{closer}"
+- template_id: nav_command_neutral_short_006
+  sentence_type: nav_command
+  register: neutral
+  length_class: short
+  slots: [entity, closer]
+  text: "chỉ lối đến {entity}{closer}"
+- template_id: nav_command_neutral_short_007
+  sentence_type: nav_command
+  register: neutral
+  length_class: short
+  slots: [entity, closer]
+  text: "dẫn lối đến {entity}{closer}"
+- template_id: nav_command_neutral_short_008
+  sentence_type: nav_command
+  register: neutral
+  length_class: short
+  slots: [entity, closer]
+  text: "chỉ hướng đi {entity}{closer}"
+- template_id: nav_command_neutral_short_009
+  sentence_type: nav_command
+  register: neutral
+  length_class: short
+  slots: [entity, closer]
+  text: "chỉ hướng đến {entity}{closer}"
+- template_id: nav_command_neutral_short_010
+  sentence_type: nav_command
+  register: neutral
+  length_class: short
+  slots: [entity, closer]
+  text: "đưa tôi tới {entity}{closer}"
+
+- template_id: nav_command_neutral_medium_001
+  sentence_type: nav_command
+  register: neutral
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}chỉ giúp tôi đường đến {entity}{closer}"
+- template_id: nav_command_neutral_medium_002
+  sentence_type: nav_command
+  register: neutral
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}cho tôi đường đi đến {entity}{closer}"
+- template_id: nav_command_neutral_medium_003
+  sentence_type: nav_command
+  register: neutral
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}tìm giúp đường đến {entity}{closer}"
+- template_id: nav_command_neutral_medium_004
+  sentence_type: nav_command
+  register: neutral
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}chỉ đường đi tới {entity}{closer}"
+- template_id: nav_command_neutral_medium_005
+  sentence_type: nav_command
+  register: neutral
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}hướng dẫn đường đến {entity}{closer}"
+- template_id: nav_command_neutral_medium_006
+  sentence_type: nav_command
+  register: neutral
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}dẫn giúp đường tới {entity}{closer}"
+- template_id: nav_command_neutral_medium_007
+  sentence_type: nav_command
+  register: neutral
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}chỉ tuyến đường đến {entity}{closer}"
+- template_id: nav_command_neutral_medium_008
+  sentence_type: nav_command
+  register: neutral
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}mở giúp đường đi đến {entity}{closer}"
+- template_id: nav_command_neutral_medium_009
+  sentence_type: nav_command
+  register: neutral
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}tìm hộ đường đến {entity}{closer}"
+- template_id: nav_command_neutral_medium_010
+  sentence_type: nav_command
+  register: neutral
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}chỉ giúp lối đi đến {entity}{closer}"
+
+- template_id: nav_command_casual_short_001
+  sentence_type: nav_command
+  register: casual
+  length_class: short
+  slots: [entity, closer]
+  text: "đi {entity}{closer}"
+- template_id: nav_command_casual_short_002
+  sentence_type: nav_command
+  register: casual
+  length_class: short
+  slots: [entity, closer]
+  text: "tới {entity}{closer}"
+- template_id: nav_command_casual_short_003
+  sentence_type: nav_command
+  register: casual
+  length_class: short
+  slots: [entity, closer]
+  text: "qua {entity}{closer}"
+- template_id: nav_command_casual_short_004
+  sentence_type: nav_command
+  register: casual
+  length_class: short
+  slots: [entity, closer]
+  text: "chỉ đường ra {entity}{closer}"
+- template_id: nav_command_casual_short_005
+  sentence_type: nav_command
+  register: casual
+  length_class: short
+  slots: [entity, closer]
+  text: "dẫn tới {entity}{closer}"
+- template_id: nav_command_casual_short_006
+  sentence_type: nav_command
+  register: casual
+  length_class: short
+  slots: [entity, closer]
+  text: "lái xe đến {entity}{closer}"
+- template_id: nav_command_casual_short_007
+  sentence_type: nav_command
+  register: casual
+  length_class: short
+  slots: [entity, closer]
+  text: "ghé {entity}{closer}"
+- template_id: nav_command_casual_short_008
+  sentence_type: nav_command
+  register: casual
+  length_class: short
+  slots: [entity, closer]
+  text: "phóng tới {entity}{closer}"
+- template_id: nav_command_casual_short_009
+  sentence_type: nav_command
+  register: casual
+  length_class: short
+  slots: [entity, closer]
+  text: "chạy đến {entity}{closer}"
+- template_id: nav_command_casual_short_010
+  sentence_type: nav_command
+  register: casual
+  length_class: short
+  slots: [entity, closer]
+  text: "chạy qua {entity}{closer}"
+
+- template_id: nav_command_casual_long_001
+  sentence_type: nav_command
+  register: casual
+  length_class: long
+  slots: [opener, entity, closer]
+  text: "{opener}chỉ đường đến {entity} giúp mình cái, đường nào cũng được miễn tới nơi{closer}"
+- template_id: nav_command_casual_long_002
+  sentence_type: nav_command
+  register: casual
+  length_class: long
+  slots: [opener, entity, closer]
+  text: "{opener}dẫn mình tới {entity} với, mình không rành đường lắm{closer}"
+- template_id: nav_command_casual_long_003
+  sentence_type: nav_command
+  register: casual
+  length_class: long
+  slots: [opener, entity, closer]
+  text: "{opener}chỉ mình đường đi {entity} đi, mình mới chuyển tới đây{closer}"
+- template_id: nav_command_casual_long_004
+  sentence_type: nav_command
+  register: casual
+  length_class: long
+  slots: [opener, entity, closer]
+  text: "{opener}tìm giúp mình đường tới {entity} cái, đang vội lắm{closer}"
+- template_id: nav_command_casual_long_005
+  sentence_type: nav_command
+  register: casual
+  length_class: long
+  slots: [opener, entity, closer]
+  text: "{opener}chỉ đường tới {entity} với, mình chạy xe máy thôi nha{closer}"
+- template_id: nav_command_casual_long_006
+  sentence_type: nav_command
+  register: casual
+  length_class: long
+  slots: [opener, entity, closer]
+  text: "{opener}dẫn đường tới {entity} giúp mình, đi đường tắt cũng được{closer}"
+- template_id: nav_command_casual_long_007
+  sentence_type: nav_command
+  register: casual
+  length_class: long
+  slots: [opener, entity, closer]
+  text: "{opener}chỉ mình lối đến {entity} đi, mình đang bị lạc nè{closer}"
+- template_id: nav_command_casual_long_008
+  sentence_type: nav_command
+  register: casual
+  length_class: long
+  slots: [opener, entity, closer]
+  text: "{opener}kiếm giúp mình đường đến {entity} cái, gấp lắm rồi{closer}"
+- template_id: nav_command_casual_long_009
+  sentence_type: nav_command
+  register: casual
+  length_class: long
+  slots: [opener, entity, closer]
+  text: "{opener}chỉ đường đến {entity} giùm mình, mình chưa đi bao giờ{closer}"
+- template_id: nav_command_casual_long_010
+  sentence_type: nav_command
+  register: casual
+  length_class: long
+  slots: [opener, entity, closer]
+  text: "{opener}dẫn mình đường tới {entity} với, đi từ từ thôi cũng được{closer}"
+
+# ===========================================================================
+# search — "Tìm giúp tôi {entity}."
+# ===========================================================================
+
+- template_id: search_formal_medium_001
+  sentence_type: search
+  register: formal
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}xin tìm giúp {entity}{closer}"
+- template_id: search_formal_medium_002
+  sentence_type: search
+  register: formal
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}nhờ tìm giúp vị trí {entity}{closer}"
+- template_id: search_formal_medium_003
+  sentence_type: search
+  register: formal
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}xin tra giúp thông tin {entity}{closer}"
+- template_id: search_formal_medium_004
+  sentence_type: search
+  register: formal
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}mong tìm giúp {entity}{closer}"
+- template_id: search_formal_medium_005
+  sentence_type: search
+  register: formal
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}xin tìm hộ {entity}{closer}"
+- template_id: search_formal_medium_006
+  sentence_type: search
+  register: formal
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}nhờ tra vị trí {entity}{closer}"
+- template_id: search_formal_medium_007
+  sentence_type: search
+  register: formal
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}xin tìm kiếm giúp {entity}{closer}"
+- template_id: search_formal_medium_008
+  sentence_type: search
+  register: formal
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}mong được tìm giúp {entity}{closer}"
+- template_id: search_formal_medium_009
+  sentence_type: search
+  register: formal
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}xin tìm giúp thông tin về {entity}{closer}"
+- template_id: search_formal_medium_010
+  sentence_type: search
+  register: formal
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}nhờ tìm hộ vị trí {entity}{closer}"
+
+- template_id: search_neutral_short_001
+  sentence_type: search
+  register: neutral
+  length_class: short
+  slots: [entity, closer]
+  text: "tìm giúp tôi {entity}{closer}"
+- template_id: search_neutral_short_002
+  sentence_type: search
+  register: neutral
+  length_class: short
+  slots: [entity, closer]
+  text: "tìm {entity}{closer}"
+- template_id: search_neutral_short_003
+  sentence_type: search
+  register: neutral
+  length_class: short
+  slots: [entity, closer]
+  text: "kiếm giúp {entity}{closer}"
+- template_id: search_neutral_short_004
+  sentence_type: search
+  register: neutral
+  length_class: short
+  slots: [entity, closer]
+  text: "tra giúp {entity}{closer}"
+- template_id: search_neutral_short_005
+  sentence_type: search
+  register: neutral
+  length_class: short
+  slots: [entity, closer]
+  text: "tìm chỗ {entity}{closer}"
+- template_id: search_neutral_short_006
+  sentence_type: search
+  register: neutral
+  length_class: short
+  slots: [entity, closer]
+  text: "kiếm chỗ {entity}{closer}"
+- template_id: search_neutral_short_007
+  sentence_type: search
+  register: neutral
+  length_class: short
+  slots: [entity, closer]
+  text: "tìm vị trí {entity}{closer}"
+- template_id: search_neutral_short_008
+  sentence_type: search
+  register: neutral
+  length_class: short
+  slots: [entity, closer]
+  text: "tìm thử {entity}{closer}"
+- template_id: search_neutral_short_009
+  sentence_type: search
+  register: neutral
+  length_class: short
+  slots: [entity, closer]
+  text: "kiếm thử {entity}{closer}"
+- template_id: search_neutral_short_010
+  sentence_type: search
+  register: neutral
+  length_class: short
+  slots: [entity, closer]
+  text: "hỏi thăm {entity}{closer}"
+
+- template_id: search_neutral_medium_001
+  sentence_type: search
+  register: neutral
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}tìm giúp tôi vị trí {entity}{closer}"
+- template_id: search_neutral_medium_002
+  sentence_type: search
+  register: neutral
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}kiếm giúp tôi thông tin {entity}{closer}"
+- template_id: search_neutral_medium_003
+  sentence_type: search
+  register: neutral
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}tra giúp tôi vị trí {entity}{closer}"
+- template_id: search_neutral_medium_004
+  sentence_type: search
+  register: neutral
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}tìm giúp tôi chỗ {entity}{closer}"
+- template_id: search_neutral_medium_005
+  sentence_type: search
+  register: neutral
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}kiếm hộ tôi {entity}{closer}"
+- template_id: search_neutral_medium_006
+  sentence_type: search
+  register: neutral
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}tìm hộ tôi vị trí {entity}{closer}"
+- template_id: search_neutral_medium_007
+  sentence_type: search
+  register: neutral
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}dò giúp tôi vị trí {entity}{closer}"
+- template_id: search_neutral_medium_008
+  sentence_type: search
+  register: neutral
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}tra cứu giúp tôi {entity}{closer}"
+- template_id: search_neutral_medium_009
+  sentence_type: search
+  register: neutral
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}tìm giúp tôi thông tin về {entity}{closer}"
+- template_id: search_neutral_medium_010
+  sentence_type: search
+  register: neutral
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}kiếm giúp tôi chỗ {entity}{closer}"
+
+- template_id: search_casual_short_001
+  sentence_type: search
+  register: casual
+  length_class: short
+  slots: [entity, closer]
+  text: "kiếm xem {entity}{closer}"
+- template_id: search_casual_short_002
+  sentence_type: search
+  register: casual
+  length_class: short
+  slots: [entity, closer]
+  text: "kiếm {entity}{closer}"
+- template_id: search_casual_short_003
+  sentence_type: search
+  register: casual
+  length_class: short
+  slots: [entity, closer]
+  text: "tra {entity}{closer}"
+- template_id: search_casual_short_004
+  sentence_type: search
+  register: casual
+  length_class: short
+  slots: [entity, closer]
+  text: "kiếm coi {entity}{closer}"
+- template_id: search_casual_short_005
+  sentence_type: search
+  register: casual
+  length_class: short
+  slots: [entity, closer]
+  text: "kiếm ngay {entity}{closer}"
+- template_id: search_casual_short_006
+  sentence_type: search
+  register: casual
+  length_class: short
+  slots: [entity, closer]
+  text: "tìm ngay {entity}{closer}"
+- template_id: search_casual_short_007
+  sentence_type: search
+  register: casual
+  length_class: short
+  slots: [entity, closer]
+  text: "kiếm giùm {entity}{closer}"
+- template_id: search_casual_short_008
+  sentence_type: search
+  register: casual
+  length_class: short
+  slots: [entity, closer]
+  text: "tìm giùm {entity}{closer}"
+- template_id: search_casual_short_009
+  sentence_type: search
+  register: casual
+  length_class: short
+  slots: [entity, closer]
+  text: "ngó thử {entity}{closer}"
+- template_id: search_casual_short_010
+  sentence_type: search
+  register: casual
+  length_class: short
+  slots: [entity, closer]
+  text: "tìm coi {entity}{closer}"
+
+- template_id: search_casual_long_001
+  sentence_type: search
+  register: casual
+  length_class: long
+  slots: [opener, entity, closer]
+  text: "{opener}tìm giúp mình {entity} cái, tìm chỗ nào gần gần thôi{closer}"
+- template_id: search_casual_long_002
+  sentence_type: search
+  register: casual
+  length_class: long
+  slots: [opener, entity, closer]
+  text: "{opener}kiếm giúp mình {entity} đi, tìm hoài không ra{closer}"
+- template_id: search_casual_long_003
+  sentence_type: search
+  register: casual
+  length_class: long
+  slots: [opener, entity, closer]
+  text: "{opener}tìm hộ mình {entity} với, chỗ nào đông đông tí cũng được{closer}"
+- template_id: search_casual_long_004
+  sentence_type: search
+  register: casual
+  length_class: long
+  slots: [opener, entity, closer]
+  text: "{opener}kiếm giùm mình {entity} cái, không cần xa lắm đâu{closer}"
+- template_id: search_casual_long_005
+  sentence_type: search
+  register: casual
+  length_class: long
+  slots: [opener, entity, closer]
+  text: "{opener}tìm thử giúp mình {entity} xem, gần đây có không{closer}"
+- template_id: search_casual_long_006
+  sentence_type: search
+  register: casual
+  length_class: long
+  slots: [opener, entity, closer]
+  text: "{opener}kiếm giúp mình {entity} cái, mình chưa biết chỗ nào cả{closer}"
+- template_id: search_casual_long_007
+  sentence_type: search
+  register: casual
+  length_class: long
+  slots: [opener, category_noun, entity, closer]
+  text: "{opener}kiếm giúp mình {category_noun} nào gần {entity} nhất{closer}"
+- template_id: search_casual_long_008
+  sentence_type: search
+  register: casual
+  length_class: long
+  slots: [opener, entity, closer]
+  text: "{opener}tìm giùm mình {entity} với, mình đang cần gấp{closer}"
+- template_id: search_casual_long_009
+  sentence_type: search
+  register: casual
+  length_class: long
+  slots: [opener, entity, closer]
+  text: "{opener}kiếm hộ mình {entity} cái, tiện đường thì ghé qua{closer}"
+- template_id: search_casual_long_010
+  sentence_type: search
+  register: casual
+  length_class: long
+  slots: [opener, entity, closer]
+  text: "{opener}tìm giúp mình {entity} đi, chỗ nào dễ tìm ấy{closer}"
+
+# ===========================================================================
+# route_question — "Từ đây đến {entity} đi thế nào?"
+# ===========================================================================
+
+- template_id: route_question_formal_medium_001
+  sentence_type: route_question
+  register: formal
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}xin hỏi từ đây đến {entity} đi thế nào{closer}"
+- template_id: route_question_formal_medium_002
+  sentence_type: route_question
+  register: formal
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}xin hỏi đường nào gần nhất đến {entity}{closer}"
+- template_id: route_question_formal_medium_003
+  sentence_type: route_question
+  register: formal
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}xin hỏi từ đây tới {entity} đi lối nào{closer}"
+- template_id: route_question_formal_medium_004
+  sentence_type: route_question
+  register: formal
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}xin hỏi muốn tới {entity} thì đi đường nào{closer}"
+- template_id: route_question_formal_medium_005
+  sentence_type: route_question
+  register: formal
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}xin hỏi đến {entity} đi bằng đường nào{closer}"
+- template_id: route_question_formal_medium_006
+  sentence_type: route_question
+  register: formal
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}xin hỏi từ chỗ này đến {entity} đi hướng nào{closer}"
+- template_id: route_question_formal_medium_007
+  sentence_type: route_question
+  register: formal
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}xin hỏi đường đi {entity} theo lối nào{closer}"
+- template_id: route_question_formal_medium_008
+  sentence_type: route_question
+  register: formal
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}xin hỏi làm sao đến {entity} nhanh nhất{closer}"
+- template_id: route_question_formal_medium_009
+  sentence_type: route_question
+  register: formal
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}xin hỏi từ đây đến {entity} đi kiểu gì{closer}"
+- template_id: route_question_formal_medium_010
+  sentence_type: route_question
+  register: formal
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}xin hỏi tuyến nào gần nhất tới {entity}{closer}"
+
+- template_id: route_question_neutral_short_001
+  sentence_type: route_question
+  register: neutral
+  length_class: short
+  slots: [entity, closer]
+  text: "đến {entity} đi đường nào{closer}"
+- template_id: route_question_neutral_short_002
+  sentence_type: route_question
+  register: neutral
+  length_class: short
+  slots: [entity, closer]
+  text: "tới {entity} đi lối nào{closer}"
+- template_id: route_question_neutral_short_003
+  sentence_type: route_question
+  register: neutral
+  length_class: short
+  slots: [entity, closer]
+  text: "{entity} đi đường nào{closer}"
+- template_id: route_question_neutral_short_004
+  sentence_type: route_question
+  register: neutral
+  length_class: short
+  slots: [entity, closer]
+  text: "đường nào đến {entity}{closer}"
+- template_id: route_question_neutral_short_005
+  sentence_type: route_question
+  register: neutral
+  length_class: short
+  slots: [entity, closer]
+  text: "đi {entity} lối nào{closer}"
+- template_id: route_question_neutral_short_006
+  sentence_type: route_question
+  register: neutral
+  length_class: short
+  slots: [entity, closer]
+  text: "{entity} đi hướng nào{closer}"
+- template_id: route_question_neutral_short_007
+  sentence_type: route_question
+  register: neutral
+  length_class: short
+  slots: [entity, closer]
+  text: "tới {entity} đường nào{closer}"
+- template_id: route_question_neutral_short_008
+  sentence_type: route_question
+  register: neutral
+  length_class: short
+  slots: [entity, closer]
+  text: "đến {entity} lối nào{closer}"
+- template_id: route_question_neutral_short_009
+  sentence_type: route_question
+  register: neutral
+  length_class: short
+  slots: [entity, closer]
+  text: "{entity} đi kiểu gì{closer}"
+- template_id: route_question_neutral_short_010
+  sentence_type: route_question
+  register: neutral
+  length_class: short
+  slots: [entity, closer]
+  text: "đường nào tới {entity}{closer}"
+
+- template_id: route_question_neutral_medium_001
+  sentence_type: route_question
+  register: neutral
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}từ đây đến {entity} đi thế nào{closer}"
+- template_id: route_question_neutral_medium_002
+  sentence_type: route_question
+  register: neutral
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}từ đây tới {entity} đi kiểu gì{closer}"
+- template_id: route_question_neutral_medium_003
+  sentence_type: route_question
+  register: neutral
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}muốn tới {entity} thì đi đường nào{closer}"
+- template_id: route_question_neutral_medium_004
+  sentence_type: route_question
+  register: neutral
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}đường nào gần nhất đến {entity}{closer}"
+- template_id: route_question_neutral_medium_005
+  sentence_type: route_question
+  register: neutral
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}đi {entity} đường nào nhanh nhất{closer}"
+- template_id: route_question_neutral_medium_006
+  sentence_type: route_question
+  register: neutral
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}đến {entity} đi lối nào{closer}"
+- template_id: route_question_neutral_medium_007
+  sentence_type: route_question
+  register: neutral
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}làm sao đến {entity} nhanh nhất{closer}"
+- template_id: route_question_neutral_medium_008
+  sentence_type: route_question
+  register: neutral
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}đi đến {entity} bằng đường nào{closer}"
+- template_id: route_question_neutral_medium_009
+  sentence_type: route_question
+  register: neutral
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}từ chỗ này đến {entity} đi hướng nào{closer}"
+- template_id: route_question_neutral_medium_010
+  sentence_type: route_question
+  register: neutral
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}từ đây đến {entity} bao xa{closer}"
+
+- template_id: route_question_casual_short_001
+  sentence_type: route_question
+  register: casual
+  length_class: short
+  slots: [entity, closer]
+  text: "{entity} đi sao{closer}"
+- template_id: route_question_casual_short_002
+  sentence_type: route_question
+  register: casual
+  length_class: short
+  slots: [entity, closer]
+  text: "kiểu gì tới {entity}{closer}"
+- template_id: route_question_casual_short_003
+  sentence_type: route_question
+  register: casual
+  length_class: short
+  slots: [entity, closer]
+  text: "tới {entity} sao đây{closer}"
+- template_id: route_question_casual_short_004
+  sentence_type: route_question
+  register: casual
+  length_class: short
+  slots: [entity, closer]
+  text: "đi {entity} sao{closer}"
+- template_id: route_question_casual_short_005
+  sentence_type: route_question
+  register: casual
+  length_class: short
+  slots: [entity, closer]
+  text: "qua {entity} đường nào{closer}"
+- template_id: route_question_casual_short_006
+  sentence_type: route_question
+  register: casual
+  length_class: short
+  slots: [entity, closer]
+  text: "lối nào tới {entity}{closer}"
+- template_id: route_question_casual_short_007
+  sentence_type: route_question
+  register: casual
+  length_class: short
+  slots: [entity, closer]
+  text: "đến {entity} sao{closer}"
+- template_id: route_question_casual_short_008
+  sentence_type: route_question
+  register: casual
+  length_class: short
+  slots: [entity, closer]
+  text: "{entity} đường nào{closer}"
+- template_id: route_question_casual_short_009
+  sentence_type: route_question
+  register: casual
+  length_class: short
+  slots: [entity, closer]
+  text: "tới {entity} lối nào{closer}"
+- template_id: route_question_casual_short_010
+  sentence_type: route_question
+  register: casual
+  length_class: short
+  slots: [entity, closer]
+  text: "đi sao tới {entity}{closer}"
+
+- template_id: route_question_casual_long_001
+  sentence_type: route_question
+  register: casual
+  length_class: long
+  slots: [opener, entity, closer]
+  text: "{opener}từ chỗ này đến {entity} đi sao vậy ta, chỉ mình với{closer}"
+- template_id: route_question_casual_long_002
+  sentence_type: route_question
+  register: casual
+  length_class: long
+  slots: [opener, entity, closer]
+  text: "{opener}muốn qua {entity} mà không biết đi lối nào, chỉ mình cái{closer}"
+- template_id: route_question_casual_long_003
+  sentence_type: route_question
+  register: casual
+  length_class: long
+  slots: [opener, entity, closer]
+  text: "{opener}đường nào tới {entity} nhanh nhất vậy, mình đang vội{closer}"
+- template_id: route_question_casual_long_004
+  sentence_type: route_question
+  register: casual
+  length_class: long
+  slots: [opener, entity, closer]
+  text: "{opener}đi {entity} kiểu gì cho lẹ vậy ta{closer}"
+- template_id: route_question_casual_long_005
+  sentence_type: route_question
+  register: casual
+  length_class: long
+  slots: [opener, entity, closer]
+  text: "{opener}từ đây tới {entity} xa không, đi đường nào cho gần{closer}"
+- template_id: route_question_casual_long_006
+  sentence_type: route_question
+  register: casual
+  length_class: long
+  slots: [opener, entity, closer]
+  text: "{opener}có ai biết đường tới {entity} không, chỉ mình với{closer}"
+- template_id: route_question_casual_long_007
+  sentence_type: route_question
+  register: casual
+  length_class: long
+  slots: [opener, entity, closer]
+  text: "{opener}tới {entity} đi ngả nào cho khỏi kẹt xe vậy{closer}"
+- template_id: route_question_casual_long_008
+  sentence_type: route_question
+  register: casual
+  length_class: long
+  slots: [opener, entity, closer]
+  text: "{opener}đi {entity} đường nào tránh được kẹt xe không ta{closer}"
+- template_id: route_question_casual_long_009
+  sentence_type: route_question
+  register: casual
+  length_class: long
+  slots: [opener, entity, closer]
+  text: "{opener}từ đây qua {entity} đi lối nào cho lẹ vậy{closer}"
+- template_id: route_question_casual_long_010
+  sentence_type: route_question
+  register: casual
+  length_class: long
+  slots: [opener, entity, closer]
+  text: "{opener}mình đang ở đây, đi {entity} kiểu gì nhanh nhất{closer}"
+
+# ===========================================================================
+# conversational — "Cho tôi hỏi đường đến {entity} với."
+# ===========================================================================
+
+- template_id: conversational_formal_medium_001
+  sentence_type: conversational
+  register: formal
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}tôi muốn hỏi đường đến {entity}{closer}"
+- template_id: conversational_formal_medium_002
+  sentence_type: conversational
+  register: formal
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}tôi xin hỏi đường đi tới {entity}{closer}"
+- template_id: conversational_formal_medium_003
+  sentence_type: conversational
+  register: formal
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}tôi đang cần hỏi đường đến {entity}{closer}"
+- template_id: conversational_formal_medium_004
+  sentence_type: conversational
+  register: formal
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}tôi muốn nhờ chỉ đường đến {entity}{closer}"
+- template_id: conversational_formal_medium_005
+  sentence_type: conversational
+  register: formal
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}tôi xin phép hỏi đường tới {entity}{closer}"
+- template_id: conversational_formal_medium_006
+  sentence_type: conversational
+  register: formal
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}tôi đang tìm đường đến {entity}{closer}"
+- template_id: conversational_formal_medium_007
+  sentence_type: conversational
+  register: formal
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}tôi cần hỏi đường đi {entity}{closer}"
+- template_id: conversational_formal_medium_008
+  sentence_type: conversational
+  register: formal
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}tôi muốn hỏi lối đến {entity}{closer}"
+- template_id: conversational_formal_medium_009
+  sentence_type: conversational
+  register: formal
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}tôi xin hỏi hướng đi đến {entity}{closer}"
+- template_id: conversational_formal_medium_010
+  sentence_type: conversational
+  register: formal
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}tôi đang cần chỉ đường tới {entity}{closer}"
+
+- template_id: conversational_neutral_short_001
+  sentence_type: conversational
+  register: neutral
+  length_class: short
+  slots: [entity, closer]
+  text: "cho hỏi đường đến {entity}{closer}"
+- template_id: conversational_neutral_short_002
+  sentence_type: conversational
+  register: neutral
+  length_class: short
+  slots: [entity, closer]
+  text: "hỏi đường tới {entity}{closer}"
+- template_id: conversational_neutral_short_003
+  sentence_type: conversational
+  register: neutral
+  length_class: short
+  slots: [entity, closer]
+  text: "cho hỏi lối đến {entity}{closer}"
+- template_id: conversational_neutral_short_004
+  sentence_type: conversational
+  register: neutral
+  length_class: short
+  slots: [entity, closer]
+  text: "hỏi đường đi {entity}{closer}"
+- template_id: conversational_neutral_short_005
+  sentence_type: conversational
+  register: neutral
+  length_class: short
+  slots: [entity, closer]
+  text: "có biết đường đến {entity} không{closer}"
+- template_id: conversational_neutral_short_006
+  sentence_type: conversational
+  register: neutral
+  length_class: short
+  slots: [entity, closer]
+  text: "hỏi lối tới {entity}{closer}"
+- template_id: conversational_neutral_short_007
+  sentence_type: conversational
+  register: neutral
+  length_class: short
+  slots: [entity, closer]
+  text: "làm sao tới {entity}{closer}"
+- template_id: conversational_neutral_short_008
+  sentence_type: conversational
+  register: neutral
+  length_class: short
+  slots: [entity, closer]
+  text: "hỏi đường về {entity}{closer}"
+- template_id: conversational_neutral_short_009
+  sentence_type: conversational
+  register: neutral
+  length_class: short
+  slots: [entity, closer]
+  text: "hỏi thăm đường tới {entity}{closer}"
+- template_id: conversational_neutral_short_010
+  sentence_type: conversational
+  register: neutral
+  length_class: short
+  slots: [entity, closer]
+  text: "hỏi hướng đến {entity}{closer}"
+
+- template_id: conversational_neutral_medium_001
+  sentence_type: conversational
+  register: neutral
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}cho tôi hỏi đường đến {entity}{closer}"
+- template_id: conversational_neutral_medium_002
+  sentence_type: conversational
+  register: neutral
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}tôi đang cần tìm đường đến {entity}{closer}"
+- template_id: conversational_neutral_medium_003
+  sentence_type: conversational
+  register: neutral
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}tôi muốn hỏi đường tới {entity}{closer}"
+- template_id: conversational_neutral_medium_004
+  sentence_type: conversational
+  register: neutral
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}có ai biết đường đến {entity} không{closer}"
+- template_id: conversational_neutral_medium_005
+  sentence_type: conversational
+  register: neutral
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}chỉ mình đường tới {entity}{closer}"
+- template_id: conversational_neutral_medium_006
+  sentence_type: conversational
+  register: neutral
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}cho mình hỏi lối đến {entity}{closer}"
+- template_id: conversational_neutral_medium_007
+  sentence_type: conversational
+  register: neutral
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}mình đang tìm đường đến {entity}{closer}"
+- template_id: conversational_neutral_medium_008
+  sentence_type: conversational
+  register: neutral
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}cho tôi xin đường đi {entity}{closer}"
+- template_id: conversational_neutral_medium_009
+  sentence_type: conversational
+  register: neutral
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}giúp tôi tìm đường đến {entity}{closer}"
+- template_id: conversational_neutral_medium_010
+  sentence_type: conversational
+  register: neutral
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}tôi đang hỏi đường tới {entity}{closer}"
+
+- template_id: conversational_casual_short_001
+  sentence_type: conversational
+  register: casual
+  length_class: short
+  slots: [entity, closer]
+  text: "hỏi đường ra {entity}{closer}"
+- template_id: conversational_casual_short_002
+  sentence_type: conversational
+  register: casual
+  length_class: short
+  slots: [entity, closer]
+  text: "biết đường ra {entity} không{closer}"
+- template_id: conversational_casual_short_003
+  sentence_type: conversational
+  register: casual
+  length_class: short
+  slots: [entity, closer]
+  text: "chỉ giúp đường tới {entity}{closer}"
+- template_id: conversational_casual_short_004
+  sentence_type: conversational
+  register: casual
+  length_class: short
+  slots: [entity, closer]
+  text: "hỏi lối ra {entity}{closer}"
+- template_id: conversational_casual_short_005
+  sentence_type: conversational
+  register: casual
+  length_class: short
+  slots: [entity, closer]
+  text: "đường đến {entity} sao{closer}"
+- template_id: conversational_casual_short_006
+  sentence_type: conversational
+  register: casual
+  length_class: short
+  slots: [entity, closer]
+  text: "biết {entity} ở đâu không{closer}"
+- template_id: conversational_casual_short_007
+  sentence_type: conversational
+  register: casual
+  length_class: short
+  slots: [entity, closer]
+  text: "chỉ mình {entity}{closer}"
+- template_id: conversational_casual_short_008
+  sentence_type: conversational
+  register: casual
+  length_class: short
+  slots: [entity, closer]
+  text: "hỏi tí đường ra {entity}{closer}"
+- template_id: conversational_casual_short_009
+  sentence_type: conversational
+  register: casual
+  length_class: short
+  slots: [entity, closer]
+  text: "đường tới {entity} sao{closer}"
+- template_id: conversational_casual_short_010
+  sentence_type: conversational
+  register: casual
+  length_class: short
+  slots: [entity, closer]
+  text: "biết lối tới {entity} không{closer}"
+
+- template_id: conversational_casual_long_001
+  sentence_type: conversational
+  register: casual
+  length_class: long
+  slots: [opener, entity, closer]
+  text: "{opener}cho mình hỏi tí, đường đến {entity} đi sao vậy ta{closer}"
+- template_id: conversational_casual_long_002
+  sentence_type: conversational
+  register: casual
+  length_class: long
+  slots: [opener, entity, closer]
+  text: "{opener}mình đang lạc đường, có ai biết đường tới {entity} không{closer}"
+- template_id: conversational_casual_long_003
+  sentence_type: conversational
+  register: casual
+  length_class: long
+  slots: [opener, entity, closer]
+  text: "{opener}cho mình hỏi cái, từ đây qua {entity} đi lối nào{closer}"
+- template_id: conversational_casual_long_004
+  sentence_type: conversational
+  register: casual
+  length_class: long
+  slots: [opener, entity, closer]
+  text: "{opener}mình mới tới đây lần đầu, chỉ mình đường tới {entity} với{closer}"
+- template_id: conversational_casual_long_005
+  sentence_type: conversational
+  register: casual
+  length_class: long
+  slots: [opener, entity, closer]
+  text: "{opener}cho hỏi xíu, đường đi {entity} có xa không{closer}"
+- template_id: conversational_casual_long_006
+  sentence_type: conversational
+  register: casual
+  length_class: long
+  slots: [opener, entity, closer]
+  text: "{opener}mình đang cần gấp, ai biết đường đến {entity} chỉ mình với{closer}"
+- template_id: conversational_casual_long_007
+  sentence_type: conversational
+  register: casual
+  length_class: long
+  slots: [opener, entity, closer]
+  text: "{opener}cho mình hỏi, đi bộ tới {entity} được không{closer}"
+- template_id: conversational_casual_long_008
+  sentence_type: conversational
+  register: casual
+  length_class: long
+  slots: [opener, entity, closer]
+  text: "{opener}mình không rành đường ở đây, chỉ mình tới {entity} với{closer}"
+- template_id: conversational_casual_long_009
+  sentence_type: conversational
+  register: casual
+  length_class: long
+  slots: [opener, entity, closer]
+  text: "{opener}cho hỏi tí xíu, gần đây có đường nào tới {entity} không{closer}"
+- template_id: conversational_casual_long_010
+  sentence_type: conversational
+  register: casual
+  length_class: long
+  slots: [opener, entity, closer]
+  text: "{opener}mình đang định qua {entity}, ai biết đường chỉ mình với{closer}"
+
+# ===========================================================================
+# short_command — "Hồ Hoàn Kiếm." / "Đi Nội Bài."
+# ===========================================================================
+
+- template_id: short_command_formal_medium_001
+  sentence_type: short_command
+  register: formal
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}xin đưa tôi đến {entity}{closer}"
+- template_id: short_command_formal_medium_002
+  sentence_type: short_command
+  register: formal
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}xin cho xe chạy đến {entity}{closer}"
+- template_id: short_command_formal_medium_003
+  sentence_type: short_command
+  register: formal
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}xin dừng lại ở {entity}{closer}"
+- template_id: short_command_formal_medium_004
+  sentence_type: short_command
+  register: formal
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}xin ghé qua {entity}{closer}"
+- template_id: short_command_formal_medium_005
+  sentence_type: short_command
+  register: formal
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}xin chạy thẳng tới {entity}{closer}"
+- template_id: short_command_formal_medium_006
+  sentence_type: short_command
+  register: formal
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}xin rẽ vào {entity}{closer}"
+- template_id: short_command_formal_medium_007
+  sentence_type: short_command
+  register: formal
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}xin cho tôi xuống ở {entity}{closer}"
+- template_id: short_command_formal_medium_008
+  sentence_type: short_command
+  register: formal
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}xin đi thẳng đến {entity}{closer}"
+- template_id: short_command_formal_medium_009
+  sentence_type: short_command
+  register: formal
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}xin cho xe tới {entity}{closer}"
+- template_id: short_command_formal_medium_010
+  sentence_type: short_command
+  register: formal
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}xin đưa xe đến {entity}{closer}"
+
+- template_id: short_command_neutral_short_001
+  sentence_type: short_command
+  register: neutral
+  length_class: short
+  slots: [entity, closer]
+  text: "{entity}{closer}"
+- template_id: short_command_neutral_short_002
+  sentence_type: short_command
+  register: neutral
+  length_class: short
+  slots: [entity, closer]
+  text: "cho tới {entity}{closer}"
+- template_id: short_command_neutral_short_003
+  sentence_type: short_command
+  register: neutral
+  length_class: short
+  slots: [entity, closer]
+  text: "thẳng tới {entity}{closer}"
+- template_id: short_command_neutral_short_004
+  sentence_type: short_command
+  register: neutral
+  length_class: short
+  slots: [entity, closer]
+  text: "đến {entity}{closer}"
+- template_id: short_command_neutral_short_005
+  sentence_type: short_command
+  register: neutral
+  length_class: short
+  slots: [entity, closer]
+  text: "tạt qua {entity}{closer}"
+- template_id: short_command_neutral_short_006
+  sentence_type: short_command
+  register: neutral
+  length_class: short
+  slots: [entity, closer]
+  text: "ghé ngang {entity}{closer}"
+- template_id: short_command_neutral_short_007
+  sentence_type: short_command
+  register: neutral
+  length_class: short
+  slots: [entity, closer]
+  text: "về {entity}{closer}"
+- template_id: short_command_neutral_short_008
+  sentence_type: short_command
+  register: neutral
+  length_class: short
+  slots: [entity, closer]
+  text: "vào {entity}{closer}"
+- template_id: short_command_neutral_short_009
+  sentence_type: short_command
+  register: neutral
+  length_class: short
+  slots: [entity, closer]
+  text: "rẽ vào {entity}{closer}"
+- template_id: short_command_neutral_short_010
+  sentence_type: short_command
+  register: neutral
+  length_class: short
+  slots: [entity, closer]
+  text: "dừng ở {entity}{closer}"
+
+- template_id: short_command_neutral_medium_001
+  sentence_type: short_command
+  register: neutral
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}cho xe chạy đến {entity}{closer}"
+- template_id: short_command_neutral_medium_002
+  sentence_type: short_command
+  register: neutral
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}đưa tôi tới {entity}{closer}"
+- template_id: short_command_neutral_medium_003
+  sentence_type: short_command
+  register: neutral
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}chạy thẳng đến {entity}{closer}"
+- template_id: short_command_neutral_medium_004
+  sentence_type: short_command
+  register: neutral
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}rẽ vào {entity}{closer}"
+- template_id: short_command_neutral_medium_005
+  sentence_type: short_command
+  register: neutral
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}dừng lại ở {entity}{closer}"
+- template_id: short_command_neutral_medium_006
+  sentence_type: short_command
+  register: neutral
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}cho tôi xuống ở {entity}{closer}"
+- template_id: short_command_neutral_medium_007
+  sentence_type: short_command
+  register: neutral
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}chạy tới {entity}{closer}"
+- template_id: short_command_neutral_medium_008
+  sentence_type: short_command
+  register: neutral
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}ghé ngang {entity}{closer}"
+- template_id: short_command_neutral_medium_009
+  sentence_type: short_command
+  register: neutral
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}đi thẳng tới {entity}{closer}"
+- template_id: short_command_neutral_medium_010
+  sentence_type: short_command
+  register: neutral
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}cho xe rẽ vào {entity}{closer}"
+
+- template_id: short_command_casual_short_001
+  sentence_type: short_command
+  register: casual
+  length_class: short
+  slots: [entity, closer]
+  text: "{entity} đi{closer}"
+- template_id: short_command_casual_short_002
+  sentence_type: short_command
+  register: casual
+  length_class: short
+  slots: [entity, closer]
+  text: "qua {entity} cái{closer}"
+- template_id: short_command_casual_short_003
+  sentence_type: short_command
+  register: casual
+  length_class: short
+  slots: [entity, closer]
+  text: "ghé {entity} tí{closer}"
+- template_id: short_command_casual_short_004
+  sentence_type: short_command
+  register: casual
+  length_class: short
+  slots: [entity, closer]
+  text: "tới {entity} đi{closer}"
+- template_id: short_command_casual_short_005
+  sentence_type: short_command
+  register: casual
+  length_class: short
+  slots: [entity, closer]
+  text: "vòng qua {entity}{closer}"
+- template_id: short_command_casual_short_006
+  sentence_type: short_command
+  register: casual
+  length_class: short
+  slots: [entity, closer]
+  text: "tấp vô {entity}{closer}"
+- template_id: short_command_casual_short_007
+  sentence_type: short_command
+  register: casual
+  length_class: short
+  slots: [entity, closer]
+  text: "quẹo vào {entity}{closer}"
+- template_id: short_command_casual_short_008
+  sentence_type: short_command
+  register: casual
+  length_class: short
+  slots: [entity, closer]
+  text: "chạy vô {entity}{closer}"
+- template_id: short_command_casual_short_009
+  sentence_type: short_command
+  register: casual
+  length_class: short
+  slots: [entity, closer]
+  text: "lượn qua {entity}{closer}"
+- template_id: short_command_casual_short_010
+  sentence_type: short_command
+  register: casual
+  length_class: short
+  slots: [entity, closer]
+  text: "cua vào {entity}{closer}"
+
+- template_id: short_command_casual_long_001
+  sentence_type: short_command
+  register: casual
+  length_class: long
+  slots: [opener, entity, closer]
+  text: "{opener}chỗ đó ấy, {entity} ấy, chạy qua đó cái{closer}"
+- template_id: short_command_casual_long_002
+  sentence_type: short_command
+  register: casual
+  length_class: long
+  slots: [opener, entity, closer]
+  text: "{opener}cái chỗ {entity} đó, ghé vô đó xíu đi{closer}"
+- template_id: short_command_casual_long_003
+  sentence_type: short_command
+  register: casual
+  length_class: long
+  slots: [opener, entity, closer]
+  text: "{opener}ừ thì {entity} đó, cho xe tấp vô đó đi{closer}"
+- template_id: short_command_casual_long_004
+  sentence_type: short_command
+  register: casual
+  length_class: long
+  slots: [opener, entity, closer]
+  text: "{opener}{entity} á, chạy tới đó luôn đi{closer}"
+- template_id: short_command_casual_long_005
+  sentence_type: short_command
+  register: casual
+  length_class: long
+  slots: [opener, entity, closer]
+  text: "{opener}chỗ kia kìa, {entity} đó, rẽ vô đi{closer}"
+- template_id: short_command_casual_long_006
+  sentence_type: short_command
+  register: casual
+  length_class: long
+  slots: [opener, entity, closer]
+  text: "{opener}chỗ {entity} lúc nãy nói ấy, quẹo vô đó đi{closer}"
+- template_id: short_command_casual_long_007
+  sentence_type: short_command
+  register: casual
+  length_class: long
+  slots: [opener, entity, closer]
+  text: "{opener}ờ {entity} đó, chạy thẳng tới luôn nha{closer}"
+- template_id: short_command_casual_long_008
+  sentence_type: short_command
+  register: casual
+  length_class: long
+  slots: [opener, entity, closer]
+  text: "{opener}{entity} đó mà, tấp vô đi cho rồi{closer}"
+- template_id: short_command_casual_long_009
+  sentence_type: short_command
+  register: casual
+  length_class: long
+  slots: [opener, entity, closer]
+  text: "{opener}chỗ đó, {entity} ấy, vòng qua đó cái{closer}"
+- template_id: short_command_casual_long_010
+  sentence_type: short_command
+  register: casual
+  length_class: long
+  slots: [opener, entity, closer]
+  text: "{opener}thôi cứ {entity} đi, ghé đại vô đó{closer}"
+
+# ===========================================================================
+# contextual — "Quán đó gần {entity} không?"
+# ===========================================================================
+
+- template_id: contextual_formal_medium_001
+  sentence_type: contextual
+  register: formal
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}xin hỏi khu này có gần {entity} không{closer}"
+- template_id: contextual_formal_medium_002
+  sentence_type: contextual
+  register: formal
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}xin hỏi chỗ này có gần {entity} không{closer}"
+- template_id: contextual_formal_medium_003
+  sentence_type: contextual
+  register: formal
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}xin hỏi từ đây đến {entity} có xa không{closer}"
+- template_id: contextual_formal_medium_004
+  sentence_type: contextual
+  register: formal
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}xin hỏi đi bộ đến {entity} có xa không{closer}"
+- template_id: contextual_formal_medium_005
+  sentence_type: contextual
+  register: formal
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}xin hỏi hướng nào đến {entity}{closer}"
+- template_id: contextual_formal_medium_006
+  sentence_type: contextual
+  register: formal
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}xin hỏi có nhìn thấy {entity} từ đây không{closer}"
+- template_id: contextual_formal_medium_007
+  sentence_type: contextual
+  register: formal
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}xin hỏi đường đến {entity} có dễ đi không{closer}"
+- template_id: contextual_formal_medium_008
+  sentence_type: contextual
+  register: formal
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}xin hỏi vị trí này có gần {entity} không{closer}"
+- template_id: contextual_formal_medium_009
+  sentence_type: contextual
+  register: formal
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}xin hỏi nơi này có gần {entity} không{closer}"
+- template_id: contextual_formal_medium_010
+  sentence_type: contextual
+  register: formal
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}xin hỏi {entity} có tiện đường không{closer}"
+
+- template_id: contextual_neutral_short_001
+  sentence_type: contextual
+  register: neutral
+  length_class: short
+  slots: [entity, closer]
+  text: "gần {entity} không{closer}"
+- template_id: contextual_neutral_short_002
+  sentence_type: contextual
+  register: neutral
+  length_class: short
+  slots: [entity, closer]
+  text: "gần đây có {entity} không{closer}"
+- template_id: contextual_neutral_short_003
+  sentence_type: contextual
+  register: neutral
+  length_class: short
+  slots: [entity, closer]
+  text: "{entity} gần đây không{closer}"
+- template_id: contextual_neutral_short_004
+  sentence_type: contextual
+  register: neutral
+  length_class: short
+  slots: [entity, closer]
+  text: "chỗ này gần {entity} không{closer}"
+- template_id: contextual_neutral_short_005
+  sentence_type: contextual
+  register: neutral
+  length_class: short
+  slots: [entity, closer]
+  text: "mất bao lâu tới {entity}{closer}"
+- template_id: contextual_neutral_short_006
+  sentence_type: contextual
+  register: neutral
+  length_class: short
+  slots: [entity, closer]
+  text: "quanh đây gần {entity} không{closer}"
+- template_id: contextual_neutral_short_007
+  sentence_type: contextual
+  register: neutral
+  length_class: short
+  slots: [entity, closer]
+  text: "{entity} cách đây bao xa{closer}"
+- template_id: contextual_neutral_short_008
+  sentence_type: contextual
+  register: neutral
+  length_class: short
+  slots: [entity, closer]
+  text: "gần {entity} chưa{closer}"
+- template_id: contextual_neutral_short_009
+  sentence_type: contextual
+  register: neutral
+  length_class: short
+  slots: [entity, closer]
+  text: "đi bộ tới {entity} được không{closer}"
+- template_id: contextual_neutral_short_010
+  sentence_type: contextual
+  register: neutral
+  length_class: short
+  slots: [entity, closer]
+  text: "{entity} ở gần không{closer}"
+
+- template_id: contextual_neutral_medium_001
+  sentence_type: contextual
+  register: neutral
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}chỗ này có gần {entity} không{closer}"
+- template_id: contextual_neutral_medium_002
+  sentence_type: contextual
+  register: neutral
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}quanh đây có gần {entity} không{closer}"
+- template_id: contextual_neutral_medium_003
+  sentence_type: contextual
+  register: neutral
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}gần đây có {entity} không{closer}"
+- template_id: contextual_neutral_medium_004
+  sentence_type: contextual
+  register: neutral
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}chỗ đó gần {entity} không{closer}"
+- template_id: contextual_neutral_medium_005
+  sentence_type: contextual
+  register: neutral
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}từ đây đến {entity} có xa không{closer}"
+- template_id: contextual_neutral_medium_006
+  sentence_type: contextual
+  register: neutral
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}khu này gần {entity} không{closer}"
+- template_id: contextual_neutral_medium_007
+  sentence_type: contextual
+  register: neutral
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}đoạn này có gần {entity} không{closer}"
+- template_id: contextual_neutral_medium_008
+  sentence_type: contextual
+  register: neutral
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}chỗ mình đứng gần {entity} không{closer}"
+- template_id: contextual_neutral_medium_009
+  sentence_type: contextual
+  register: neutral
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}ở đây có gần {entity} không{closer}"
+- template_id: contextual_neutral_medium_010
+  sentence_type: contextual
+  register: neutral
+  length_class: medium
+  slots: [opener, entity, closer]
+  text: "{opener}vị trí này gần {entity} không{closer}"
+
+- template_id: contextual_casual_short_001
+  sentence_type: contextual
+  register: casual
+  length_class: short
+  slots: [entity, closer]
+  text: "gần {entity} hông{closer}"
+- template_id: contextual_casual_short_002
+  sentence_type: contextual
+  register: casual
+  length_class: short
+  slots: [entity, closer]
+  text: "{entity} gần hông{closer}"
+- template_id: contextual_casual_short_003
+  sentence_type: contextual
+  register: casual
+  length_class: short
+  slots: [entity, closer]
+  text: "gần đây có {entity} hông{closer}"
+- template_id: contextual_casual_short_004
+  sentence_type: contextual
+  register: casual
+  length_class: short
+  slots: [entity, closer]
+  text: "chỗ này gần {entity} hông{closer}"
+- template_id: contextual_casual_short_005
+  sentence_type: contextual
+  register: casual
+  length_class: short
+  slots: [entity, closer]
+  text: "{entity} xa hông{closer}"
+- template_id: contextual_casual_short_006
+  sentence_type: contextual
+  register: casual
+  length_class: short
+  slots: [entity, closer]
+  text: "gần {entity} không ta{closer}"
+- template_id: contextual_casual_short_007
+  sentence_type: contextual
+  register: casual
+  length_class: short
+  slots: [entity, closer]
+  text: "gần {entity} vậy hông{closer}"
+- template_id: contextual_casual_short_008
+  sentence_type: contextual
+  register: casual
+  length_class: short
+  slots: [entity, closer]
+  text: "{entity} kế bên không{closer}"
+- template_id: contextual_casual_short_009
+  sentence_type: contextual
+  register: casual
+  length_class: short
+  slots: [entity, closer]
+  text: "gần {entity} lắm không{closer}"
+- template_id: contextual_casual_short_010
+  sentence_type: contextual
+  register: casual
+  length_class: short
+  slots: [entity, closer]
+  text: "{entity} gần xịt không{closer}"
+
+- template_id: contextual_casual_long_001
+  sentence_type: contextual
+  register: casual
+  length_class: long
+  slots: [opener, entity, closer]
+  text: "{opener}chỗ này có gần {entity} không ta, hay là xa lắm{closer}"
+- template_id: contextual_casual_long_002
+  sentence_type: contextual
+  register: casual
+  length_class: long
+  slots: [opener, category_noun, entity, closer]
+  text: "{opener}quanh đây có {category_noun} nào gần {entity} không, chỉ mình với{closer}"
+- template_id: contextual_casual_long_003
+  sentence_type: contextual
+  register: casual
+  length_class: long
+  slots: [opener, entity, closer]
+  text: "{opener}từ đây qua {entity} có xa không ta, đi bộ được không{closer}"
+- template_id: contextual_casual_long_004
+  sentence_type: contextual
+  register: casual
+  length_class: long
+  slots: [opener, entity, closer]
+  text: "{opener}khu này gần {entity} không vậy, hay phải đi xa lắm{closer}"
+- template_id: contextual_casual_long_005
+  sentence_type: contextual
+  register: casual
+  length_class: long
+  slots: [opener, entity, closer]
+  text: "{opener}chỗ mình đứng đây gần {entity} không ta{closer}"
+- template_id: contextual_casual_long_006
+  sentence_type: contextual
+  register: casual
+  length_class: long
+  slots: [opener, category_noun, entity, closer]
+  text: "{opener}gần {entity} có {category_noun} nào không, mình đang cần gấp{closer}"
+- template_id: contextual_casual_long_007
+  sentence_type: contextual
+  register: casual
+  length_class: long
+  slots: [opener, entity, closer]
+  text: "{opener}đoạn này gần {entity} không vậy ta, xa không{closer}"
+- template_id: contextual_casual_long_008
+  sentence_type: contextual
+  register: casual
+  length_class: long
+  slots: [opener, entity, closer]
+  text: "{opener}mình đang đứng ở đây, gần {entity} không ta{closer}"
+- template_id: contextual_casual_long_009
+  sentence_type: contextual
+  register: casual
+  length_class: long
+  slots: [opener, entity, closer]
+  text: "{opener}chỗ này với {entity} có gần nhau không ta{closer}"
+- template_id: contextual_casual_long_010
+  sentence_type: contextual
+  register: casual
+  length_class: long
+  slots: [opener, category_noun, entity, closer]
+  text: "{opener}xung quanh {entity} có {category_noun} nào không vậy{closer}"

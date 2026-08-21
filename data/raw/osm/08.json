@@ -1,0 +1,7729 @@
+{
+  "bbox": [
+    20.8926915,
+    102.1438643,
+    22.5479246,
+    103.5987948
+  ],
+  "element_count": 512,
+  "elements": [
+    {
+      "id": 447004422,
+      "lat": 21.5915545,
+      "lon": 103.422676,
+      "tags": {
+        "name": "Hong Ky Hotel",
+        "tourism": "hotel"
+      },
+      "type": "node"
+    },
+    {
+      "id": 3294303620,
+      "lat": 21.3920509,
+      "lon": 103.012188,
+      "tags": {
+        "name": "Thực phẩm sạch Tâm Đỏ",
+        "shop": "supermarket"
+      },
+      "type": "node"
+    },
+    {
+      "id": 3294335516,
+      "lat": 21.3977311,
+      "lon": 103.0211599,
+      "tags": {
+        "amenity": "restaurant",
+        "diet:vegetarian": "only",
+        "name": "Vegetarian Restaurant"
+      },
+      "type": "node"
+    },
+    {
+      "id": 3294335518,
+      "lat": 21.3787302,
+      "lon": 103.0161872,
+      "tags": {
+        "name": "Hoa Ba Supermarket",
+        "shop": "supermarket",
+        "sym": "Shopping Center"
+      },
+      "type": "node"
+    },
+    {
+      "id": 3294360354,
+      "lat": 21.5918917,
+      "lon": 103.4206087,
+      "tags": {
+        "cmt": "03-DEC-14 13:38:07",
+        "ele": "579.556",
+        "name": "Hotel snake",
+        "sym": "Lodging",
+        "tourism": "hotel"
+      },
+      "type": "node"
+    },
+    {
+      "id": 4061319323,
+      "lat": 21.3847153,
+      "lon": 103.0192053,
+      "tags": {
+        "name": "Hong Ky Boutique Hotel",
+        "tourism": "hotel"
+      },
+      "type": "node"
+    },
+    {
+      "id": 4061334793,
+      "lat": 21.385886,
+      "lon": 103.0197155,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Sông Hồng Restaurant",
+        "name:vi": "Sông Hồng Restaurant"
+      },
+      "type": "node"
+    },
+    {
+      "id": 4275610390,
+      "lat": 21.3921057,
+      "lon": 103.0188842,
+      "tags": {
+        "historic": "memorial",
+        "name": "Tượng đài chiến thắng Điện Biên Phủ"
+      },
+      "type": "node"
+    },
+    {
+      "id": 4369429494,
+      "lat": 21.4005426,
+      "lon": 103.0224041,
+      "tags": {
+        "addr:housenumber": "514",
+        "addr:street": "Đường 7 Tháng 5",
+        "email": "info@dienbienphu.muongthanh.vn",
+        "internet_access": "wlan",
+        "name": "Khách sạn Mường Thanh Holiday Điện Biên Phủ",
+        "name:en": "Muong Thanh Holiday Dien Bien Phu Hotel",
+        "opening_hours": "24/7",
+        "phone": "+842303810043",
+        "tourism": "hotel",
+        "website": "https://www.muongthanh.vn/dienbien"
+      },
+      "type": "node"
+    },
+    {
+      "id": 4378226691,
+      "lat": 21.4005302,
+      "lon": 103.0229768,
+      "tags": {
+        "amenity": "fuel",
+        "name": "Petro Vietnam",
+        "name:en": "Petro Vietnam",
+        "name:vi": "Petro Vietnam"
+      },
+      "type": "node"
+    },
+    {
+      "id": 4411033391,
+      "lat": 21.3813687,
+      "lon": 103.0124033,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Nhà hàng Dân Tộc Quán",
+        "name:vi": "Nhà hàng Dân Tộc Quán"
+      },
+      "type": "node"
+    },
+    {
+      "id": 4411033492,
+      "lat": 21.3821095,
+      "lon": 103.0107621,
+      "tags": {
+        "historic": "memorial",
+        "name": "Đài tưởng niệm lính Pháp",
+        "name:de": "Französisches Kriegsdenkmal",
+        "name:en": "French Soldiers' Memorial",
+        "name:vi": "Đài tưởng niệm lính Pháp"
+      },
+      "type": "node"
+    },
+    {
+      "id": 4411036390,
+      "lat": 21.388598,
+      "lon": 103.01689,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "oriental",
+        "internet_access": "wlan",
+        "name": "Nhà hàng Ngọc Mai",
+        "name:vi": "Nhà hàng Ngọc Mai"
+      },
+      "type": "node"
+    },
+    {
+      "id": 4411036391,
+      "lat": 21.381409,
+      "lon": 103.012046,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Nhà hàng Tay Muong",
+        "name:vi": "Nhà hàng Tay Muong"
+      },
+      "type": "node"
+    },
+    {
+      "id": 4411037089,
+      "lat": 21.3810256,
+      "lon": 103.0183281,
+      "tags": {
+        "historic": "memorial",
+        "name": "Nghĩa trang liệt sỹ Đồi A1",
+        "name:de": "Soldatenfriehof",
+        "name:en": "A1 Vietnam Soldiers National Cemetery",
+        "name:vi": "Nghĩa trang liệt sỹ Đồi A1"
+      },
+      "type": "node"
+    },
+    {
+      "id": 4416978389,
+      "lat": 21.3824981,
+      "lon": 103.0201467,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "vụ ân restaurant",
+        "name:vi": "vụ ân restaurant"
+      },
+      "type": "node"
+    },
+    {
+      "id": 4416986289,
+      "lat": 21.2789115,
+      "lon": 102.9724893,
+      "tags": {
+        "amenity": "fuel",
+        "name": "Xăng dầu Sao Việt",
+        "name:vi": "Xăng dầu Sao Việt",
+        "phone": "02303737696"
+      },
+      "type": "node"
+    },
+    {
+      "id": 4420514790,
+      "lat": 21.3812849,
+      "lon": 103.0118425,
+      "tags": {
+        "amenity": "fuel",
+        "name": "Petro Vietnam",
+        "name:en": "Petro Vietnam",
+        "name:vi": "Petro Vietnam"
+      },
+      "type": "node"
+    },
+    {
+      "id": 4420523489,
+      "lat": 21.3673242,
+      "lon": 103.0087529,
+      "tags": {
+        "amenity": "fuel",
+        "brand": "Petrolimex",
+        "brand:wikidata": "Q10831598",
+        "name": "Petrolimex",
+        "name:en": "Petrolimex"
+      },
+      "type": "node"
+    },
+    {
+      "id": 4423022595,
+      "lat": 21.4054574,
+      "lon": 103.0055763,
+      "tags": {
+        "amenity": "fuel",
+        "brand": "Petrolimex",
+        "brand:wikidata": "Q10831598",
+        "name": "Petrolimex",
+        "name:en": "Petrolimex"
+      },
+      "type": "node"
+    },
+    {
+      "id": 4456912024,
+      "lat": 21.4512679,
+      "lon": 103.1637745,
+      "tags": {
+        "historic": "memorial",
+        "name": "Sở chỉ huy Chiến dịch Sở chỉ huy Chiến dịch",
+        "name:en": "Headquater of the Điện Biên Phủ campaign"
+      },
+      "type": "node"
+    },
+    {
+      "id": 4511121034,
+      "lat": 21.3921675,
+      "lon": 103.0144265,
+      "tags": {
+        "name": "Khach San Nam Rom",
+        "name:en": "Nam Rom Hotel",
+        "source": "GPS;photograph",
+        "tourism": "hotel"
+      },
+      "type": "node"
+    },
+    {
+      "id": 4511121037,
+      "lat": 21.3922294,
+      "lon": 103.0128,
+      "tags": {
+        "amenity": "fuel",
+        "brand": "Petrolimex",
+        "brand:wikidata": "Q10831598",
+        "brand:wikipedia": "en:Petrolimex",
+        "name": "Petrolimex",
+        "source": "GPS;photograph"
+      },
+      "type": "node"
+    },
+    {
+      "id": 4511121038,
+      "lat": 21.3925072,
+      "lon": 103.0126509,
+      "tags": {
+        "name": "Nha Khach Truc An",
+        "source": "GPS;photograph",
+        "tourism": "hotel"
+      },
+      "type": "node"
+    },
+    {
+      "id": 4511121039,
+      "lat": 21.3920829,
+      "lon": 103.0153707,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "VietinBank",
+        "brand:wikidata": "Q7928459",
+        "name": "VietinBank",
+        "source": "GPS;photograph"
+      },
+      "type": "node"
+    },
+    {
+      "id": 4693157590,
+      "lat": 21.3960546,
+      "lon": 103.0205131,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "vietnamese",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "only",
+        "email": "rus240887@gmail.com",
+        "internet_access": "wlan",
+        "name": "Yen Ninh",
+        "name:en": "Yen Ninh Vegetarian Restaurant",
+        "opening_hours": "Mo-Su 08:00-22:00",
+        "phone": "+84 98 988 75 13",
+        "website": "https://dbpcity.wixsite.com/yenninh"
+      },
+      "type": "node"
+    },
+    {
+      "id": 5171146500,
+      "lat": 22.1897147,
+      "lon": 102.4599391,
+      "tags": {
+        "amenity": "bus_station",
+        "name": "Bến xe khách Huyện Mường Nhé",
+        "name:en": "Muong Nhe Coach Station"
+      },
+      "type": "node"
+    },
+    {
+      "id": 5171146514,
+      "lat": 22.195695,
+      "lon": 102.4584049,
+      "tags": {
+        "historic": "monument",
+        "name": "Tổ quốc ghi công"
+      },
+      "type": "node"
+    },
+    {
+      "id": 5171149725,
+      "lat": 22.190358,
+      "lon": 102.4619911,
+      "tags": {
+        "amenity": "fuel",
+        "name": "Petrolimex"
+      },
+      "type": "node"
+    },
+    {
+      "id": 5293466221,
+      "lat": 21.3935853,
+      "lon": 103.012104,
+      "tags": {
+        "internet_access": "wlan",
+        "name": "MUONG PHANG HOTEL",
+        "tourism": "hotel"
+      },
+      "type": "node"
+    },
+    {
+      "id": 5294896122,
+      "lat": 21.3923128,
+      "lon": 103.0109928,
+      "tags": {
+        "name": "NHA NGHI PHUONG HI EN Guesthouse",
+        "tourism": "hotel"
+      },
+      "type": "node"
+    },
+    {
+      "id": 5305922626,
+      "lat": 21.5184158,
+      "lon": 103.351381,
+      "tags": {
+        "amenity": "fuel",
+        "name": "PV Oil Station"
+      },
+      "type": "node"
+    },
+    {
+      "id": 5305922627,
+      "lat": 21.5219535,
+      "lon": 103.2307086,
+      "tags": {
+        "amenity": "fuel",
+        "name": "Petrolimex Station"
+      },
+      "type": "node"
+    },
+    {
+      "id": 5305922723,
+      "lat": 21.5240313,
+      "lon": 103.2132321,
+      "tags": {
+        "amenity": "fuel",
+        "name": "Petrolimex Station"
+      },
+      "type": "node"
+    },
+    {
+      "id": 5492241221,
+      "lat": 21.3923557,
+      "lon": 103.0166099,
+      "tags": {
+        "historic": "monument",
+        "name": "Đồi D1",
+        "name:en": "D1 Hill"
+      },
+      "type": "node"
+    },
+    {
+      "id": 5626777821,
+      "lat": 21.3977803,
+      "lon": 103.0215392,
+      "tags": {
+        "addr:housenumber": "571",
+        "addr:street": "Võ Nguyên Giáp",
+        "amenity": "restaurant",
+        "cuisine": "vietnamese",
+        "internet_access": "wlan",
+        "name": "Bun Cha Oc"
+      },
+      "type": "node"
+    },
+    {
+      "id": 6151805186,
+      "lat": 21.7583292,
+      "lon": 103.0921005,
+      "tags": {
+        "addr:district": "Mường Chà",
+        "addr:province": "Điện Biên",
+        "addr:street": "QL 12",
+        "addr:subdistrict": "Mường Chà",
+        "contact:facebook": "NameTe19792",
+        "internet_access": "wlan",
+        "name": "Khách sạn New Star",
+        "tourism": "hotel"
+      },
+      "type": "node"
+    },
+    {
+      "id": 6160555406,
+      "lat": 21.7576159,
+      "lon": 103.0903742,
+      "tags": {
+        "amenity": "bank",
+        "brand": "Agribank",
+        "brand:wikidata": "Q4693829",
+        "brand:wikipedia": "en:AgriBank",
+        "name": "Agribank"
+      },
+      "type": "node"
+    },
+    {
+      "id": 6419214996,
+      "lat": 21.3976668,
+      "lon": 103.0155866,
+      "tags": {
+        "addr:housenumber": "109",
+        "addr:street": "Lê Trọng Tấn",
+        "name": "Nhà nghỉ 51 - Chi nhánh 2",
+        "phone": "+84 93 165 46 66",
+        "tourism": "hotel",
+        "website": "https://nhanghi51.webdanang43.net/"
+      },
+      "type": "node"
+    },
+    {
+      "id": 6514973426,
+      "lat": 22.3773617,
+      "lon": 102.2534771,
+      "tags": {
+        "amenity": "townhall",
+        "name": "UBND xã Sín Thầu"
+      },
+      "type": "node"
+    },
+    {
+      "id": 6515217495,
+      "lat": 22.4302785,
+      "lon": 102.1724466,
+      "tags": {
+        "amenity": "marketplace",
+        "name": "Chợ Biên giới A Pa Chải - Long Phú",
+        "name:en": "A Pa Chai - Longfu Border Market",
+        "name:vi": "Chợ Biên giới A Pa Chải - Long Phú",
+        "name:zh": "阿巴寨龙富边界市场",
+        "name:zh-Hans": "阿巴寨龙富边界市场",
+        "name:zh-Hant": "阿巴寨龍富邊界市場"
+      },
+      "type": "node"
+    },
+    {
+      "id": 6990013805,
+      "lat": 21.3910107,
+      "lon": 103.0150019,
+      "tags": {
+        "name": "An Lộc Hotel",
+        "tourism": "hotel"
+      },
+      "type": "node"
+    },
+    {
+      "id": 6990015893,
+      "lat": 21.5893347,
+      "lon": 103.4211734,
+      "tags": {
+        "name": "NHÀ HÀNG & KHÁCH SẠN TÂY BẮC",
+        "tourism": "hotel"
+      },
+      "type": "node"
+    },
+    {
+      "id": 7127450185,
+      "lat": 21.5884329,
+      "lon": 103.4204694,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Pho & Fried Rice"
+      },
+      "type": "node"
+    },
+    {
+      "id": 7156615985,
+      "lat": 21.396115,
+      "lon": 103.0197115,
+      "tags": {
+        "addr:street": "653 Tô 9, Tân Thanh, Tp",
+        "amenity": "restaurant",
+        "diet:vegetarian": "yes",
+        "name": "Quán chay tú oanh"
+      },
+      "type": "node"
+    },
+    {
+      "id": 7886575433,
+      "lat": 22.1981467,
+      "lon": 102.4527001,
+      "tags": {
+        "name": "Hạt Kiểm lâm",
+        "office": "government"
+      },
+      "type": "node"
+    },
+    {
+      "id": 10225167817,
+      "lat": 21.7592263,
+      "lon": 103.0914371,
+      "tags": {
+        "addr:housenumber": "37",
+        "amenity": "restaurant",
+        "cuisine": "vietnamese",
+        "name": "Tien Lieu Restaurant",
+        "phone": "0215 384 3099"
+      },
+      "type": "node"
+    },
+    {
+      "id": 10225167917,
+      "lat": 21.758483,
+      "lon": 103.0926035,
+      "tags": {
+        "name": "Dung Hai Mart",
+        "shop": "supermarket"
+      },
+      "type": "node"
+    },
+    {
+      "id": 11366072049,
+      "lat": 21.3971037,
+      "lon": 103.0190958,
+      "tags": {
+        "name": "Phuong Nam",
+        "tourism": "hotel"
+      },
+      "type": "node"
+    },
+    {
+      "id": 11772651113,
+      "lat": 21.3932301,
+      "lon": 103.016657,
+      "tags": {
+        "name": "Pharma Hotel",
+        "tourism": "hotel"
+      },
+      "type": "node"
+    },
+    {
+      "id": 12867131801,
+      "lat": 21.5698741,
+      "lon": 103.3779216,
+      "tags": {
+        "amenity": "fuel",
+        "name": "Petrolimex"
+      },
+      "type": "node"
+    },
+    {
+      "id": 13461734501,
+      "lat": 21.387407,
+      "lon": 103.0172576,
+      "tags": {
+        "name": "Tinh Vuong Hotel",
+        "tourism": "hotel"
+      },
+      "type": "node"
+    },
+    {
+      "center": {
+        "lat": 21.40684895,
+        "lon": 103.04534605
+      },
+      "id": 24426805,
+      "tags": {
+        "SWBD_cell": "111283",
+        "SWBD_facc_code": "bh080",
+        "SWBD_wb": "8",
+        "ele": "505.0",
+        "name": "Hồ Huổi Phạ",
+        "natural": "water",
+        "source": "SWBD",
+        "water": "reservoir"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.2904987,
+        "lon": 103.03531480000001
+      },
+      "id": 24427022,
+      "tags": {
+        "SWBD_cell": "111283",
+        "SWBD_facc_code": "bh080",
+        "SWBD_wb": "14",
+        "ele": "500.0",
+        "name": "Hồ Hồng Sạt",
+        "natural": "water",
+        "source": "SWBD",
+        "water": "reservoir"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.3836874,
+        "lon": 103.022502
+      },
+      "id": 36856316,
+      "tags": {
+        "highway": "residential",
+        "name": "Tôn Thất Tùng"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.34526085,
+        "lon": 103.0101424
+      },
+      "id": 36856319,
+      "tags": {
+        "highway": "trunk",
+        "layer": "1",
+        "name": "Quốc lộ 279 - Quốc lộ 12",
+        "name:en": "National Highway 279 - National Highway 12",
+        "ref": "QL.279;QL.12",
+        "source": "GPS",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.585569800000002,
+        "lon": 103.42203465
+      },
+      "id": 38040940,
+      "tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "Quốc lộ 6 - Quốc lộ 279",
+        "name:en": "National Route 6 - National Route 279",
+        "ref": "QL.6;QL.279",
+        "source:geometry": "strava;ride",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.5732176,
+        "lon": 103.4979816
+      },
+      "id": 38040942,
+      "tags": {
+        "highway": "tertiary",
+        "name": "Đèo Pha Đin cũ"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.7218283,
+        "lon": 103.3883214
+      },
+      "id": 38040950,
+      "tags": {
+        "highway": "trunk",
+        "name": "Quốc lộ 6",
+        "ref": "QL.6",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 22.408440499999998,
+        "lon": 102.1703172
+      },
+      "id": 212737756,
+      "tags": {
+        "bicycle": "private",
+        "cycleway": "opposite_lane",
+        "foot": "yes",
+        "highway": "unclassified",
+        "maxspeed": "50",
+        "name": "Đường tuần tra biên giới",
+        "name:vi": "Đường tuần tra biên giới",
+        "oneway": "no",
+        "sidewalk": "both",
+        "surface": "unpaved"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 22.2449699,
+        "lon": 102.42641485
+      },
+      "id": 212741926,
+      "tags": {
+        "highway": "primary",
+        "name": "Quốc lộ 4H",
+        "name:en": "National Route 4H",
+        "ref": "QL.4H"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 22.15299785,
+        "lon": 102.55803895
+      },
+      "id": 212741947,
+      "tags": {
+        "highway": "primary",
+        "name": "Quốc lộ 4H",
+        "name:en": "National Route 4H",
+        "ref": "QL.4H"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.944257450000002,
+        "lon": 102.97850995
+      },
+      "id": 244500089,
+      "tags": {
+        "highway": "secondary",
+        "name": "Đường tỉnh 150",
+        "ref": "ĐT.150"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.9638569,
+        "lon": 102.93495155
+      },
+      "id": 244500090,
+      "tags": {
+        "highway": "secondary",
+        "name": "Đường tỉnh 150",
+        "ref": "ĐT.150"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.833338949999998,
+        "lon": 102.8137286
+      },
+      "id": 244500091,
+      "tags": {
+        "highway": "secondary",
+        "name": "Đường tỉnh 145B",
+        "ref": "ĐT.145B"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.843863550000002,
+        "lon": 102.9242284
+      },
+      "id": 244500092,
+      "tags": {
+        "highway": "primary",
+        "name": "Quốc lộ 4H",
+        "name:en": "National Route 4H",
+        "note": "there's also a osm-gpx track here",
+        "ref": "QL.4H"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.39052545,
+        "lon": 103.01483150000001
+      },
+      "id": 322657260,
+      "tags": {
+        "highway": "residential",
+        "lit": "yes",
+        "name": "Nguyễn Chí Thanh",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.5900562,
+        "lon": 103.42200135
+      },
+      "id": 322661281,
+      "tags": {
+        "highway": "trunk",
+        "name": "Quốc lộ 6 - Quốc lộ 279",
+        "name:en": "National Route 6 - National Route 279",
+        "ref": "QL.6;QL.279",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.409831850000003,
+        "lon": 103.04299259999999
+      },
+      "id": 322661284,
+      "tags": {
+        "highway": "trunk",
+        "layer": "1",
+        "name": "Quốc lộ 279",
+        "name:en": "National Route 279",
+        "ref": "QL.279",
+        "source": "GPS",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.5262102,
+        "lon": 103.20668785000001
+      },
+      "id": 322661286,
+      "tags": {
+        "highway": "trunk",
+        "layer": "1",
+        "name": "Quốc lộ 279",
+        "name:en": "National Route 279",
+        "ref": "QL.279",
+        "source": "GPS",
+        "source:geometry": "strava;ride",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.58080735,
+        "lon": 103.40586615000001
+      },
+      "id": 322661287,
+      "tags": {
+        "highway": "trunk",
+        "layer": "1",
+        "name": "Quốc lộ 279",
+        "name:en": "National Route 279",
+        "ref": "QL.279",
+        "source": "GPS",
+        "source:geometry": "strava;ride",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.56502065,
+        "lon": 103.50230590000001
+      },
+      "id": 322683816,
+      "tags": {
+        "alt_name": "Quốc lộ 6",
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "Đèo Pha Đin",
+        "ref": "QL.6",
+        "source:geometry": "strava;ride",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.3890888,
+        "lon": 103.02956405
+      },
+      "id": 379684649,
+      "tags": {
+        "highway": "tertiary",
+        "lit": "yes",
+        "name": "Đường Hoàng Công Chất",
+        "name:en": "Hoang Cong Chat Street",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.40023445,
+        "lon": 103.0073684
+      },
+      "id": 403878121,
+      "tags": {
+        "highway": "trunk",
+        "lit": "yes",
+        "name": "Đường Nguyễn Hữu Thọ",
+        "name:en": "Nguyen Huu Tho Street",
+        "oneway": "yes",
+        "ref": "QL.12",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.7956383,
+        "lon": 103.1060511
+      },
+      "id": 420292511,
+      "tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "Quốc lộ 12",
+        "name:en": "National Route 12",
+        "name:zh": "12号公路",
+        "ref": "QL.12",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.915872049999997,
+        "lon": 103.13321985
+      },
+      "id": 420292512,
+      "tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "Quốc lộ 12",
+        "ref": "QL.12",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.60913985,
+        "lon": 103.02945120000001
+      },
+      "id": 420292513,
+      "tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "Quốc lộ 12",
+        "name:en": "National Route 12",
+        "ref": "QL.12",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.82529375,
+        "lon": 103.1154228
+      },
+      "id": 420292514,
+      "tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "Quốc lộ 12",
+        "name:en": "National Route 12",
+        "ref": "QL.12",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.7086251,
+        "lon": 103.0795196
+      },
+      "id": 420305985,
+      "tags": {
+        "highway": "trunk",
+        "name": "Quốc lộ 12",
+        "ref": "QL.12",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 22.3229672,
+        "lon": 102.3773572
+      },
+      "id": 423898796,
+      "tags": {
+        "highway": "primary",
+        "maxspeed": "80",
+        "name": "Quốc lộ 4H2",
+        "name:en": "National Route 4H2",
+        "name:zh": "4H2公路",
+        "ref": "QL.4H2"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.2879222,
+        "lon": 103.2337533
+      },
+      "id": 437042620,
+      "tags": {
+        "highway": "secondary",
+        "name": "Đường tỉnh 139",
+        "ref": "ĐT.139"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.369158499999998,
+        "lon": 103.1053978
+      },
+      "id": 437042627,
+      "tags": {
+        "highway": "secondary",
+        "name": "Đường tỉnh 143",
+        "ref": "ĐT.143"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.2578359,
+        "lon": 103.12749195
+      },
+      "id": 437042629,
+      "tags": {
+        "highway": "primary",
+        "name": "Quốc lộ 12",
+        "ref": "QL.12"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.2538762,
+        "lon": 103.25198735000001
+      },
+      "id": 437042632,
+      "tags": {
+        "bridge": "yes",
+        "highway": "primary",
+        "layer": "1",
+        "name": "Quốc lộ 12",
+        "ref": "QL.12"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.2523904,
+        "lon": 103.14006230000001
+      },
+      "id": 437042634,
+      "tags": {
+        "bridge": "yes",
+        "highway": "primary",
+        "layer": "1",
+        "name": "Quốc lộ 12",
+        "ref": "QL.12"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.2387752,
+        "lon": 103.31482944999999
+      },
+      "id": 437042638,
+      "tags": {
+        "bridge": "yes",
+        "highway": "primary",
+        "layer": "1",
+        "name": "Quốc lộ 12",
+        "ref": "QL.12"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.25540545,
+        "lon": 103.06072105
+      },
+      "id": 437042641,
+      "tags": {
+        "highway": "primary",
+        "name": "Quốc lộ 279C",
+        "ref": "QL.279C"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.2645938,
+        "lon": 103.11508365
+      },
+      "id": 437042642,
+      "tags": {
+        "bridge": "yes",
+        "highway": "primary",
+        "layer": "1",
+        "name": "Quốc lộ 12",
+        "ref": "QL.12"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.247099249999998,
+        "lon": 103.3641279
+      },
+      "id": 437042645,
+      "tags": {
+        "bridge": "yes",
+        "highway": "primary",
+        "layer": "1",
+        "name": "Quốc lộ 12",
+        "ref": "QL.12"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.09844645,
+        "lon": 103.11571004999999
+      },
+      "id": 437042646,
+      "tags": {
+        "bridge": "yes",
+        "highway": "primary",
+        "layer": "1",
+        "name": "Quốc lộ 279C",
+        "ref": "QL.279C"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.26279405,
+        "lon": 103.38710145
+      },
+      "id": 437042654,
+      "tags": {
+        "bridge": "yes",
+        "highway": "primary",
+        "layer": "1",
+        "name": "Quốc lộ 12",
+        "ref": "QL.12"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.279424749999997,
+        "lon": 103.41445095
+      },
+      "id": 437042656,
+      "tags": {
+        "bridge": "yes",
+        "highway": "primary",
+        "layer": "1",
+        "name": "Quốc lộ 12",
+        "ref": "QL.12"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.2549664,
+        "lon": 103.06032139999999
+      },
+      "id": 437042662,
+      "tags": {
+        "bridge": "yes",
+        "highway": "primary",
+        "layer": "1",
+        "name": "Quốc lộ 279C",
+        "ref": "QL.279C"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.2620655,
+        "lon": 103.39582630000001
+      },
+      "id": 437042670,
+      "tags": {
+        "bridge": "yes",
+        "highway": "primary",
+        "layer": "1",
+        "name": "Quốc lộ 12",
+        "ref": "QL.12"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.328388949999997,
+        "lon": 103.18661234999999
+      },
+      "id": 437042674,
+      "tags": {
+        "highway": "secondary",
+        "name": "Đường tỉnh 143",
+        "ref": "ĐT.143"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.27107855,
+        "lon": 103.40497725
+      },
+      "id": 437042675,
+      "tags": {
+        "highway": "primary",
+        "name": "Quốc lộ 12",
+        "ref": "QL.12"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.2555388,
+        "lon": 103.37564
+      },
+      "id": 437042677,
+      "tags": {
+        "highway": "primary",
+        "name": "Quốc lộ 12",
+        "ref": "QL.12"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 20.9611241,
+        "lon": 103.2044502
+      },
+      "id": 437042700,
+      "tags": {
+        "highway": "primary",
+        "name": "Quốc lộ 279C",
+        "ref": "QL.279C"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.14233685,
+        "lon": 103.0933773
+      },
+      "id": 437042715,
+      "tags": {
+        "highway": "primary",
+        "name": "Quốc lộ 279C",
+        "ref": "QL.279C"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.215185249999998,
+        "lon": 103.0564718
+      },
+      "id": 437042718,
+      "tags": {
+        "bridge": "yes",
+        "highway": "primary",
+        "layer": "1",
+        "name": "Quốc lộ 279C",
+        "ref": "QL.279C"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.15461805,
+        "lon": 103.08868245
+      },
+      "id": 437042721,
+      "tags": {
+        "bridge": "yes",
+        "highway": "primary",
+        "layer": "1",
+        "name": "Quốc lộ 279C",
+        "ref": "QL.279C"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.249488,
+        "lon": 103.2645016
+      },
+      "id": 437042722,
+      "tags": {
+        "highway": "primary",
+        "name": "Quốc lộ 12",
+        "ref": "QL.12"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 20.92902625,
+        "lon": 103.29529925
+      },
+      "id": 437042724,
+      "tags": {
+        "highway": "secondary",
+        "name": "Đường tỉnh 105",
+        "ref": "ĐT.105"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.3084859,
+        "lon": 103.21969
+      },
+      "id": 437042727,
+      "tags": {
+        "highway": "secondary",
+        "name": "Đường tỉnh 143",
+        "ref": "ĐT.143"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.01972525,
+        "lon": 103.13817235
+      },
+      "id": 437042730,
+      "tags": {
+        "highway": "primary",
+        "name": "Quốc lộ 279C",
+        "ref": "QL.279C"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.24556785,
+        "lon": 103.34261190000001
+      },
+      "id": 437042733,
+      "tags": {
+        "highway": "primary",
+        "name": "Quốc lộ 12",
+        "ref": "QL.12"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.07889545,
+        "lon": 103.12076694999999
+      },
+      "id": 437042748,
+      "tags": {
+        "highway": "primary",
+        "name": "Quốc lộ 279C",
+        "ref": "QL.279C"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.27096465,
+        "lon": 103.0606509
+      },
+      "id": 437042768,
+      "tags": {
+        "highway": "primary",
+        "name": "Quốc lộ 12",
+        "ref": "QL.12"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 20.92278845,
+        "lon": 103.2336501
+      },
+      "id": 437042770,
+      "tags": {
+        "highway": "primary",
+        "name": "Quốc lộ 279C",
+        "ref": "QL.279C"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.263590649999998,
+        "lon": 103.19583990000001
+      },
+      "id": 437042801,
+      "tags": {
+        "highway": "primary",
+        "name": "Quốc lộ 12",
+        "ref": "QL.12"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.2374441,
+        "lon": 103.29485055
+      },
+      "id": 437042802,
+      "tags": {
+        "highway": "primary",
+        "name": "Quốc lộ 12",
+        "ref": "QL.12"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.26123125,
+        "lon": 103.3915063
+      },
+      "id": 437042805,
+      "tags": {
+        "highway": "primary",
+        "name": "Quốc lộ 12",
+        "ref": "QL.12"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.4595631,
+        "lon": 103.1037316
+      },
+      "id": 447393551,
+      "tags": {
+        "highway": "secondary",
+        "name": "Đường tỉnh 141",
+        "ref": "ĐT.141",
+        "source:geometry": "strava;ride",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.55878705,
+        "lon": 103.01539475
+      },
+      "id": 470671196,
+      "tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "Quốc lộ 12",
+        "name:en": "National Route 12",
+        "ref": "QL.12",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.110518300000003,
+        "lon": 103.1085554
+      },
+      "id": 470684161,
+      "tags": {
+        "highway": "primary",
+        "name": "Quốc lộ 279C",
+        "ref": "QL.279C"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.13013185,
+        "lon": 103.09840765
+      },
+      "id": 470684167,
+      "tags": {
+        "bridge": "yes",
+        "highway": "primary",
+        "layer": "1",
+        "name": "Quốc lộ 279C",
+        "oneway": "yes",
+        "ref": "QL.279C"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 22.00095185,
+        "lon": 102.79467224999999
+      },
+      "id": 481831400,
+      "tags": {
+        "highway": "primary",
+        "name": "Quốc lộ 4H",
+        "name:en": "National Route 4H",
+        "note": "there's also a osm-gpx track here",
+        "ref": "QL.4H"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.744239450000002,
+        "lon": 103.3606288
+      },
+      "id": 485543343,
+      "tags": {
+        "highway": "trunk",
+        "name": "Quốc lộ 6",
+        "ref": "QL.6",
+        "source": "osm-gpx",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.775386349999998,
+        "lon": 103.32657215
+      },
+      "id": 485543344,
+      "tags": {
+        "highway": "trunk",
+        "name": "Quốc lộ 6",
+        "ref": "QL.6",
+        "source": "osm-gpx",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.75506645,
+        "lon": 103.3360854
+      },
+      "id": 485543346,
+      "tags": {
+        "highway": "trunk",
+        "name": "Quốc lộ 6",
+        "ref": "QL.6",
+        "source": "osm-gpx",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.82709965,
+        "lon": 103.29801125
+      },
+      "id": 485543348,
+      "tags": {
+        "highway": "trunk",
+        "name": "Quốc lộ 6",
+        "ref": "QL.6",
+        "source": "osm-gpx",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.7925847,
+        "lon": 103.3132732
+      },
+      "id": 485543350,
+      "tags": {
+        "highway": "trunk",
+        "name": "Quốc lộ 6",
+        "ref": "QL.6",
+        "source": "osm-gpx",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.3818414,
+        "lon": 103.01508304999999
+      },
+      "id": 532672161,
+      "tags": {
+        "highway": "trunk",
+        "lit": "yes",
+        "name": "Hoàng Văn Thái",
+        "oneway": "yes",
+        "ref": "QL.12",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.381732,
+        "lon": 103.01503120000001
+      },
+      "id": 532672162,
+      "tags": {
+        "highway": "trunk",
+        "lit": "yes",
+        "name": "Hoàng Văn Thái",
+        "oneway": "yes",
+        "ref": "QL.12",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.3817509,
+        "lon": 103.0134505
+      },
+      "id": 532672163,
+      "tags": {
+        "bridge": "yes",
+        "highway": "trunk",
+        "layer": "1",
+        "lit": "yes",
+        "name": "Cầu A1",
+        "oneway": "yes",
+        "ref": "QL.12",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.381639749999998,
+        "lon": 103.01346795
+      },
+      "id": 532672164,
+      "tags": {
+        "bridge": "yes",
+        "highway": "trunk",
+        "layer": "1",
+        "lit": "yes",
+        "name": "Cầu A1",
+        "oneway": "yes",
+        "ref": "QL.12",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.381661,
+        "lon": 103.01223544999999
+      },
+      "id": 532672165,
+      "tags": {
+        "highway": "trunk",
+        "lit": "yes",
+        "name": "Nguyễn Hữu Thọ",
+        "oneway": "yes",
+        "ref": "QL.12",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.38157985,
+        "lon": 103.0122422
+      },
+      "id": 532672166,
+      "tags": {
+        "highway": "trunk",
+        "lit": "yes",
+        "name": "Nguyễn Hữu Thọ",
+        "oneway": "yes",
+        "ref": "QL.12",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.38535345,
+        "lon": 103.01122294999999
+      },
+      "id": 532672167,
+      "tags": {
+        "highway": "trunk",
+        "lit": "yes",
+        "name": "Nguyễn Hữu Thọ",
+        "ref": "QL.12",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.3907581,
+        "lon": 103.0104962
+      },
+      "id": 532672168,
+      "tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "lit": "yes",
+        "maxspeed:type": "VN:urban",
+        "name": "Nguyễn Hữu Thọ",
+        "oneway": "yes",
+        "ref": "QL.12",
+        "sidewalk": "right",
+        "sidewalk:right:surface": "paving_stones",
+        "smoothness": "excellent",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.390751,
+        "lon": 103.0103919
+      },
+      "id": 532672169,
+      "tags": {
+        "highway": "trunk",
+        "lit": "yes",
+        "name": "Nguyễn Hữu Thọ",
+        "oneway": "yes",
+        "ref": "QL.12",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.3923998,
+        "lon": 103.01163754999999
+      },
+      "id": 532672171,
+      "tags": {
+        "highway": "primary",
+        "lit": "yes",
+        "name": "Trần Đăng Ninh",
+        "oneway": "yes",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.39241385,
+        "lon": 103.01519505
+      },
+      "id": 532672172,
+      "tags": {
+        "highway": "primary",
+        "lit": "yes",
+        "name": "Trần Đăng Ninh",
+        "name:ja": "チャンダンニン通り",
+        "oneway": "yes",
+        "sidewalk": "right",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.39223105,
+        "lon": 103.01516135
+      },
+      "id": 532672173,
+      "tags": {
+        "highway": "primary",
+        "lit": "yes",
+        "name": "Trần Đăng Ninh",
+        "name:ja": "チャンダンニン通り",
+        "oneway": "yes",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.40180025,
+        "lon": 103.02888985
+      },
+      "id": 532672181,
+      "tags": {
+        "highway": "trunk",
+        "lit": "yes",
+        "name": "Đường Võ Nguyên Giáp",
+        "name:en": "Vo Nguyen Giap Road",
+        "oneway": "yes",
+        "ref": "QL.279",
+        "sidewalk": "right",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.3738838,
+        "lon": 103.0125123
+      },
+      "id": 532672182,
+      "tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "lit": "yes",
+        "maxspeed:type": "VN:urban",
+        "name": "Đường Võ Nguyên Giáp",
+        "name:en": "Vo Nguyen Giap Road",
+        "oneway": "yes",
+        "ref": "QL.279;QL.12",
+        "sidewalk": "right",
+        "sidewalk:right:surface": "paving_stones",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.37382935,
+        "lon": 103.01247075
+      },
+      "id": 532672183,
+      "tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "lit": "yes",
+        "maxspeed:type": "VN:urban",
+        "name": "Đường Võ Nguyên Giáp",
+        "name:en": "Vo Nguyen Giap Road",
+        "oneway": "yes",
+        "ref": "QL.279;QL.12",
+        "sidewalk": "right",
+        "sidewalk:right:surface": "paving_stones",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.40190385,
+        "lon": 103.0287223
+      },
+      "id": 532672185,
+      "tags": {
+        "highway": "trunk",
+        "lit": "yes",
+        "name": "Đường Võ Nguyên Giáp",
+        "name:en": "Vo Nguyen Giap Road",
+        "oneway": "yes",
+        "ref": "QL.279",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.3871432,
+        "lon": 103.01320445
+      },
+      "id": 532688429,
+      "tags": {
+        "highway": "residential",
+        "lit": "yes",
+        "motorcar": "destination",
+        "name": "Đường Bế Văn Đàn",
+        "name:en": "Be Van Dan Street",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.38666235,
+        "lon": 103.01182775000001
+      },
+      "id": 532688431,
+      "tags": {
+        "bridge": "yes",
+        "highway": "residential",
+        "layer": "1",
+        "lit": "yes",
+        "name": "Cầu Mường Thanh",
+        "name:en": "Muong Thanh Bridge",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.389686949999998,
+        "lon": 103.0244946
+      },
+      "id": 532688434,
+      "tags": {
+        "highway": "residential",
+        "name": "Đường 13m",
+        "oneway": "yes",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.38743845,
+        "lon": 103.0238052
+      },
+      "id": 532688435,
+      "tags": {
+        "highway": "tertiary",
+        "name": "Đường 27m",
+        "oneway": "yes",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.3873791,
+        "lon": 103.023808
+      },
+      "id": 532688436,
+      "tags": {
+        "highway": "tertiary",
+        "name": "Đường 27m",
+        "oneway": "yes",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.39297585,
+        "lon": 103.02377485
+      },
+      "id": 532688437,
+      "tags": {
+        "highway": "residential",
+        "name": "Sùng Phái Sinh",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.3875983,
+        "lon": 103.0191305
+      },
+      "id": 532688438,
+      "tags": {
+        "highway": "residential",
+        "lit": "yes",
+        "name": "Đường Phan Đình Giót",
+        "name:en": "Phan Dinh Giot Street",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.388586949999997,
+        "lon": 103.02163085000001
+      },
+      "id": 532688440,
+      "tags": {
+        "highway": "residential",
+        "name": "Đường Trần Can",
+        "name:en": "Tran Can Street"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.38868375,
+        "lon": 103.01831335
+      },
+      "id": 532688441,
+      "tags": {
+        "highway": "residential",
+        "lit": "yes",
+        "name": "Đường Trần Can",
+        "name:en": "Tran Can Street",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.3918497,
+        "lon": 103.0226957
+      },
+      "id": 532688442,
+      "tags": {
+        "highway": "tertiary",
+        "lit": "yes",
+        "name": "Trường Chinh",
+        "name:en": "Truong Chinh Road",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.383941800000002,
+        "lon": 103.01947135
+      },
+      "id": 532688443,
+      "tags": {
+        "highway": "tertiary",
+        "lit": "yes",
+        "name": "Hoàng Văn Thái",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.3847712,
+        "lon": 103.0200395
+      },
+      "id": 532688444,
+      "tags": {
+        "highway": "residential",
+        "lit": "yes",
+        "name": "Đường Hoàng Công Chất",
+        "name:en": "Hoang Cong Chat Street",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 22.18960295,
+        "lon": 102.46135265000001
+      },
+      "id": 532934088,
+      "tags": {
+        "amenity": "hospital",
+        "name": "Trung tâm Y tế Mường Nhé",
+        "name:en": "Muong Nhe Medical Center",
+        "name:zh": "孟涅县医科中心"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 22.18458175,
+        "lon": 102.46567974999999
+      },
+      "id": 532934090,
+      "tags": {
+        "bridge": "yes",
+        "highway": "residential",
+        "layer": "1",
+        "name": "Cầu Treo Mường Nhé"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 22.194320400000002,
+        "lon": 102.45312899999999
+      },
+      "id": 532934091,
+      "tags": {
+        "amenity": "school",
+        "name": "Trường Trung học cơ sở Mường Nhé",
+        "name:en": "Muong Nhe Secondary School",
+        "name:zh": "孟涅初中"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 22.195771999999998,
+        "lon": 102.4546538
+      },
+      "id": 532934093,
+      "tags": {
+        "building": "office",
+        "name": "Trung tâm Hội nghị huyện Mường Nhé",
+        "name:en": "Muong Nhe District Convention Centre",
+        "office": "government"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 22.1933556,
+        "lon": 102.4544513
+      },
+      "id": 532934094,
+      "tags": {
+        "amenity": "school",
+        "name": "Trường Trung học phổ thông Mường Nhé",
+        "name:en": "Muong Nhe High School",
+        "name:zh": "孟涅高中"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 22.19338715,
+        "lon": 102.45812125
+      },
+      "id": 532934118,
+      "tags": {
+        "highway": "primary",
+        "name": "Quốc lộ 4H",
+        "name:en": "National Route 4H",
+        "oneway": "yes",
+        "ref": "QL.4H"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 22.19338715,
+        "lon": 102.45812125
+      },
+      "id": 532934119,
+      "tags": {
+        "highway": "primary",
+        "name": "Quốc lộ 4H",
+        "name:en": "National Route 4H",
+        "oneway": "yes",
+        "ref": "QL.4H"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.3944812,
+        "lon": 103.0214593
+      },
+      "id": 554486598,
+      "tags": {
+        "highway": "residential",
+        "lanes": "2",
+        "name": "Hoà Bình",
+        "sidewalk": "no",
+        "sidewalk:right:surface": "paving_stones",
+        "smoothness": "excellent",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.405616199999997,
+        "lon": 103.02795415
+      },
+      "id": 554486619,
+      "tags": {
+        "highway": "residential",
+        "name": "Đường 13-3"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.406423099999998,
+        "lon": 103.0276121
+      },
+      "id": 554486621,
+      "tags": {
+        "highway": "residential",
+        "name": "Trần Văn Thọ"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.397055,
+        "lon": 103.01608705000001
+      },
+      "id": 581253988,
+      "tags": {
+        "highway": "unclassified",
+        "lit": "yes",
+        "name": "Lê Trọng Tấn",
+        "source": "bing",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 22.39513515,
+        "lon": 102.2242031
+      },
+      "id": 614230220,
+      "tags": {
+        "bridge": "yes",
+        "highway": "primary",
+        "layer": "1",
+        "maxspeed": "80",
+        "name": "Quốc lộ 4H2",
+        "name:en": "National Route 4H2",
+        "name:zh": "4H2公路",
+        "ref": "QL.4H2"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 22.4240049,
+        "lon": 102.1767154
+      },
+      "id": 614230511,
+      "tags": {
+        "highway": "primary",
+        "maxspeed": "80",
+        "name": "Quốc lộ 4H2",
+        "name:en": "National Route 4H2",
+        "name:vi": "Quốc lộ 4H2",
+        "name:zh": "4H2公路",
+        "name:zh-Hans": "4H2公路",
+        "name:zh-Hant": "4H2公路",
+        "ref": "QL.4H2"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.624853700000003,
+        "lon": 103.52359229999999
+      },
+      "id": 633175384,
+      "tags": {
+        "highway": "trunk",
+        "name": "Quốc lộ 279",
+        "name:en": "National Route 279",
+        "ref": "QL.279",
+        "source": "GPS",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.652596250000002,
+        "lon": 103.45417465
+      },
+      "id": 633177021,
+      "tags": {
+        "highway": "trunk",
+        "name": "Quốc lộ 279",
+        "name:en": "National Route 279",
+        "ref": "QL.279",
+        "source": "GPS",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.4303775,
+        "lon": 103.0480477
+      },
+      "id": 634512662,
+      "tags": {
+        "highway": "trunk",
+        "layer": "1",
+        "name": "Quốc lộ 279",
+        "name:en": "National Route 279",
+        "ref": "QL.279",
+        "source": "GPS",
+        "source:geometry": "strava;ride",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.483280999999998,
+        "lon": 103.09091240000001
+      },
+      "id": 634512667,
+      "tags": {
+        "highway": "trunk",
+        "layer": "1",
+        "name": "Quốc lộ 279",
+        "name:en": "National Route 279",
+        "ref": "QL.279",
+        "source": "GPS",
+        "source:geometry": "strava;ride",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.49390905,
+        "lon": 103.02078395000001
+      },
+      "id": 634515798,
+      "tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "Quốc lộ 12",
+        "name:en": "National Route 12",
+        "ref": "QL.12",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.525015449999998,
+        "lon": 103.1604964
+      },
+      "id": 634516020,
+      "tags": {
+        "highway": "trunk",
+        "layer": "1",
+        "name": "Quốc lộ 279",
+        "name:en": "National Route 279",
+        "ref": "QL.279",
+        "source": "GPS",
+        "source:geometry": "strava;ride",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.4711562,
+        "lon": 103.01678575
+      },
+      "id": 634518513,
+      "tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "Quốc lộ 12",
+        "name:en": "National Route 12",
+        "ref": "QL.12",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.2839941,
+        "lon": 103.0050516
+      },
+      "id": 634519286,
+      "tags": {
+        "highway": "trunk",
+        "layer": "1",
+        "name": "Quốc lộ 279",
+        "name:en": "National Route 279",
+        "ref": "QL.279",
+        "source": "GPS",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.52463425,
+        "lon": 103.19062389999999
+      },
+      "id": 634522499,
+      "tags": {
+        "highway": "trunk",
+        "layer": "1",
+        "name": "Quốc lộ 279",
+        "name:en": "National Route 279",
+        "ref": "QL.279",
+        "source": "GPS",
+        "source:geometry": "strava;ride",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.544580850000003,
+        "lon": 103.2736554
+      },
+      "id": 634523432,
+      "tags": {
+        "highway": "trunk",
+        "layer": "1",
+        "name": "Quốc lộ 279",
+        "name:en": "National Route 279",
+        "ref": "QL.279",
+        "source": "GPS",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.5389639,
+        "lon": 103.3174484
+      },
+      "id": 634523439,
+      "tags": {
+        "highway": "trunk",
+        "layer": "1",
+        "name": "Quốc lộ 279",
+        "name:en": "National Route 279",
+        "ref": "QL.279",
+        "source": "GPS",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.5478903,
+        "lon": 103.37327105
+      },
+      "id": 634523980,
+      "tags": {
+        "highway": "trunk",
+        "layer": "1",
+        "name": "Quốc lộ 279",
+        "name:en": "National Route 279",
+        "ref": "QL.279",
+        "source": "GPS",
+        "source:geometry": "strava;ride",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.8856699,
+        "lon": 103.13139895
+      },
+      "id": 634525431,
+      "tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "Quốc lộ 12",
+        "ref": "QL.12",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.7569919,
+        "lon": 103.0895709
+      },
+      "id": 634525939,
+      "tags": {
+        "highway": "trunk",
+        "name": "Quốc lộ 12",
+        "name:en": "National Route 12",
+        "name:zh": "12号公路",
+        "ref": "QL.12",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.6571298,
+        "lon": 103.05965370000001
+      },
+      "id": 634527459,
+      "tags": {
+        "highway": "trunk",
+        "name": "Quốc lộ 12",
+        "ref": "QL.12",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.594712549999997,
+        "lon": 103.42608055
+      },
+      "id": 634537426,
+      "tags": {
+        "highway": "trunk",
+        "name": "Quốc lộ 6 - Quốc lộ 279",
+        "name:en": "National Route 6 - National Route 279",
+        "ref": "QL.6;QL.279",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.576439800000003,
+        "lon": 103.3950226
+      },
+      "id": 634537427,
+      "tags": {
+        "highway": "trunk",
+        "layer": "1",
+        "name": "Quốc lộ 279",
+        "name:en": "National Route 279",
+        "ref": "QL.279",
+        "source": "GPS",
+        "source:geometry": "strava;ride",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.67071765,
+        "lon": 103.42442030000001
+      },
+      "id": 634540509,
+      "tags": {
+        "highway": "trunk",
+        "name": "Quốc lộ 6",
+        "ref": "QL.6",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.393685599999998,
+        "lon": 103.01027325
+      },
+      "id": 640288775,
+      "tags": {
+        "highway": "residential",
+        "lit": "yes",
+        "name": "Lò Văn Hặc"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.39599425,
+        "lon": 103.0096379
+      },
+      "id": 640288783,
+      "tags": {
+        "highway": "residential",
+        "name": "Lò Văn Hặc"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.38316515,
+        "lon": 103.0178571
+      },
+      "id": 640290256,
+      "tags": {
+        "leisure": "park",
+        "name": "Đồi A1",
+        "opening_hours": "08:00-22:00"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.38409695,
+        "lon": 103.02053505
+      },
+      "id": 640290262,
+      "tags": {
+        "leisure": "park",
+        "name": "Đồi F"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.39202915,
+        "lon": 103.03577605000001
+      },
+      "id": 640293853,
+      "tags": {
+        "highway": "residential",
+        "lit": "yes",
+        "name": "Hoàng Công Chất"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.3870738,
+        "lon": 103.02180525
+      },
+      "id": 640295103,
+      "tags": {
+        "leisure": "stadium",
+        "name": "Sân vận động Điện Biên Phủ"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.39283845,
+        "lon": 103.0186734
+      },
+      "id": 640295913,
+      "tags": {
+        "leisure": "park",
+        "name": "Đồi D1"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.74594115,
+        "lon": 103.08820560000001
+      },
+      "id": 656686155,
+      "tags": {
+        "addr:district": "Mường Chà",
+        "addr:province": "Điện Biên",
+        "addr:subdistrict": "Mường Chà",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Trung tâm Y tế Mường Chà"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.7470358,
+        "lon": 103.09013295
+      },
+      "id": 656700910,
+      "tags": {
+        "amenity": "school",
+        "isced:level": "3",
+        "name": "Trường Phổ thông dân tộc nội trú Trung học phổ thông Na Sang",
+        "old_name": "Trường Phổ thông dân tộc nội trú Trung học phổ thông huyện Mường Chà"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.7589501,
+        "lon": 103.09290915
+      },
+      "id": 656700918,
+      "tags": {
+        "amenity": "marketplace",
+        "name": "Chợ Mường Chà",
+        "name:en": "Muong Cha Market"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.7623804,
+        "lon": 103.09343015
+      },
+      "id": 656752135,
+      "tags": {
+        "highway": "primary",
+        "name": "Quốc lộ 4H",
+        "name:en": "National Route 4H",
+        "ref": "QL.4H"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.76223085,
+        "lon": 103.09292880000001
+      },
+      "id": 656911079,
+      "tags": {
+        "bridge": "yes",
+        "highway": "primary",
+        "layer": "1",
+        "name": "Quốc lộ 4H",
+        "name:en": "National Route 4H",
+        "ref": "QL.4H"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.253128150000002,
+        "lon": 102.9591351
+      },
+      "id": 680087967,
+      "tags": {
+        "highway": "trunk",
+        "layer": "1",
+        "name": "Quốc lộ 279",
+        "name:en": "National Route 279",
+        "ref": "QL.279",
+        "source": "GPS",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.279612200000003,
+        "lon": 103.0034886
+      },
+      "id": 680087970,
+      "tags": {
+        "bridge": "yes",
+        "highway": "trunk",
+        "layer": "1",
+        "name": "Quốc lộ 279",
+        "name:en": "National Route 279",
+        "ref": "QL.279",
+        "source": "GPS",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.9031942,
+        "lon": 102.9009618
+      },
+      "id": 684926447,
+      "tags": {
+        "highway": "primary",
+        "name": "Quốc lộ 4H",
+        "name:en": "National Route 4H",
+        "note": "there's also a osm-gpx track here",
+        "ref": "QL.4H"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.97313985,
+        "lon": 102.8415894
+      },
+      "id": 684926448,
+      "tags": {
+        "bridge": "yes",
+        "highway": "primary",
+        "layer": "1",
+        "name": "Quốc lộ 4H",
+        "name:en": "National Route 4H",
+        "note": "there's also a osm-gpx track here",
+        "ref": "QL.4H"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.94418045,
+        "lon": 102.800345
+      },
+      "id": 684927174,
+      "tags": {
+        "highway": "secondary",
+        "name": "Đường tỉnh 145",
+        "ref": "ĐT.145"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.91740605,
+        "lon": 102.7383542
+      },
+      "id": 685014291,
+      "tags": {
+        "highway": "secondary",
+        "name": "Đường tỉnh 145",
+        "ref": "ĐT.145"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 22.15284755,
+        "lon": 102.57787189999999
+      },
+      "id": 685016705,
+      "tags": {
+        "highway": "primary",
+        "name": "Quốc lộ 4H",
+        "name:en": "National Route 4H",
+        "ref": "QL.4H"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 22.157338000000003,
+        "lon": 102.57599619999999
+      },
+      "id": 685016706,
+      "tags": {
+        "bridge": "yes",
+        "highway": "primary",
+        "layer": "1",
+        "name": "Quốc lộ 4H",
+        "name:en": "National Route 4H",
+        "ref": "QL.4H"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 22.1919215,
+        "lon": 102.4601935
+      },
+      "id": 686432630,
+      "tags": {
+        "building": "yes",
+        "government": "social_security",
+        "name": "Ngân hàng Chính sách Xã hội huyện Mường Nhé",
+        "office": "government"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 22.195539949999997,
+        "lon": 102.45641405
+      },
+      "id": 686432640,
+      "tags": {
+        "building": "yes",
+        "government": "ministry",
+        "name": "Phòng Giáo dục & Đào tạo huyện Mường Nhé",
+        "office": "government"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 22.1976494,
+        "lon": 102.45405505
+      },
+      "id": 686432660,
+      "tags": {
+        "building": "yes",
+        "government": "prosecutor",
+        "name": "Viện Kiểm sát nhân dân huyện Mường Nhé",
+        "name:en": "People's Prosecuracy of Muong Nhe District",
+        "name:zh": "孟涅县人民检察院",
+        "office": "government"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 22.19481835,
+        "lon": 102.45203935
+      },
+      "id": 686432695,
+      "tags": {
+        "amenity": "school",
+        "name": "Trường Phổ thông Dân tộc Nội trú Mường Nhé",
+        "name:zh": "孟涅寄宿民族学校"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 22.3740395,
+        "lon": 102.25372899999999
+      },
+      "id": 693163907,
+      "tags": {
+        "bridge": "yes",
+        "fixme": "retrace",
+        "highway": "primary",
+        "layer": "1",
+        "maxspeed": "80",
+        "name": "Quốc lộ 4H2",
+        "name:en": "National Route 4H2",
+        "name:zh": "4H2公路",
+        "ref": "QL.4H2"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 22.3742368,
+        "lon": 102.25187635
+      },
+      "id": 693908882,
+      "tags": {
+        "amenity": "school",
+        "name": "Trường Trung học cơ sở Sín Thầu",
+        "name:en": "Sin Thau Secondary School",
+        "name:id": "SMP Sin Thau",
+        "name:zh": "辛偷初中"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 22.3742382,
+        "lon": 102.2525447
+      },
+      "id": 693908884,
+      "tags": {
+        "amenity": "school",
+        "name": "Trường Tiểu học xã Sín Thầu",
+        "name:en": "Sin Thau Commune Primary School",
+        "name:id": "SD Komune Sin Thau",
+        "name:zh": "辛偷社小学"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 22.411492199999998,
+        "lon": 102.19349255
+      },
+      "id": 694011902,
+      "tags": {
+        "bicycle": "yes",
+        "bridge": "yes",
+        "highway": "primary",
+        "layer": "1",
+        "maxspeed": "80",
+        "name": "Quốc lộ 4H2",
+        "name:en": "National Route 4H2",
+        "name:zh": "4H2公路",
+        "ref": "QL.4H2"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 22.304507049999998,
+        "lon": 102.41010234999999
+      },
+      "id": 694011905,
+      "tags": {
+        "highway": "primary",
+        "name": "Quốc lộ 4H",
+        "name:en": "National Route 4H",
+        "ref": "QL.4H",
+        "source": "mapbox"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 22.3039349,
+        "lon": 102.3979373
+      },
+      "id": 694011906,
+      "tags": {
+        "highway": "primary",
+        "maxspeed": "80",
+        "name": "Quốc lộ 4H2",
+        "name:en": "National Route 4H2",
+        "name:zh": "4H2公路",
+        "ref": "QL.4H2"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 22.3037588,
+        "lon": 102.39729055000001
+      },
+      "id": 694011907,
+      "tags": {
+        "bridge": "yes",
+        "highway": "primary",
+        "layer": "1",
+        "maxspeed": "80",
+        "name": "Quốc lộ 4H2",
+        "name:en": "National Route 4H2",
+        "name:zh": "4H2公路",
+        "ref": "QL.4H2"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 22.4095178,
+        "lon": 102.19754265
+      },
+      "id": 694011909,
+      "tags": {
+        "highway": "primary",
+        "maxspeed": "80",
+        "name": "Quốc lộ 4H2",
+        "name:en": "National Route 4H2",
+        "name:zh": "4H2公路",
+        "ref": "QL.4H2"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.222472,
+        "lon": 102.92258805
+      },
+      "id": 694272861,
+      "tags": {
+        "highway": "trunk",
+        "layer": "1",
+        "name": "Quốc lộ 279",
+        "name:en": "National Route 279",
+        "oneway": "yes",
+        "ref": "QL.279",
+        "source": "GPS",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.2223426,
+        "lon": 102.92258805
+      },
+      "id": 694272862,
+      "tags": {
+        "highway": "trunk",
+        "layer": "1",
+        "name": "Quốc lộ 279",
+        "name:en": "National Route 279",
+        "oneway": "yes",
+        "ref": "QL.279",
+        "source": "GPS",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.222724550000002,
+        "lon": 102.9217991
+      },
+      "id": 694272863,
+      "tags": {
+        "highway": "trunk",
+        "layer": "1",
+        "name": "Quốc lộ 279",
+        "name:en": "National Route 279",
+        "ref": "QL.279",
+        "source": "GPS",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.2231615,
+        "lon": 102.9212404
+      },
+      "id": 694272864,
+      "tags": {
+        "highway": "trunk",
+        "layer": "1",
+        "name": "Quốc lộ 279",
+        "name:en": "National Route 279",
+        "oneway": "yes",
+        "ref": "QL.279",
+        "source": "GPS",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.2230785,
+        "lon": 102.92116920000001
+      },
+      "id": 694272865,
+      "tags": {
+        "highway": "trunk",
+        "layer": "1",
+        "name": "Quốc lộ 279",
+        "name:en": "National Route 279",
+        "oneway": "yes",
+        "ref": "QL.279",
+        "source": "GPS",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.2218766,
+        "lon": 102.91432474999999
+      },
+      "id": 694272869,
+      "tags": {
+        "highway": "trunk",
+        "layer": "1",
+        "name": "Quốc lộ 279",
+        "name:en": "National Route 279",
+        "ref": "QL.279",
+        "source": "GPS",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.5830032,
+        "lon": 103.4107775
+      },
+      "id": 717855606,
+      "tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "Đường tránh Tuần Giáo",
+        "ref": "QL.279",
+        "source:geometry": "strava;ride",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.58319255,
+        "lon": 103.41573645
+      },
+      "id": 717855615,
+      "tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "Đường tránh Tuần Giáo",
+        "ref": "QL.279",
+        "source:geometry": "strava;ride",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 22.41528885,
+        "lon": 102.1869944
+      },
+      "id": 770563936,
+      "tags": {
+        "highway": "primary",
+        "maxspeed": "80",
+        "name": "Quốc lộ 4H2",
+        "name:en": "National Route 4H2",
+        "name:vi": "Quốc lộ 4H2",
+        "name:zh": "4H2公路",
+        "name:zh-Hans": "4H2公路",
+        "name:zh-Hant": "4H2公路",
+        "ref": "QL.4H2"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 22.41913445,
+        "lon": 102.18042575000001
+      },
+      "id": 770563937,
+      "tags": {
+        "bridge": "yes",
+        "highway": "primary",
+        "layer": "1",
+        "maxspeed": "80",
+        "name": "Quốc lộ 4H2",
+        "name:en": "National Route 4H2",
+        "name:zh": "4H2公路",
+        "ref": "QL.4H2"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.76223525,
+        "lon": 103.09292794999999
+      },
+      "id": 775455537,
+      "tags": {
+        "area": "yes",
+        "man_made": "bridge",
+        "name": "Cầu Mường Chà",
+        "name:zh": "Muong Cha Bridge"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 22.16649735,
+        "lon": 102.490014
+      },
+      "id": 775716475,
+      "tags": {
+        "bridge": "yes",
+        "highway": "primary",
+        "layer": "1",
+        "name": "Quốc lộ 4H",
+        "name:en": "National Route 4H",
+        "ref": "QL.4H"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 22.1920514,
+        "lon": 102.4600278
+      },
+      "id": 785085799,
+      "tags": {
+        "amenity": "bank",
+        "building": "yes",
+        "name": "Agribank"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 22.197630850000003,
+        "lon": 102.45441075
+      },
+      "id": 785085802,
+      "tags": {
+        "building": "yes",
+        "government": "ministry",
+        "name": "Trung tâm Dân số - Kế hoạch hóa gia đình",
+        "name:en": "Centre for Population and Family Planning",
+        "office": "government"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 22.1936806,
+        "lon": 102.45822770000001
+      },
+      "id": 785085808,
+      "tags": {
+        "building": "yes",
+        "name": "Nhà nghỉ A Pa Chải",
+        "tourism": "hotel"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 22.190775199999997,
+        "lon": 102.45997935
+      },
+      "id": 785085823,
+      "tags": {
+        "amenity": "marketplace",
+        "landuse": "retail",
+        "name": "Chợ Mường Nhé",
+        "name:en": "Muong Nhe Market",
+        "name:zh": "孟湟市场"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.8310019,
+        "lon": 102.75641350000001
+      },
+      "id": 812767277,
+      "tags": {
+        "highway": "secondary",
+        "name": "Đường tỉnh 145",
+        "ref": "ĐT.145"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.87516575,
+        "lon": 102.72916505
+      },
+      "id": 813259415,
+      "tags": {
+        "highway": "secondary",
+        "name": "Đường tỉnh 145",
+        "ref": "ĐT.145"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.76588935,
+        "lon": 103.06029035
+      },
+      "id": 841531694,
+      "tags": {
+        "highway": "primary",
+        "name": "Quốc lộ 4H",
+        "name:en": "National Route 4H",
+        "ref": "QL.4H"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.839233999999998,
+        "lon": 102.9266423
+      },
+      "id": 841531695,
+      "tags": {
+        "bridge": "yes",
+        "highway": "primary",
+        "layer": "1",
+        "name": "Quốc lộ 4H",
+        "name:en": "National Route 4H",
+        "ref": "QL.4H"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 22.08942305,
+        "lon": 102.60583455
+      },
+      "id": 841537379,
+      "tags": {
+        "highway": "primary",
+        "name": "Quốc lộ 4H",
+        "name:en": "National Route 4H",
+        "ref": "QL.4H"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 22.131479,
+        "lon": 102.58039769999999
+      },
+      "id": 841537380,
+      "tags": {
+        "bridge": "yes",
+        "highway": "primary",
+        "layer": "1",
+        "name": "Quốc lộ 4H",
+        "name:en": "National Route 4H",
+        "ref": "QL.4H"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 22.1833163,
+        "lon": 102.4660237
+      },
+      "id": 844780349,
+      "tags": {
+        "amenity": "school",
+        "name": "Trường PTDTBT Tiểu học Trần Văn Thọ",
+        "name:en": "Tran Van Tho Minority Primary School"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 22.174168350000002,
+        "lon": 102.48072164999999
+      },
+      "id": 844780360,
+      "tags": {
+        "highway": "primary",
+        "name": "Quốc lộ 4H",
+        "name:en": "National Route 4H",
+        "ref": "QL.4H"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 22.1980139,
+        "lon": 102.45350515
+      },
+      "id": 845316124,
+      "tags": {
+        "building": "yes",
+        "government": "social_security",
+        "name": "Bảo hiểm Xã hội huyện Mường Nhé",
+        "office": "government"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 22.30375555,
+        "lon": 102.39729245000001
+      },
+      "id": 845930059,
+      "tags": {
+        "area": "yes",
+        "man_made": "bridge",
+        "name": "Cầu Đoàn Kết",
+        "name:en": "Doan Ket Bridge",
+        "name:zh": "团结桥"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 22.37405125,
+        "lon": 102.2537138
+      },
+      "id": 845930060,
+      "tags": {
+        "area": "yes",
+        "man_made": "bridge",
+        "name": "Cầu Tả Kố Khừ",
+        "name:en": "Ta Ko Khu Bridge"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.763866450000002,
+        "lon": 103.0944331
+      },
+      "id": 852612434,
+      "tags": {
+        "amenity": "school",
+        "isced:level": "3",
+        "name": "Trường Trung học phổ thông Na Sang",
+        "old_name": "Trường Trung học phổ thông Mường Chà"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.76451985,
+        "lon": 103.09415415000001
+      },
+      "id": 852612438,
+      "tags": {
+        "addr:district": "Mường Chà",
+        "addr:province": "Điện Biên",
+        "addr:subdistrict": "Mường Chà",
+        "amenity": "school",
+        "name": "Trường tiểu học thị trấn Mường Chà",
+        "opening_hours": "Mo-Fi 06:00-17:00"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.764220299999998,
+        "lon": 103.0928117
+      },
+      "id": 852612443,
+      "tags": {
+        "amenity": "school",
+        "name": "Trường Trung học cơ sở thị trấn Mường Chà",
+        "opening_hours": "Mo-Sa 06:00-17:00"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.763003400000002,
+        "lon": 103.09408105
+      },
+      "id": 852612450,
+      "tags": {
+        "leisure": "stadium",
+        "name": "Sân vận động huyện Mường Chà"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.756947750000002,
+        "lon": 103.09023125
+      },
+      "id": 852612466,
+      "tags": {
+        "building": "yes",
+        "government": "ministry",
+        "name": "Viện KSND huyện Mường Chà",
+        "office": "government"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.75741185,
+        "lon": 103.09047335
+      },
+      "id": 852612470,
+      "tags": {
+        "building": "yes",
+        "government": "ministry",
+        "name": "Kho bạc Nhà nước Huyện Mường Chà",
+        "office": "government"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.75796505,
+        "lon": 103.0904638
+      },
+      "id": 852612474,
+      "tags": {
+        "building": "yes",
+        "name": "Nhà khách Mường Chà",
+        "tourism": "hotel"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.75897825,
+        "lon": 103.09099705
+      },
+      "id": 852612478,
+      "tags": {
+        "building": "yes",
+        "government": "administrative",
+        "name": "UBND Huyện Mường Chà",
+        "office": "government"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.398864449999998,
+        "lon": 103.03313805
+      },
+      "id": 885505373,
+      "tags": {
+        "highway": "tertiary",
+        "lanes": "4",
+        "lit": "yes",
+        "maxspeed:type": "VN:urban",
+        "name": "Đường 7 tháng 5",
+        "oneway": "yes",
+        "sidewalk": "right",
+        "sidewalk:right:surface": "paving_stones",
+        "smoothness": "excellent",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.3986111,
+        "lon": 103.0329813
+      },
+      "id": 885505374,
+      "tags": {
+        "highway": "tertiary",
+        "lanes": "4",
+        "lit": "yes",
+        "maxspeed:type": "VN:urban",
+        "name": "Đường 7 tháng 5",
+        "oneway": "yes",
+        "sidewalk": "right",
+        "sidewalk:right:surface": "paving_stones",
+        "smoothness": "excellent",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.392494499999998,
+        "lon": 103.01162515
+      },
+      "id": 885727141,
+      "tags": {
+        "highway": "primary",
+        "lanes": "2",
+        "lit": "yes",
+        "maxspeed:type": "VN:urban",
+        "name": "Trần Đăng Ninh",
+        "oneway": "yes",
+        "sidewalk": "right",
+        "sidewalk:right:surface": "paving_stones",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.17565995,
+        "lon": 103.0735678
+      },
+      "id": 886154953,
+      "tags": {
+        "bridge": "yes",
+        "highway": "primary",
+        "layer": "1",
+        "name": "Quốc lộ 279C",
+        "ref": "QL.279C"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.1953891,
+        "lon": 103.0648683
+      },
+      "id": 886154954,
+      "tags": {
+        "highway": "primary",
+        "name": "Quốc lộ 279C",
+        "ref": "QL.279C"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.1476038,
+        "lon": 103.08747475
+      },
+      "id": 886701558,
+      "tags": {
+        "bridge": "yes",
+        "highway": "primary",
+        "layer": "1",
+        "name": "Quốc lộ 279C",
+        "ref": "QL.279C"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.15112065,
+        "lon": 103.08877319999999
+      },
+      "id": 886701559,
+      "tags": {
+        "highway": "primary",
+        "name": "Quốc lộ 279C",
+        "ref": "QL.279C"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.238862949999998,
+        "lon": 103.3211028
+      },
+      "id": 886882470,
+      "tags": {
+        "bridge": "yes",
+        "highway": "primary",
+        "layer": "1",
+        "name": "Quốc lộ 12",
+        "ref": "QL.12"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.2379248,
+        "lon": 103.31814855
+      },
+      "id": 886882471,
+      "tags": {
+        "highway": "primary",
+        "name": "Quốc lộ 12",
+        "ref": "QL.12"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.847368850000002,
+        "lon": 102.74525320000001
+      },
+      "id": 886895183,
+      "tags": {
+        "bridge": "yes",
+        "highway": "secondary",
+        "layer": "1",
+        "name": "Đường tỉnh 145",
+        "ref": "ĐT.145"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 22.147519799999998,
+        "lon": 102.53048445
+      },
+      "id": 887390293,
+      "tags": {
+        "bridge": "yes",
+        "highway": "primary",
+        "layer": "1",
+        "name": "Quốc lộ 4H",
+        "name:en": "National Route 4H",
+        "ref": "QL.4H"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 22.155431450000002,
+        "lon": 102.5098663
+      },
+      "id": 887390294,
+      "tags": {
+        "highway": "primary",
+        "name": "Quốc lộ 4H",
+        "name:en": "National Route 4H",
+        "ref": "QL.4H"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.52158485,
+        "lon": 103.33348855
+      },
+      "id": 887415584,
+      "tags": {
+        "bridge": "yes",
+        "highway": "trunk",
+        "layer": "1",
+        "name": "Quốc lộ 279",
+        "name:en": "National Route 279",
+        "ref": "QL.279",
+        "source": "GPS",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.51897485,
+        "lon": 103.34552385
+      },
+      "id": 887415585,
+      "tags": {
+        "highway": "trunk",
+        "layer": "1",
+        "name": "Quốc lộ 279",
+        "name:en": "National Route 279",
+        "ref": "QL.279",
+        "source": "GPS",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.849653449999998,
+        "lon": 102.9184574
+      },
+      "id": 887431842,
+      "tags": {
+        "bridge": "yes",
+        "highway": "primary",
+        "layer": "1",
+        "name": "Quốc lộ 4H",
+        "name:en": "National Route 4H",
+        "note": "there's also a osm-gpx track here",
+        "ref": "QL.4H"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.849315949999998,
+        "lon": 102.9201237
+      },
+      "id": 887431843,
+      "tags": {
+        "highway": "primary",
+        "name": "Quốc lộ 4H",
+        "name:en": "National Route 4H",
+        "note": "there's also a osm-gpx track here",
+        "ref": "QL.4H"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.8484278,
+        "lon": 102.92137285
+      },
+      "id": 887431844,
+      "tags": {
+        "bridge": "yes",
+        "highway": "primary",
+        "layer": "1",
+        "name": "Quốc lộ 4H",
+        "name:en": "National Route 4H",
+        "note": "there's also a osm-gpx track here",
+        "ref": "QL.4H"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.8897566,
+        "lon": 102.90643840000001
+      },
+      "id": 887738128,
+      "tags": {
+        "bridge": "yes",
+        "highway": "primary",
+        "layer": "1",
+        "name": "Quốc lộ 4H",
+        "name:en": "National Route 4H",
+        "note": "there's also a osm-gpx track here",
+        "ref": "QL.4H"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.869911600000002,
+        "lon": 102.9120201
+      },
+      "id": 887738129,
+      "tags": {
+        "highway": "primary",
+        "name": "Quốc lộ 4H",
+        "name:en": "National Route 4H",
+        "note": "there's also a osm-gpx track here",
+        "ref": "QL.4H"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.97323745,
+        "lon": 102.88468555
+      },
+      "id": 887739706,
+      "tags": {
+        "highway": "secondary",
+        "name": "Đường tỉnh 150",
+        "ref": "ĐT.150"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.97320195,
+        "lon": 102.905283
+      },
+      "id": 887739707,
+      "tags": {
+        "bridge": "yes",
+        "highway": "secondary",
+        "layer": "1",
+        "name": "Đường tỉnh 150",
+        "ref": "ĐT.150"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.9612331,
+        "lon": 102.868921
+      },
+      "id": 887745309,
+      "tags": {
+        "bridge": "yes",
+        "highway": "primary",
+        "layer": "1",
+        "name": "Quốc lộ 4H",
+        "name:en": "National Route 4H",
+        "note": "there's also a osm-gpx track here",
+        "ref": "QL.4H"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.96768935,
+        "lon": 102.85543394999999
+      },
+      "id": 887745310,
+      "tags": {
+        "highway": "primary",
+        "name": "Quốc lộ 4H",
+        "name:en": "National Route 4H",
+        "note": "there's also a osm-gpx track here",
+        "ref": "QL.4H"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.78937785,
+        "lon": 102.9940374
+      },
+      "id": 887805208,
+      "tags": {
+        "bridge": "yes",
+        "highway": "primary",
+        "layer": "1",
+        "name": "Quốc lộ 4H",
+        "name:en": "National Route 4H",
+        "ref": "QL.4H"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.81053935,
+        "lon": 102.96022934999999
+      },
+      "id": 887805209,
+      "tags": {
+        "highway": "primary",
+        "name": "Quốc lộ 4H",
+        "name:en": "National Route 4H",
+        "ref": "QL.4H"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.5693846,
+        "lon": 103.48813444999999
+      },
+      "id": 887815254,
+      "tags": {
+        "alt_name": "Quốc lộ 6",
+        "bridge": "yes",
+        "highway": "trunk",
+        "lanes": "2",
+        "layer": "1",
+        "name": "Đèo Pha Đin",
+        "ref": "QL.6",
+        "source:geometry": "strava;ride",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.5663688,
+        "lon": 103.4785713
+      },
+      "id": 887815255,
+      "tags": {
+        "alt_name": "Quốc lộ 6",
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "Đèo Pha Đin",
+        "ref": "QL.6",
+        "source:geometry": "strava;ride",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.580366599999998,
+        "lon": 103.01871704999999
+      },
+      "id": 887822676,
+      "tags": {
+        "bridge": "yes",
+        "highway": "trunk",
+        "lanes": "2",
+        "layer": "1",
+        "name": "Quốc lộ 12",
+        "name:en": "National Route 12",
+        "ref": "QL.12",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.5901426,
+        "lon": 103.02393635
+      },
+      "id": 887822677,
+      "tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "Quốc lộ 12",
+        "name:en": "National Route 12",
+        "ref": "QL.12",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.46171,
+        "lon": 103.1423441
+      },
+      "id": 887861622,
+      "tags": {
+        "highway": "primary",
+        "name": "Quốc lộ 279B",
+        "ref": "QL.279B",
+        "source": "maxar",
+        "source:geometry": "strava;ride",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.450790650000002,
+        "lon": 103.1380612
+      },
+      "id": 887861625,
+      "tags": {
+        "bridge": "yes",
+        "highway": "secondary",
+        "layer": "1",
+        "name": "Đường tỉnh 141",
+        "ref": "ĐT.141",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.3131883,
+        "lon": 103.01076695
+      },
+      "id": 888012304,
+      "tags": {
+        "bridge": "yes",
+        "highway": "trunk",
+        "layer": "1",
+        "name": "Quốc lộ 279 - Quốc lộ 12",
+        "name:en": "National Highway 279 - National Highway 12",
+        "ref": "QL.279;QL.12",
+        "source": "GPS",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.318973399999997,
+        "lon": 103.0107963
+      },
+      "id": 888012305,
+      "tags": {
+        "highway": "trunk",
+        "layer": "0",
+        "name": "Quốc lộ 279 - Quốc lộ 12",
+        "name:en": "National Highway 279 - National Highway 12",
+        "ref": "QL.279;QL.12",
+        "source": "GPS",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.82803705,
+        "lon": 103.1130081
+      },
+      "id": 888027212,
+      "tags": {
+        "bridge": "yes",
+        "highway": "trunk",
+        "lanes": "2",
+        "layer": "1",
+        "name": "Quốc lộ 12",
+        "name:en": "National Route 12",
+        "ref": "QL.12",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.84060805,
+        "lon": 103.11796885
+      },
+      "id": 888027213,
+      "tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "Quốc lộ 12",
+        "name:en": "National Route 12",
+        "ref": "QL.12",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.8193925,
+        "lon": 103.11591154999999
+      },
+      "id": 888027214,
+      "tags": {
+        "bridge": "yes",
+        "highway": "trunk",
+        "lanes": "2",
+        "layer": "1",
+        "name": "Quốc lộ 12",
+        "name:en": "National Route 12",
+        "name:zh": "12号公路",
+        "ref": "QL.12",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.82158475,
+        "lon": 103.11699725
+      },
+      "id": 888027215,
+      "tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "Quốc lộ 12",
+        "name:en": "National Route 12",
+        "name:zh": "12号公路",
+        "ref": "QL.12",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 22.398708499999998,
+        "lon": 102.21576815
+      },
+      "id": 888040373,
+      "tags": {
+        "bridge": "yes",
+        "highway": "primary",
+        "layer": "1",
+        "maxspeed": "80",
+        "name": "Quốc lộ 4H2",
+        "name:en": "National Route 4H2",
+        "name:zh": "4H2公路",
+        "ref": "QL.4H2"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 22.405514349999997,
+        "lon": 102.2063148
+      },
+      "id": 888040374,
+      "tags": {
+        "highway": "primary",
+        "maxspeed": "80",
+        "name": "Quốc lộ 4H2",
+        "name:en": "National Route 4H2",
+        "name:zh": "4H2公路",
+        "ref": "QL.4H2"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.4156978,
+        "lon": 103.00574610000001
+      },
+      "id": 888045757,
+      "tags": {
+        "highway": "trunk",
+        "name": "Quốc lộ 12",
+        "name:en": "National Route 12",
+        "oneway": "yes",
+        "ref": "QL.12",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.16511965,
+        "lon": 103.0815728
+      },
+      "id": 888054856,
+      "tags": {
+        "highway": "primary",
+        "name": "Quốc lộ 279C",
+        "ref": "QL.279C"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.7369556,
+        "lon": 103.35003900000001
+      },
+      "id": 888058332,
+      "tags": {
+        "bridge": "yes",
+        "highway": "trunk",
+        "layer": "1",
+        "name": "Quốc lộ 6",
+        "ref": "QL.6",
+        "source": "osm-gpx",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.74229,
+        "lon": 103.34617705
+      },
+      "id": 888058333,
+      "tags": {
+        "highway": "trunk",
+        "name": "Quốc lộ 6",
+        "ref": "QL.6",
+        "source": "osm-gpx",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.40018705,
+        "lon": 103.00747815
+      },
+      "id": 888062511,
+      "tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "lit": "yes",
+        "maxspeed:type": "VN:urban",
+        "name": "Đường Nguyễn Hữu Thọ",
+        "name:en": "Nguyen Huu Tho Street",
+        "oneway": "yes",
+        "ref": "QL.12",
+        "sidewalk": "right",
+        "sidewalk:right:surface": "paving_stones",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.408018300000002,
+        "lon": 103.00475610000001
+      },
+      "id": 888062512,
+      "tags": {
+        "bridge": "yes",
+        "highway": "trunk",
+        "layer": "1",
+        "name": "Quốc lộ 12",
+        "name:en": "National Route 12",
+        "oneway": "yes",
+        "ref": "QL.12",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.40966225,
+        "lon": 103.0051039
+      },
+      "id": 888062513,
+      "tags": {
+        "highway": "trunk",
+        "name": "Quốc lộ 12",
+        "name:en": "National Route 12",
+        "oneway": "yes",
+        "ref": "QL.12",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.95277805,
+        "lon": 103.0083616
+      },
+      "id": 888073801,
+      "tags": {
+        "bridge": "yes",
+        "highway": "secondary",
+        "layer": "1",
+        "name": "Đường tỉnh 150",
+        "ref": "ĐT.150"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.53736065,
+        "lon": 103.01208489999999
+      },
+      "id": 888074789,
+      "tags": {
+        "bridge": "yes",
+        "highway": "trunk",
+        "lanes": "2",
+        "layer": "1",
+        "name": "Quốc lộ 12",
+        "name:en": "National Route 12",
+        "ref": "QL.12",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.5179501,
+        "lon": 103.01541415
+      },
+      "id": 888074790,
+      "tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "Quốc lộ 12",
+        "name:en": "National Route 12",
+        "ref": "QL.12",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.954185250000002,
+        "lon": 103.01818995
+      },
+      "id": 888081444,
+      "tags": {
+        "highway": "secondary",
+        "name": "Đường tỉnh 150",
+        "ref": "ĐT.150"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.49911015,
+        "lon": 103.1200328
+      },
+      "id": 888085622,
+      "tags": {
+        "bridge": "yes",
+        "highway": "trunk",
+        "layer": "1",
+        "name": "Quốc lộ 279",
+        "name:en": "National Route 279",
+        "ref": "QL.279",
+        "source": "GPS",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.49828225,
+        "lon": 103.11766925
+      },
+      "id": 888085623,
+      "tags": {
+        "highway": "trunk",
+        "layer": "1",
+        "name": "Quốc lộ 279",
+        "name:en": "National Route 279",
+        "ref": "QL.279",
+        "source": "GPS",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.8402789,
+        "lon": 102.9267572
+      },
+      "id": 889406201,
+      "tags": {
+        "highway": "secondary",
+        "name": "Đường tỉnh 145B",
+        "ref": "ĐT.145B"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.83991795,
+        "lon": 102.92684885
+      },
+      "id": 889406202,
+      "tags": {
+        "highway": "secondary",
+        "name": "Đường tỉnh 145B",
+        "ref": "ĐT.145B"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.791900249999998,
+        "lon": 103.02777685000001
+      },
+      "id": 889407051,
+      "tags": {
+        "bridge": "yes",
+        "highway": "primary",
+        "layer": "1",
+        "name": "Quốc lộ 4H",
+        "name:en": "National Route 4H",
+        "ref": "QL.4H"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.79238995,
+        "lon": 103.0108816
+      },
+      "id": 889407052,
+      "tags": {
+        "highway": "primary",
+        "name": "Quốc lộ 4H",
+        "name:en": "National Route 4H",
+        "ref": "QL.4H"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 22.18163765,
+        "lon": 102.47109209999999
+      },
+      "id": 889408757,
+      "tags": {
+        "bridge": "yes",
+        "highway": "primary",
+        "layer": "1",
+        "name": "Quốc lộ 4H",
+        "name:en": "National Route 4H",
+        "ref": "QL.4H"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 22.1854739,
+        "lon": 102.46682705
+      },
+      "id": 889408758,
+      "tags": {
+        "highway": "primary",
+        "name": "Quốc lộ 4H",
+        "name:en": "National Route 4H",
+        "ref": "QL.4H"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.8504633,
+        "lon": 102.87612595
+      },
+      "id": 889410027,
+      "tags": {
+        "bridge": "yes",
+        "highway": "secondary",
+        "layer": "1",
+        "name": "Đường tỉnh 145B",
+        "ref": "ĐT.145B"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.84980075,
+        "lon": 102.8722917
+      },
+      "id": 889410028,
+      "tags": {
+        "highway": "secondary",
+        "name": "Đường tỉnh 145B",
+        "ref": "ĐT.145B"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.8503727,
+        "lon": 102.86845325
+      },
+      "id": 889410029,
+      "tags": {
+        "bridge": "yes",
+        "highway": "secondary",
+        "layer": "1",
+        "name": "Đường tỉnh 145B",
+        "ref": "ĐT.145B"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.84886585,
+        "lon": 102.89715245
+      },
+      "id": 889410030,
+      "tags": {
+        "highway": "secondary",
+        "name": "Đường tỉnh 145B",
+        "ref": "ĐT.145B"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.9544745,
+        "lon": 103.02788079999999
+      },
+      "id": 889413949,
+      "tags": {
+        "bridge": "yes",
+        "highway": "secondary",
+        "layer": "1",
+        "name": "Đường tỉnh 150",
+        "ref": "ĐT.150"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.95918725,
+        "lon": 103.0404918
+      },
+      "id": 889413950,
+      "tags": {
+        "highway": "secondary",
+        "name": "Đường tỉnh 150",
+        "ref": "ĐT.150"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 22.031170000000003,
+        "lon": 102.70628565
+      },
+      "id": 889440182,
+      "tags": {
+        "bridge": "yes",
+        "highway": "primary",
+        "layer": "1",
+        "name": "Quốc lộ 4H",
+        "name:en": "National Route 4H",
+        "note": "there's also a osm-gpx track here",
+        "ref": "QL.4H"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 22.045499550000002,
+        "lon": 102.65332674999999
+      },
+      "id": 889440183,
+      "tags": {
+        "highway": "primary",
+        "name": "Quốc lộ 4H",
+        "name:en": "National Route 4H",
+        "note": "there's also a osm-gpx track here",
+        "ref": "QL.4H"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.4529869,
+        "lon": 103.01089235
+      },
+      "id": 889444855,
+      "tags": {
+        "bridge": "yes",
+        "highway": "trunk",
+        "lanes": "2",
+        "layer": "1",
+        "name": "Quốc lộ 12",
+        "name:en": "National Route 12",
+        "ref": "QL.12",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.436539099999997,
+        "lon": 103.00682815
+      },
+      "id": 889444856,
+      "tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "Quốc lộ 12",
+        "name:en": "National Route 12",
+        "ref": "QL.12",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.234970699999998,
+        "lon": 103.05711095
+      },
+      "id": 889449426,
+      "tags": {
+        "highway": "primary",
+        "name": "Quốc lộ 279C",
+        "ref": "QL.279C"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.750338999999997,
+        "lon": 103.38386525
+      },
+      "id": 889455735,
+      "tags": {
+        "bridge": "yes",
+        "highway": "secondary",
+        "layer": "1",
+        "name": "Đường tỉnh 140",
+        "ref": "ĐT.140"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.7501685,
+        "lon": 103.38348335
+      },
+      "id": 889455736,
+      "tags": {
+        "highway": "secondary",
+        "name": "Đường tỉnh 140",
+        "ref": "ĐT.140"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.92722035,
+        "lon": 102.77606965000001
+      },
+      "id": 889468857,
+      "tags": {
+        "bridge": "yes",
+        "highway": "secondary",
+        "layer": "1",
+        "name": "Đường tỉnh 145",
+        "ref": "ĐT.145B"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.92950455,
+        "lon": 102.7813873
+      },
+      "id": 889468858,
+      "tags": {
+        "highway": "secondary",
+        "name": "Đường tỉnh 145",
+        "ref": "ĐT.145B"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.223174399999998,
+        "lon": 102.92091105
+      },
+      "id": 889475283,
+      "tags": {
+        "covered": "yes",
+        "highway": "primary",
+        "layer": "-1",
+        "name": "Quốc lộ 279",
+        "name:en": "National Route 279",
+        "ref": "QL.279",
+        "source": "GPS",
+        "surface": "asphalt",
+        "tunnel": "yes"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.2233555,
+        "lon": 102.92076045
+      },
+      "id": 889475284,
+      "tags": {
+        "highway": "trunk",
+        "layer": "1",
+        "name": "Quốc lộ 279",
+        "name:en": "National Route 279",
+        "oneway": "yes",
+        "ref": "QL.279",
+        "source": "GPS",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.22334085,
+        "lon": 102.92105565
+      },
+      "id": 889475285,
+      "tags": {
+        "covered": "yes",
+        "highway": "primary",
+        "layer": "-1",
+        "name": "Quốc lộ 279",
+        "name:en": "National Route 279",
+        "ref": "QL.279",
+        "source": "GPS",
+        "surface": "asphalt",
+        "tunnel": "yes"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.223438950000002,
+        "lon": 102.92083385000001
+      },
+      "id": 889475286,
+      "tags": {
+        "highway": "trunk",
+        "layer": "1",
+        "name": "Quốc lộ 279",
+        "name:en": "National Route 279",
+        "oneway": "yes",
+        "ref": "QL.279",
+        "source": "GPS",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.84135055,
+        "lon": 102.91817405
+      },
+      "id": 889503250,
+      "tags": {
+        "bridge": "yes",
+        "highway": "secondary",
+        "layer": "1",
+        "name": "Đường tỉnh 145B",
+        "ref": "ĐT.145B"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.84169515,
+        "lon": 102.9224503
+      },
+      "id": 889503251,
+      "tags": {
+        "highway": "secondary",
+        "name": "Đường tỉnh 145B",
+        "ref": "ĐT.145B"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 22.151384399999998,
+        "lon": 102.54701969999999
+      },
+      "id": 889513153,
+      "tags": {
+        "bridge": "yes",
+        "highway": "primary",
+        "layer": "1",
+        "name": "Quốc lộ 4H",
+        "name:en": "National Route 4H",
+        "ref": "QL.4H"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 22.14920075,
+        "lon": 102.53885105
+      },
+      "id": 889513154,
+      "tags": {
+        "highway": "primary",
+        "name": "Quốc lộ 4H",
+        "name:en": "National Route 4H",
+        "ref": "QL.4H"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.62752435,
+        "lon": 103.48441235
+      },
+      "id": 889545217,
+      "tags": {
+        "bridge": "yes",
+        "highway": "trunk",
+        "layer": "1",
+        "name": "QL 279, Mường Giôn",
+        "ref": "QL.279",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.639398800000002,
+        "lon": 103.47457514999999
+      },
+      "id": 889545218,
+      "tags": {
+        "highway": "trunk",
+        "name": "Quốc lộ 279",
+        "name:en": "National Route 279",
+        "ref": "QL.279",
+        "source": "GPS",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.40978305,
+        "lon": 103.04226125
+      },
+      "id": 889977673,
+      "tags": {
+        "bridge": "yes",
+        "highway": "trunk",
+        "layer": "1",
+        "name": "Quốc lộ 279",
+        "name:en": "National Route 279",
+        "ref": "QL.279",
+        "source": "GPS",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.409912499999997,
+        "lon": 103.04185005
+      },
+      "id": 889977674,
+      "tags": {
+        "highway": "trunk",
+        "layer": "1",
+        "name": "Quốc lộ 279",
+        "name:en": "National Route 279",
+        "ref": "QL.279",
+        "source": "GPS",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.91680245,
+        "lon": 102.8954767
+      },
+      "id": 889981949,
+      "tags": {
+        "bridge": "yes",
+        "highway": "primary",
+        "layer": "1",
+        "name": "Quốc lộ 4H",
+        "name:en": "National Route 4H",
+        "note": "there's also a osm-gpx track here",
+        "ref": "QL.4H"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.92444085,
+        "lon": 102.8914529
+      },
+      "id": 889981950,
+      "tags": {
+        "highway": "primary",
+        "name": "Quốc lộ 4H",
+        "name:en": "National Route 4H",
+        "note": "there's also a osm-gpx track here",
+        "ref": "QL.4H"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.9320206,
+        "lon": 102.88859705
+      },
+      "id": 889981951,
+      "tags": {
+        "bridge": "yes",
+        "highway": "primary",
+        "layer": "1",
+        "name": "Quốc lộ 4H",
+        "name:en": "National Route 4H",
+        "note": "there's also a osm-gpx track here",
+        "ref": "QL.4H"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.9521911,
+        "lon": 102.8753942
+      },
+      "id": 889981952,
+      "tags": {
+        "highway": "primary",
+        "name": "Quốc lộ 4H",
+        "name:en": "National Route 4H",
+        "note": "there's also a osm-gpx track here",
+        "ref": "QL.4H"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.619510499999997,
+        "lon": 103.0365859
+      },
+      "id": 890045689,
+      "tags": {
+        "bridge": "yes",
+        "highway": "trunk",
+        "layer": "1",
+        "name": "Quốc lộ 12",
+        "ref": "QL.12",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.8160788,
+        "lon": 103.11517465
+      },
+      "id": 890098083,
+      "tags": {
+        "bridge": "yes",
+        "highway": "trunk",
+        "lanes": "2",
+        "layer": "1",
+        "name": "Quốc lộ 12",
+        "name:en": "National Route 12",
+        "name:zh": "12号公路",
+        "ref": "QL.12",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.81773845,
+        "lon": 103.11523535
+      },
+      "id": 890098084,
+      "tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "Quốc lộ 12",
+        "name:en": "National Route 12",
+        "name:zh": "12号公路",
+        "ref": "QL.12",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.46716625,
+        "lon": 103.06607980000001
+      },
+      "id": 890498686,
+      "tags": {
+        "bridge": "yes",
+        "highway": "trunk",
+        "layer": "1",
+        "name": "Quốc lộ 279",
+        "name:en": "National Route 279",
+        "ref": "QL.279",
+        "source": "GPS",
+        "source:geometry": "strava;ride",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.45912355,
+        "lon": 103.05453525
+      },
+      "id": 890498687,
+      "tags": {
+        "highway": "trunk",
+        "layer": "1",
+        "name": "Quốc lộ 279",
+        "name:en": "National Route 279",
+        "ref": "QL.279",
+        "source": "GPS",
+        "source:geometry": "strava;ride",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.46999945,
+        "lon": 103.06971475
+      },
+      "id": 890499145,
+      "tags": {
+        "highway": "secondary",
+        "name": "Đường tỉnh 141",
+        "oneway": "yes",
+        "ref": "ĐT.141",
+        "source:geometry": "strava;ride",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.470231650000002,
+        "lon": 103.0698993
+      },
+      "id": 890499146,
+      "tags": {
+        "highway": "secondary",
+        "name": "Đường tỉnh 141",
+        "oneway": "yes",
+        "ref": "ĐT.141",
+        "source:geometry": "strava;ride",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 22.38481895,
+        "lon": 102.2390693
+      },
+      "id": 890502531,
+      "tags": {
+        "highway": "primary",
+        "maxspeed": "80",
+        "name": "Quốc lộ 4H2",
+        "name:en": "National Route 4H2",
+        "name:zh": "4H2公路",
+        "ref": "QL.4H2"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 22.3968037,
+        "lon": 102.219986
+      },
+      "id": 890502532,
+      "tags": {
+        "highway": "primary",
+        "maxspeed": "80",
+        "name": "Quốc lộ 4H2",
+        "name:en": "National Route 4H2",
+        "name:zh": "4H2公路",
+        "ref": "QL.4H2"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 22.363872649999998,
+        "lon": 102.29797744999999
+      },
+      "id": 890505290,
+      "tags": {
+        "highway": "primary",
+        "maxspeed": "80",
+        "name": "Quốc lộ 4H2",
+        "name:en": "National Route 4H2",
+        "name:zh": "4H2公路",
+        "ref": "QL.4H2"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.8519549,
+        "lon": 102.85995654999999
+      },
+      "id": 890507289,
+      "tags": {
+        "bridge": "yes",
+        "highway": "secondary",
+        "layer": "1",
+        "name": "Đường tỉnh 145B",
+        "ref": "ĐT.145B"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.8524097,
+        "lon": 102.8641939
+      },
+      "id": 890507290,
+      "tags": {
+        "highway": "secondary",
+        "name": "Đường tỉnh 145B",
+        "ref": "ĐT.145B"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.610619149999998,
+        "lon": 103.43302235
+      },
+      "id": 890507474,
+      "tags": {
+        "highway": "trunk",
+        "name": "Quốc lộ 6 - Quốc lộ 279",
+        "name:en": "National Route 6 - National Route 279",
+        "ref": "QL.6;QL.279",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.623013450000002,
+        "lon": 103.436938
+      },
+      "id": 890507475,
+      "tags": {
+        "bridge": "yes",
+        "highway": "trunk",
+        "layer": "1",
+        "name": "Quốc lộ 6 - Quốc lộ 279",
+        "name:en": "National Route 6 - National Route 279",
+        "ref": "QL.6;QL.279",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 22.292556,
+        "lon": 102.3990295
+      },
+      "id": 890510957,
+      "tags": {
+        "bridge": "yes",
+        "highway": "primary",
+        "layer": "1",
+        "name": "Quốc lộ 4H",
+        "name:en": "National Route 4H",
+        "ref": "QL.4H"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.966209,
+        "lon": 102.86428955
+      },
+      "id": 890573791,
+      "tags": {
+        "highway": "secondary",
+        "name": "Đường tỉnh 150",
+        "ref": "ĐT.150"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.9671302,
+        "lon": 102.8641345
+      },
+      "id": 890573792,
+      "tags": {
+        "bridge": "yes",
+        "highway": "secondary",
+        "layer": "1",
+        "name": "Đường tỉnh 150",
+        "ref": "ĐT.150"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 20.97638685,
+        "lon": 103.17129155
+      },
+      "id": 890576024,
+      "tags": {
+        "highway": "primary",
+        "name": "Quốc lộ 279C",
+        "oneway": "yes",
+        "ref": "QL.279C"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.1228713,
+        "lon": 103.10183165000001
+      },
+      "id": 890740128,
+      "tags": {
+        "highway": "primary",
+        "name": "Quốc lộ 279C",
+        "oneway": "yes",
+        "ref": "QL.279C"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.12334095,
+        "lon": 103.10203444999999
+      },
+      "id": 890740129,
+      "tags": {
+        "bridge": "yes",
+        "highway": "primary",
+        "layer": "1",
+        "name": "Quốc lộ 279C",
+        "oneway": "yes",
+        "ref": "QL.279C"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.1266047,
+        "lon": 103.1004412
+      },
+      "id": 890740130,
+      "tags": {
+        "highway": "primary",
+        "name": "Quốc lộ 279C",
+        "oneway": "yes",
+        "ref": "QL.279C"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.1228888,
+        "lon": 103.10178205
+      },
+      "id": 890740131,
+      "tags": {
+        "highway": "primary",
+        "name": "Quốc lộ 279C",
+        "oneway": "yes",
+        "ref": "QL.279C"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.12336995,
+        "lon": 103.10193375
+      },
+      "id": 890740132,
+      "tags": {
+        "bridge": "yes",
+        "highway": "primary",
+        "layer": "1",
+        "name": "Quốc lộ 279C",
+        "oneway": "yes",
+        "ref": "QL.279C"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.13007865,
+        "lon": 103.0984792
+      },
+      "id": 890740133,
+      "tags": {
+        "bridge": "yes",
+        "highway": "primary",
+        "layer": "1",
+        "name": "Quốc lộ 279C",
+        "oneway": "yes",
+        "ref": "QL.279C"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.133743799999998,
+        "lon": 103.09881585
+      },
+      "id": 890740134,
+      "tags": {
+        "highway": "primary",
+        "name": "Quốc lộ 279C",
+        "oneway": "yes",
+        "ref": "QL.279C"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.133771850000002,
+        "lon": 103.09871685
+      },
+      "id": 890740135,
+      "tags": {
+        "highway": "primary",
+        "name": "Quốc lộ 279C",
+        "oneway": "yes",
+        "ref": "QL.279C"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.12664135,
+        "lon": 103.10035644999999
+      },
+      "id": 890740136,
+      "tags": {
+        "highway": "primary",
+        "name": "Quốc lộ 279C",
+        "oneway": "yes",
+        "ref": "QL.279C"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.05927025,
+        "lon": 103.11671055
+      },
+      "id": 891743002,
+      "tags": {
+        "bridge": "yes",
+        "highway": "primary",
+        "layer": "1",
+        "name": "Quốc lộ 279C",
+        "ref": "QL.279C"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.5209197,
+        "lon": 103.22449040000001
+      },
+      "id": 891758193,
+      "tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "layer": "1",
+        "lit": "yes",
+        "maxspeed:type": "VN:urban",
+        "name": "Quốc lộ 279",
+        "name:en": "National Route 279",
+        "oneway": "yes",
+        "ref": "QL.279",
+        "sidewalk": "right",
+        "sidewalk:right:surface": "paving_stones",
+        "source": "GPS",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.7751772,
+        "lon": 103.09714745
+      },
+      "id": 891759918,
+      "tags": {
+        "bridge": "yes",
+        "highway": "trunk",
+        "layer": "1",
+        "name": "Quốc lộ 12",
+        "name:en": "National Route 12",
+        "name:zh": "12号公路",
+        "ref": "QL.12",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 22.033886199999998,
+        "lon": 102.72729799999999
+      },
+      "id": 891764222,
+      "tags": {
+        "highway": "primary",
+        "name": "Quốc lộ 4H",
+        "name:en": "National Route 4H",
+        "note": "there's also a osm-gpx track here",
+        "ref": "QL.4H"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.737268,
+        "lon": 103.08781619999999
+      },
+      "id": 891765906,
+      "tags": {
+        "bridge": "yes",
+        "highway": "trunk",
+        "layer": "1",
+        "name": "Quốc lộ 12",
+        "ref": "QL.12"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.73824905,
+        "lon": 103.0860689
+      },
+      "id": 891765907,
+      "tags": {
+        "highway": "trunk",
+        "name": "Quốc lộ 12",
+        "ref": "QL.12",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.52084325,
+        "lon": 103.22449979999999
+      },
+      "id": 891775590,
+      "tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "layer": "1",
+        "lit": "yes",
+        "maxspeed:type": "VN:urban",
+        "name": "Quốc lộ 279",
+        "name:en": "National Route 279",
+        "oneway": "yes",
+        "ref": "QL.279",
+        "sidewalk": "right",
+        "sidewalk:right:surface": "paving_stones",
+        "source": "GPS",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.521488599999998,
+        "lon": 103.2304221
+      },
+      "id": 891775591,
+      "tags": {
+        "highway": "trunk",
+        "layer": "1",
+        "lit": "yes",
+        "name": "Quốc lộ 279",
+        "name:en": "National Route 279",
+        "oneway": "yes",
+        "ref": "QL.279",
+        "source": "GPS",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.52310825,
+        "lon": 103.23259435
+      },
+      "id": 891776705,
+      "tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "layer": "1",
+        "lit": "yes",
+        "maxspeed:type": "VN:urban",
+        "name": "Quốc lộ 279",
+        "name:en": "National Route 279",
+        "oneway": "yes",
+        "ref": "QL.279",
+        "sidewalk": "right",
+        "sidewalk:right:surface": "paving_stones",
+        "source": "GPS",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.52178145,
+        "lon": 103.21694675
+      },
+      "id": 891780654,
+      "tags": {
+        "highway": "trunk",
+        "layer": "1",
+        "name": "Quốc lộ 279",
+        "name:en": "National Route 279",
+        "oneway": "yes",
+        "ref": "QL.279",
+        "source": "GPS",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.5217406,
+        "lon": 103.2169283
+      },
+      "id": 891780655,
+      "tags": {
+        "highway": "trunk",
+        "layer": "1",
+        "name": "Quốc lộ 279",
+        "name:en": "National Route 279",
+        "oneway": "yes",
+        "ref": "QL.279",
+        "source": "GPS",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.52170445,
+        "lon": 103.2183106
+      },
+      "id": 891780656,
+      "tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "layer": "1",
+        "lit": "yes",
+        "maxspeed:type": "VN:urban",
+        "name": "Quốc lộ 279",
+        "name:en": "National Route 279",
+        "oneway": "yes",
+        "ref": "QL.279",
+        "sidewalk": "right",
+        "sidewalk:right:surface": "paving_stones",
+        "source": "GPS",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.5217827,
+        "lon": 103.21833305000001
+      },
+      "id": 891780657,
+      "tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "layer": "1",
+        "lit": "yes",
+        "maxspeed:type": "VN:urban",
+        "name": "Quốc lộ 279",
+        "name:en": "National Route 279",
+        "oneway": "yes",
+        "ref": "QL.279",
+        "sidewalk": "right",
+        "sidewalk:right:surface": "paving_stones",
+        "source": "GPS",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.46802025,
+        "lon": 103.0593615
+      },
+      "id": 891785392,
+      "tags": {
+        "bridge": "yes",
+        "highway": "trunk",
+        "layer": "1",
+        "name": "Quốc lộ 279",
+        "name:en": "National Route 279",
+        "ref": "QL.279",
+        "source": "GPS",
+        "source:geometry": "strava;ride",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.4681289,
+        "lon": 103.0624966
+      },
+      "id": 891785393,
+      "tags": {
+        "highway": "trunk",
+        "layer": "1",
+        "name": "Quốc lộ 279",
+        "name:en": "National Route 279",
+        "ref": "QL.279",
+        "source": "GPS",
+        "source:geometry": "strava;ride",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.52238465,
+        "lon": 103.23150505
+      },
+      "id": 891793809,
+      "tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "layer": "1",
+        "lit": "yes",
+        "maxspeed:type": "VN:urban",
+        "name": "Quốc lộ 279",
+        "name:en": "National Route 279",
+        "oneway": "yes",
+        "ref": "QL.279",
+        "sidewalk": "right",
+        "sidewalk:right:surface": "paving_stones",
+        "source": "GPS",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.521957649999997,
+        "lon": 103.21654710000001
+      },
+      "id": 891793814,
+      "tags": {
+        "highway": "trunk",
+        "layer": "1",
+        "name": "Quốc lộ 279",
+        "name:en": "National Route 279",
+        "ref": "QL.279",
+        "source": "GPS",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.582861100000002,
+        "lon": 103.4120415
+      },
+      "id": 892114962,
+      "tags": {
+        "alt_name": "Đường tránh Tuần Giáo",
+        "bridge": "yes",
+        "fixme": "Quốc lộ 279 có hệ thống mốc đặc biệt, mỗi vùng lại có nhiều mốc Km0 khác nhau, xin lưu ý nhé!",
+        "highway": "trunk",
+        "lanes": "2",
+        "layer": "1",
+        "name": "Cầu Km 1+040",
+        "name:en": "Km 1+040 QL.279 (National highway 279 Dien Bien section)",
+        "ref": "QL.279",
+        "source:geometry": "strava;ride",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 22.13974675,
+        "lon": 102.5772622
+      },
+      "id": 892531616,
+      "tags": {
+        "highway": "primary",
+        "name": "Quốc lộ 4H",
+        "name:en": "National Route 4H",
+        "ref": "QL.4H"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 22.14771395,
+        "lon": 102.57966354999999
+      },
+      "id": 892531617,
+      "tags": {
+        "bridge": "yes",
+        "highway": "primary",
+        "layer": "1",
+        "name": "Quốc lộ 4H",
+        "name:en": "National Route 4H",
+        "ref": "QL.4H"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.5839506,
+        "lon": 103.41944285
+      },
+      "id": 892543056,
+      "tags": {
+        "alt_name": "Đường tránh Tuần Giáo",
+        "bridge": "yes",
+        "fixme": "Quốc lộ 279 có hệ thống mốc đặc biệt, mỗi vùng lại có nhiều mốc Km0 khác nhau, xin lưu ý nhé!",
+        "highway": "trunk",
+        "lanes": "2",
+        "layer": "1",
+        "name": "Cầu Km 0+241",
+        "name:en": "Km 0+241 QL.279 (National highway 279 Dien Bien section)",
+        "ref": "QL.279",
+        "source:geometry": "strava;ride",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.584365599999998,
+        "lon": 103.42095225
+      },
+      "id": 892543057,
+      "tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "Đường tránh Tuần Giáo",
+        "ref": "QL.279",
+        "source:geometry": "strava;ride",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.58659415,
+        "lon": 103.42190735
+      },
+      "id": 892614408,
+      "tags": {
+        "bridge": "yes",
+        "highway": "trunk",
+        "lanes": "2",
+        "layer": "1",
+        "name": "Quốc lộ 6 - Quốc lộ 279",
+        "name:en": "National Route 6 - National Route 279",
+        "ref": "QL.6;QL.279",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.5878468,
+        "lon": 103.42143965
+      },
+      "id": 892614409,
+      "tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "Quốc lộ 6 - Quốc lộ 279",
+        "name:en": "National Route 6 - National Route 279",
+        "ref": "QL.6;QL.279",
+        "source:geometry": "strava;ride",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.770482100000002,
+        "lon": 103.32809105
+      },
+      "id": 892863132,
+      "tags": {
+        "bridge": "yes",
+        "highway": "trunk",
+        "layer": "1",
+        "name": "Quốc lộ 6",
+        "ref": "QL.6",
+        "source": "osm-gpx",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.76927275,
+        "lon": 103.32791370000001
+      },
+      "id": 892863133,
+      "tags": {
+        "highway": "trunk",
+        "name": "Quốc lộ 6",
+        "ref": "QL.6",
+        "source": "osm-gpx",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.76811335,
+        "lon": 103.3280297
+      },
+      "id": 892863134,
+      "tags": {
+        "bridge": "yes",
+        "highway": "trunk",
+        "layer": "1",
+        "name": "Quốc lộ 6",
+        "ref": "QL.6",
+        "source": "osm-gpx",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.765158,
+        "lon": 103.32988624999999
+      },
+      "id": 892863135,
+      "tags": {
+        "highway": "trunk",
+        "name": "Quốc lộ 6",
+        "ref": "QL.6",
+        "source": "osm-gpx",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.5185252,
+        "lon": 103.136867
+      },
+      "id": 892916491,
+      "tags": {
+        "bridge": "yes",
+        "highway": "trunk",
+        "layer": "1",
+        "name": "Quốc lộ 279",
+        "name:en": "National Route 279",
+        "ref": "QL.279",
+        "source": "GPS",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.5061998,
+        "lon": 103.12593635
+      },
+      "id": 892916492,
+      "tags": {
+        "highway": "trunk",
+        "layer": "1",
+        "name": "Quốc lộ 279",
+        "name:en": "National Route 279",
+        "ref": "QL.279",
+        "source": "GPS",
+        "source:geometry": "strava;ride",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 20.9495481,
+        "lon": 103.22928114999999
+      },
+      "id": 893100630,
+      "tags": {
+        "bridge": "yes",
+        "highway": "primary",
+        "layer": "1",
+        "name": "Quốc lộ 279C",
+        "ref": "QL.279C"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 22.037912900000002,
+        "lon": 102.67554465
+      },
+      "id": 893188326,
+      "tags": {
+        "bridge": "yes",
+        "highway": "primary",
+        "layer": "1",
+        "name": "Quốc lộ 4H",
+        "name:en": "National Route 4H",
+        "note": "there's also a osm-gpx track here",
+        "ref": "QL.4H"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 22.0330722,
+        "lon": 102.6908409
+      },
+      "id": 893188327,
+      "tags": {
+        "highway": "primary",
+        "name": "Quốc lộ 4H",
+        "name:en": "National Route 4H",
+        "note": "there's also a osm-gpx track here",
+        "ref": "QL.4H"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.31705945,
+        "lon": 103.2078912
+      },
+      "id": 893188491,
+      "tags": {
+        "bridge": "yes",
+        "highway": "secondary",
+        "layer": "1",
+        "name": "Đường tỉnh 143",
+        "ref": "ĐT.143"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.92639365,
+        "lon": 102.7699482
+      },
+      "id": 893264443,
+      "tags": {
+        "highway": "secondary",
+        "name": "Đường tỉnh 145",
+        "ref": "ĐT.145"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.926555399999998,
+        "lon": 102.76371675
+      },
+      "id": 893264444,
+      "tags": {
+        "bridge": "yes",
+        "highway": "secondary",
+        "layer": "1",
+        "name": "Đường tỉnh 145",
+        "ref": "ĐT.145"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.804686699999998,
+        "lon": 103.30207285
+      },
+      "id": 893334719,
+      "tags": {
+        "bridge": "yes",
+        "highway": "trunk",
+        "layer": "1",
+        "name": "Quốc lộ 6",
+        "ref": "QL.6",
+        "source": "osm-gpx",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.811470149999998,
+        "lon": 103.30180634999999
+      },
+      "id": 893334720,
+      "tags": {
+        "highway": "trunk",
+        "name": "Quốc lộ 6",
+        "ref": "QL.6",
+        "source": "osm-gpx",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.521070700000003,
+        "lon": 103.3585513
+      },
+      "id": 894079804,
+      "tags": {
+        "bridge": "yes",
+        "highway": "trunk",
+        "layer": "1",
+        "name": "Quốc lộ 279",
+        "ref": "QL.279",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.521460349999998,
+        "lon": 103.35988814999999
+      },
+      "id": 894079805,
+      "tags": {
+        "highway": "trunk",
+        "layer": "1",
+        "name": "Quốc lộ 279",
+        "name:en": "National Route 279",
+        "ref": "QL.279",
+        "source": "GPS",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 22.122856900000002,
+        "lon": 102.5809792
+      },
+      "id": 894090857,
+      "tags": {
+        "bridge": "yes",
+        "highway": "primary",
+        "layer": "1",
+        "name": "Quốc lộ 4H",
+        "name:en": "National Route 4H",
+        "ref": "QL.4H"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 22.1270211,
+        "lon": 102.5804535
+      },
+      "id": 894090858,
+      "tags": {
+        "highway": "primary",
+        "name": "Quốc lộ 4H",
+        "name:en": "National Route 4H",
+        "ref": "QL.4H"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.57393305,
+        "lon": 103.3859309
+      },
+      "id": 894119845,
+      "tags": {
+        "alt_name": "Quốc lộ 279",
+        "bridge": "yes",
+        "highway": "trunk",
+        "layer": "1",
+        "name": "Cầu Tà Cơn",
+        "name:en": "National Route 279",
+        "ref": "QL.279",
+        "source": "GPS",
+        "source:geometry": "strava;ride",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.57494605,
+        "lon": 103.38716665000001
+      },
+      "id": 894119846,
+      "tags": {
+        "highway": "trunk",
+        "layer": "1",
+        "name": "Quốc lộ 279",
+        "name:en": "National Route 279",
+        "ref": "QL.279",
+        "source": "GPS",
+        "source:geometry": "strava;ride",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.942651849999997,
+        "lon": 102.87864400000001
+      },
+      "id": 894284958,
+      "tags": {
+        "bridge": "yes",
+        "highway": "primary",
+        "layer": "1",
+        "name": "Quốc lộ 4H",
+        "name:en": "National Route 4H",
+        "note": "there's also a osm-gpx track here",
+        "ref": "QL.4H"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.9373213,
+        "lon": 102.8833855
+      },
+      "id": 894284959,
+      "tags": {
+        "highway": "primary",
+        "name": "Quốc lộ 4H",
+        "name:en": "National Route 4H",
+        "note": "there's also a osm-gpx track here",
+        "ref": "QL.4H"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.532668299999997,
+        "lon": 103.2456662
+      },
+      "id": 894436276,
+      "tags": {
+        "bridge": "yes",
+        "highway": "trunk",
+        "layer": "1",
+        "name": "Quốc lộ 279",
+        "name:en": "National Route 279",
+        "ref": "QL.279",
+        "source": "GPS",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.528309399999998,
+        "lon": 103.23958555
+      },
+      "id": 894436277,
+      "tags": {
+        "highway": "trunk",
+        "layer": "1",
+        "name": "Quốc lộ 279",
+        "name:en": "National Route 279",
+        "ref": "QL.279",
+        "source": "GPS",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.7218126,
+        "lon": 103.08178649999999
+      },
+      "id": 894439836,
+      "tags": {
+        "bridge": "yes",
+        "highway": "trunk",
+        "layer": "1",
+        "name": "Quốc lộ 12",
+        "ref": "QL.12"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.729545299999998,
+        "lon": 103.0848328
+      },
+      "id": 894439837,
+      "tags": {
+        "highway": "trunk",
+        "name": "Quốc lộ 12",
+        "ref": "QL.12",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 22.028810200000002,
+        "lon": 102.747978
+      },
+      "id": 894507183,
+      "tags": {
+        "bridge": "yes",
+        "highway": "primary",
+        "layer": "1",
+        "name": "Quốc lộ 4H",
+        "name:en": "National Route 4H",
+        "note": "there's also a osm-gpx track here",
+        "ref": "QL.4H"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.5159095,
+        "lon": 103.1346595
+      },
+      "id": 894536431,
+      "tags": {
+        "highway": "trunk",
+        "layer": "1",
+        "name": "Quốc lộ 279",
+        "name:en": "National Route 279",
+        "ref": "QL.279",
+        "source": "GPS",
+        "source:geometry": "strava;ride",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.5133088,
+        "lon": 103.13178355
+      },
+      "id": 894536432,
+      "tags": {
+        "bridge": "yes",
+        "highway": "trunk",
+        "layer": "1",
+        "name": "Quốc lộ 279",
+        "name:en": "National Route 279",
+        "ref": "QL.279",
+        "source": "GPS",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.8655413,
+        "lon": 103.12973565
+      },
+      "id": 894570455,
+      "tags": {
+        "bridge": "yes",
+        "highway": "trunk",
+        "lanes": "2",
+        "layer": "1",
+        "name": "Quốc lộ 12",
+        "ref": "QL.12",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.8592693,
+        "lon": 103.1255407
+      },
+      "id": 894570456,
+      "tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "Quốc lộ 12",
+        "ref": "QL.12",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.933805800000002,
+        "lon": 102.98500295
+      },
+      "id": 894827405,
+      "tags": {
+        "bridge": "yes",
+        "highway": "secondary",
+        "layer": "1",
+        "name": "Đường tỉnh 150",
+        "ref": "ĐT.150"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.944712000000003,
+        "lon": 102.99953245
+      },
+      "id": 894827406,
+      "tags": {
+        "highway": "secondary",
+        "name": "Đường tỉnh 150",
+        "ref": "ĐT.150"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.88339675,
+        "lon": 103.17362735
+      },
+      "id": 895387600,
+      "tags": {
+        "highway": "secondary",
+        "name": "Đường tỉnh 144B",
+        "ref": "ĐT.144B",
+        "source": "maxar"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.4851989,
+        "lon": 103.1340946
+      },
+      "id": 902870437,
+      "tags": {
+        "highway": "primary",
+        "name": "Quốc lộ 279B",
+        "ref": "QL.279B",
+        "source": "maxar",
+        "source:geometry": "strava;ride",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.469883250000002,
+        "lon": 103.14470775000001
+      },
+      "id": 903223835,
+      "tags": {
+        "bridge": "yes",
+        "highway": "primary",
+        "layer": "1",
+        "name": "Quốc lộ 279B",
+        "ref": "QL.279B",
+        "source": "maxar"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.93349665,
+        "lon": 102.9870046
+      },
+      "id": 945328428,
+      "tags": {
+        "bridge": "yes",
+        "highway": "secondary",
+        "layer": "1",
+        "name": "Đường tỉnh 150",
+        "ref": "ĐT.150"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.9333443,
+        "lon": 102.9860068
+      },
+      "id": 945328429,
+      "tags": {
+        "highway": "secondary",
+        "name": "Đường tỉnh 150",
+        "ref": "ĐT.150"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.93359685,
+        "lon": 102.9907901
+      },
+      "id": 945328433,
+      "tags": {
+        "bridge": "yes",
+        "highway": "secondary",
+        "layer": "1",
+        "name": "Đường tỉnh 150",
+        "ref": "ĐT.150"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.93356385,
+        "lon": 102.98886965
+      },
+      "id": 945328434,
+      "tags": {
+        "highway": "secondary",
+        "name": "Đường tỉnh 150",
+        "ref": "ĐT.150"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.8757314,
+        "lon": 103.21380145
+      },
+      "id": 947633229,
+      "tags": {
+        "bridge": "yes",
+        "highway": "secondary",
+        "layer": "1",
+        "name": "Đường tỉnh 144B",
+        "ref": "ĐT.144B",
+        "source": "maxar"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 22.40346425,
+        "lon": 102.2110536
+      },
+      "id": 954206768,
+      "tags": {
+        "bridge": "yes",
+        "highway": "primary",
+        "layer": "1",
+        "maxspeed": "80",
+        "name": "Quốc lộ 4H2",
+        "name:en": "National Route 4H2",
+        "name:zh": "4H2公路",
+        "ref": "QL.4H2"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 22.401106149999997,
+        "lon": 102.21339035
+      },
+      "id": 954206769,
+      "tags": {
+        "highway": "primary",
+        "maxspeed": "80",
+        "name": "Quốc lộ 4H2",
+        "name:en": "National Route 4H2",
+        "name:zh": "4H2公路",
+        "ref": "QL.4H2"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.3876602,
+        "lon": 103.013251
+      },
+      "id": 959988675,
+      "tags": {
+        "inscription": "Hầm Piroth",
+        "leisure": "park",
+        "name": "Hầm Piroth",
+        "opening_hours": "24/7"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.3889872,
+        "lon": 103.0314965
+      },
+      "id": 959989941,
+      "tags": {
+        "addr:city": "Thành Phố Điện Biên",
+        "addr:district": "Noong Bua",
+        "addr:province": "Điện Biên",
+        "leisure": "park",
+        "name": "Công viên Noong Bua",
+        "opening_hours": "24/7"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.3871377,
+        "lon": 103.01843265
+      },
+      "id": 960016476,
+      "tags": {
+        "leisure": "park",
+        "name": "Đồi C1"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.4702434,
+        "lon": 103.05972495
+      },
+      "id": 960019192,
+      "tags": {
+        "addr:district": "Nà Nhạn",
+        "addr:province": "Điện Biên",
+        "addr:subdistrict": "Nà Nhạn",
+        "leisure": "park",
+        "name": "Công Viên Tượng Đài Kéo Pháo",
+        "opening_hours": "24/7"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.451353,
+        "lon": 103.1499638
+      },
+      "id": 960041871,
+      "tags": {
+        "addr:district": "Điện Biên",
+        "addr:province": "Điện Biên",
+        "addr:subdistrict": "Mường Phăng",
+        "leisure": "park",
+        "name": "Tượng Đài Di Tích Mường Phăng"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.39641565,
+        "lon": 103.01738545
+      },
+      "id": 960111916,
+      "tags": {
+        "leisure": "park",
+        "name": "Đồi E2"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.395290099999997,
+        "lon": 103.0146828
+      },
+      "id": 960112186,
+      "tags": {
+        "leisure": "park",
+        "name": "Đồi E1"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.3895831,
+        "lon": 103.0134701
+      },
+      "id": 962982791,
+      "tags": {
+        "leisure": "park",
+        "name": "Công Viên Vừ A Dính",
+        "opening_hours": "24/7"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 22.156479400000002,
+        "lon": 102.5694484
+      },
+      "id": 963849017,
+      "tags": {
+        "bridge": "yes",
+        "highway": "primary",
+        "layer": "1",
+        "name": "Quốc lộ 4H",
+        "name:en": "National Route 4H",
+        "ref": "QL.4H"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 22.156611750000003,
+        "lon": 102.57291765
+      },
+      "id": 963849018,
+      "tags": {
+        "highway": "primary",
+        "name": "Quốc lộ 4H",
+        "name:en": "National Route 4H",
+        "ref": "QL.4H"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.430003550000002,
+        "lon": 103.0520309
+      },
+      "id": 977472093,
+      "tags": {
+        "area": "yes",
+        "historic": "memorial",
+        "name": "Trận Địa Pháo H6"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.374128650000003,
+        "lon": 103.44630725
+      },
+      "id": 999750737,
+      "tags": {
+        "highway": "secondary",
+        "name": "Đường tỉnh 108",
+        "ref": "ĐT.108"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.3803901,
+        "lon": 103.41992265
+      },
+      "id": 999750738,
+      "tags": {
+        "highway": "secondary",
+        "name": "Đường tỉnh 108",
+        "ref": "ĐT.108"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.40684095,
+        "lon": 103.38313955
+      },
+      "id": 1020435476,
+      "tags": {
+        "highway": "secondary",
+        "name": "Đường tỉnh 108",
+        "ref": "ĐT.108"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.3892405,
+        "lon": 103.0243872
+      },
+      "id": 1034719621,
+      "tags": {
+        "amenity": "school",
+        "grades": "10-12",
+        "name": "Trường Trung học phổ thông chuyên Lê Quý Đôn",
+        "name:en": "Le Quy Don High School for the Gifted"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.3569789,
+        "lon": 103.00980835
+      },
+      "id": 1064271723,
+      "tags": {
+        "building": "yes",
+        "layer": "1",
+        "monitoring:weather": "yes",
+        "name": "Đài Khí tượng Thuỷ văn tỉnh Điện Biên",
+        "office": "government"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.387619,
+        "lon": 103.0259705
+      },
+      "id": 1079234571,
+      "tags": {
+        "addr:housenumber": "187",
+        "addr:street": "Hoàng Công Chất",
+        "amenity": "university",
+        "education": "university",
+        "name": "Phân hiệu Đại học Thái Nguyên tại tỉnh Điện Biên"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.63653695,
+        "lon": 103.44066565
+      },
+      "id": 1094010435,
+      "tags": {
+        "highway": "trunk",
+        "name": "Quốc lộ 6 - Quốc lộ 279",
+        "name:en": "National Route 6 - National Route 279",
+        "ref": "QL.6;QL.279",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.39451475,
+        "lon": 103.0340002
+      },
+      "id": 1104429558,
+      "tags": {
+        "addr:city": "Thành Phố Điên Biên Phủ",
+        "addr:province": "Điện BIên",
+        "addr:subdistrict": "Noong Bua",
+        "leisure": "park",
+        "name": "Công viên Hoa Ban"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 22.05611495,
+        "lon": 102.63087734999999
+      },
+      "id": 1160745505,
+      "tags": {
+        "bridge": "yes",
+        "highway": "primary",
+        "layer": "1",
+        "name": "Quốc lộ 4H",
+        "name:en": "National Route 4H",
+        "ref": "QL.4H"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.3900024,
+        "lon": 103.01440085
+      },
+      "id": 1190296900,
+      "tags": {
+        "building": "yes",
+        "name": "Khách sạn Hương Bình",
+        "tourism": "hotel"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.38880845,
+        "lon": 103.01463135
+      },
+      "id": 1190881173,
+      "tags": {
+        "highway": "residential",
+        "name": "Nguyễn Chí Thanh"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.385314299999997,
+        "lon": 103.01457945
+      },
+      "id": 1190881174,
+      "tags": {
+        "highway": "residential",
+        "lit": "yes",
+        "name": "Nguyễn Chí Thanh",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.405861549999997,
+        "lon": 103.02484945
+      },
+      "id": 1204347952,
+      "tags": {
+        "leisure": "park",
+        "name": "Đồi Him Lam",
+        "opening_hours": "24/7"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.4021181,
+        "lon": 103.03795450000001
+      },
+      "id": 1204348013,
+      "tags": {
+        "leisure": "park",
+        "name": "Công Viên Tái Định Cư Him Lam",
+        "opening_hours": "24/7"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.37468975,
+        "lon": 103.01170909999999
+      },
+      "id": 1204348096,
+      "tags": {
+        "leisure": "park",
+        "name": "Công Viên Nam Thanh",
+        "opening_hours": "24/7"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.3821116,
+        "lon": 103.0107204
+      },
+      "id": 1204348316,
+      "tags": {
+        "leisure": "park",
+        "name": "Công Viên Tưởng Niệm Lính Pháp",
+        "opening_hours": "24/7"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.38202735,
+        "lon": 103.00895295000001
+      },
+      "id": 1204348419,
+      "tags": {
+        "leisure": "park",
+        "name": "Công Viên Phố 5 Thanh Trường",
+        "opening_hours": "24/7"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.38530135,
+        "lon": 103.01115775
+      },
+      "id": 1204348923,
+      "tags": {
+        "leisure": "park",
+        "name": "Khu Di Tích Hầm Đờ Cát",
+        "opening_hours": "24/7"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.3860835,
+        "lon": 103.0098227
+      },
+      "id": 1204349012,
+      "tags": {
+        "leisure": "park",
+        "name": "Khuôn viên Di tích Hầm Đờ Cát",
+        "opening_hours": "24/7"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.42251735,
+        "lon": 103.0073455
+      },
+      "id": 1204349341,
+      "tags": {
+        "leisure": "park",
+        "name": "Khuôn viên Di Tích Đồi Độc Lập",
+        "opening_hours": "24/7"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.3924674,
+        "lon": 103.03219875
+      },
+      "id": 1204399183,
+      "tags": {
+        "amenity": "hospital",
+        "emergency": "yes",
+        "healthcare": "hospital",
+        "healthcare:speciality": "general",
+        "name": "Bệnh viện Đa khoa tỉnh Điện Biên",
+        "name:en": "Dien Bien Province General Hospital"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.39261725,
+        "lon": 103.0341661
+      },
+      "id": 1204399184,
+      "tags": {
+        "amenity": "university",
+        "education": "university",
+        "name": "Phân hiệu Đại học Thái Nguyên tại tỉnh Điện Biên"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.383872949999997,
+        "lon": 103.03661890000001
+      },
+      "id": 1204399202,
+      "tags": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Bệnh viện Phổi tỉnh Điện Biên"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.383614,
+        "lon": 103.02396
+      },
+      "id": 1204399203,
+      "tags": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Bệnh viện Y học cổ truyền - Phục hồi chức năng tỉnh Điện Biên"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.808700950000002,
+        "lon": 102.762497
+      },
+      "id": 1204399206,
+      "tags": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Trung tâm Y tế huyện Nậm Pồ"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.5876931,
+        "lon": 103.41858925
+      },
+      "id": 1204399208,
+      "tags": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Trung tâm Y tế Tuần Giáo"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.51926765,
+        "lon": 103.2178231
+      },
+      "id": 1204399209,
+      "tags": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Trung tâm Y tế Mường Ảng"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.302497799999998,
+        "lon": 103.23167505
+      },
+      "id": 1204399212,
+      "tags": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Trung tâm Y tế Điện Biên Đông"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.328639199999998,
+        "lon": 103.02139389999999
+      },
+      "id": 1204399213,
+      "tags": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Trung tâm Y tế huyện Điện Biên"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.39236295,
+        "lon": 103.01428015
+      },
+      "id": 1214669793,
+      "tags": {
+        "highway": "primary",
+        "lit": "yes",
+        "name": "Trần Đăng Ninh",
+        "oneway": "yes",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.39239925,
+        "lon": 103.01356425
+      },
+      "id": 1214669794,
+      "tags": {
+        "bridge": "yes",
+        "bridge:structure": "suspension",
+        "highway": "primary",
+        "layer": "1",
+        "lit": "yes",
+        "name": "Cầu Thanh Bình",
+        "oneway": "yes",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.392266499999998,
+        "lon": 103.0142735
+      },
+      "id": 1214669795,
+      "tags": {
+        "highway": "primary",
+        "lit": "yes",
+        "name": "Trần Đăng Ninh",
+        "oneway": "yes",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.392302,
+        "lon": 103.0135581
+      },
+      "id": 1214669796,
+      "tags": {
+        "bridge": "yes",
+        "bridge:structure": "suspension",
+        "highway": "primary",
+        "layer": "1",
+        "lit": "yes",
+        "name": "Cầu Thanh Bình",
+        "oneway": "yes",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.3932497,
+        "lon": 103.002333
+      },
+      "id": 1214669797,
+      "tags": {
+        "aeroway": "aerodrome",
+        "area": "yes",
+        "designation": "Northern Airports Services Company",
+        "iata": "DIN",
+        "icao": "VVDB",
+        "name": "Sân bay Điện Biên",
+        "name:en": "Dien Bien Airport",
+        "name:fa": "فرودگاه دین‌بین‌فو",
+        "name:fr": "Aéroport de Diên Biên",
+        "name:id": "Bandar Udara Dien Bien",
+        "name:ms": "Lapangan Terbang Dienbien",
+        "name:pl": "Port lotniczy Điện Biên",
+        "name:ru": "Дьенбьенфу",
+        "name:tg": "Фурудгоҳи дин‌бин‌фу",
+        "name:uk": "Дьєнб'єнфу",
+        "name:vi": "Sân bay Điện Biên",
+        "name:zh": "奠边府机场",
+        "ref": "DIN",
+        "source": "ourairports.com",
+        "wikidata": "Q1654720",
+        "wikipedia": "vi:Sân bay Điện Biên Phủ"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.38696735,
+        "lon": 103.0091376
+      },
+      "id": 1214669954,
+      "tags": {
+        "highway": "unclassified",
+        "lit": "yes",
+        "name": "Đường Bế Văn Đàn",
+        "name:en": "Be Van Dan Street",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.58257525,
+        "lon": 103.4226503
+      },
+      "id": 1223109853,
+      "tags": {
+        "building": "yes",
+        "monitoring:weather": "yes",
+        "name": "Trạm khí tượng Tuần Giáo",
+        "office": "government"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.450718600000002,
+        "lon": 103.13825675
+      },
+      "id": 1241257178,
+      "tags": {
+        "highway": "secondary",
+        "name": "Đường tỉnh 141",
+        "ref": "ĐT.141",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.96455125,
+        "lon": 102.8308955
+      },
+      "id": 1241258371,
+      "tags": {
+        "highway": "secondary",
+        "name": "Đường tỉnh 145",
+        "ref": "ĐT.145"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.95627075,
+        "lon": 102.8195265
+      },
+      "id": 1241258372,
+      "tags": {
+        "bridge": "yes",
+        "highway": "secondary",
+        "layer": "1",
+        "name": "Đường tỉnh 145",
+        "ref": "ĐT.145"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 20.97638685,
+        "lon": 103.17129155
+      },
+      "id": 1241262211,
+      "tags": {
+        "highway": "primary",
+        "name": "Quốc lộ 279C",
+        "oneway": "yes",
+        "ref": "QL.279C"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.3865874,
+        "lon": 103.02316110000001
+      },
+      "id": 1280900829,
+      "tags": {
+        "amenity": "school",
+        "grades": "1-5",
+        "name": "Trường Tiểu học Hà Nội - Điện Biên Phủ",
+        "name:en": "Hanoi - Dien Bien Phu Primary School"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.386241300000002,
+        "lon": 103.03146925
+      },
+      "id": 1281448727,
+      "tags": {
+        "amenity": "school",
+        "grades": "6-9",
+        "name": "Trường Trung học cơ sở Him Lam",
+        "name:en": "Him Lam Secondary School"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.388063250000002,
+        "lon": 103.03140095
+      },
+      "id": 1281448730,
+      "tags": {
+        "building": "yes",
+        "government": "administrative",
+        "name": "Đảng uỷ - HĐND - UBND phường Noong Bua",
+        "office": "government"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.390016850000002,
+        "lon": 103.0307194
+      },
+      "id": 1281448736,
+      "tags": {
+        "amenity": "marketplace",
+        "name": "Chợ Noong Bua"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.3895069,
+        "lon": 103.03265695
+      },
+      "id": 1281453449,
+      "tags": {
+        "amenity": "college",
+        "name": "Trường Chính trị tỉnh Điện Biên"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.39018295,
+        "lon": 103.03209905
+      },
+      "id": 1281453456,
+      "tags": {
+        "amenity": "school",
+        "grades": "1-5",
+        "name": "Trường Tiểu học Noong Bua",
+        "name:en": "Noong Bua Primary School"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.45130635,
+        "lon": 103.14905385
+      },
+      "id": 1316883258,
+      "tags": {
+        "highway": "primary",
+        "name": "Quốc lộ 279B",
+        "oneway": "yes",
+        "ref": "QL.279B",
+        "source:geometry": "strava;ride",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.40314095,
+        "lon": 103.032641
+      },
+      "id": 1329391500,
+      "tags": {
+        "leisure": "park",
+        "name": "Nghĩa trang liệt sĩ Him Lam",
+        "opening_hours": "24/7"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.83144995,
+        "lon": 102.93776535
+      },
+      "id": 1353088599,
+      "tags": {
+        "highway": "primary",
+        "maxspeed": "50",
+        "name": "Quốc lộ 4H"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.45124295,
+        "lon": 103.1488865
+      },
+      "id": 1378956177,
+      "tags": {
+        "highway": "primary",
+        "name": "Quốc lộ 279B",
+        "oneway": "yes",
+        "ref": "QL.279B",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.450557449999998,
+        "lon": 103.13977890000001
+      },
+      "id": 1456406458,
+      "tags": {
+        "highway": "primary",
+        "name": "Quốc lộ 279B",
+        "oneway": "yes",
+        "ref": "QL.279B",
+        "source:geometry": "strava;ride",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.450564649999997,
+        "lon": 103.1397495
+      },
+      "id": 1456406461,
+      "tags": {
+        "highway": "primary",
+        "name": "Quốc lộ 279B",
+        "oneway": "yes",
+        "ref": "QL.279B",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.45033325,
+        "lon": 103.13976525
+      },
+      "id": 1456406463,
+      "tags": {
+        "highway": "primary",
+        "name": "Quốc lộ 279B",
+        "oneway": "yes",
+        "ref": "QL.279B",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.45035515,
+        "lon": 103.13996449999999
+      },
+      "id": 1456406465,
+      "tags": {
+        "highway": "primary",
+        "name": "Quốc lộ 279B",
+        "oneway": "yes",
+        "ref": "QL.279B",
+        "source:geometry": "strava;ride",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.3962305,
+        "lon": 103.02368265000001
+      },
+      "id": 1457669605,
+      "tags": {
+        "amenity": "school",
+        "isced:level": "1",
+        "name": "Trường Tiểu học Tô Vĩnh Diện"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.39085815,
+        "lon": 103.01146175
+      },
+      "id": 1457669609,
+      "tags": {
+        "amenity": "school",
+        "isced:level": "1",
+        "name": "Trường Tiểu học Bế Văn Đàn"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.3732784,
+        "lon": 103.014044
+      },
+      "id": 1457669612,
+      "tags": {
+        "amenity": "school",
+        "isced:level": "1",
+        "name": "Trường Tiểu học Nam Thanh"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.40172775,
+        "lon": 103.03712295
+      },
+      "id": 1457670659,
+      "tags": {
+        "amenity": "school",
+        "isced:level": "2",
+        "name": "Trường Trung học cơ sở Trần Can"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.38675895,
+        "lon": 103.01492035000001
+      },
+      "id": 1517878514,
+      "tags": {
+        "highway": "residential",
+        "lit": "yes",
+        "name": "Đường Bế Văn Đàn",
+        "name:en": "Be Van Dan Street",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.3866101,
+        "lon": 103.0236241
+      },
+      "id": 1517880418,
+      "tags": {
+        "highway": "residential",
+        "name": "Sùng Phái Sinh",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.5860979,
+        "lon": 103.41545024999999
+      },
+      "id": 1529015251,
+      "tags": {
+        "highway": "primary",
+        "lanes": "2",
+        "layer": "1",
+        "name": "Quốc lộ 279 cũ",
+        "source": "GPS",
+        "source:geometry": "strava;ride",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.5738697,
+        "lon": 103.44562705
+      },
+      "id": 1529015254,
+      "tags": {
+        "highway": "trunk",
+        "name": "Quốc lộ 6",
+        "ref": "QL.6",
+        "source:geometry": "strava;ride",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.417578300000002,
+        "lon": 103.00686164999999
+      },
+      "id": 1529280325,
+      "tags": {
+        "amenity": "bus_station",
+        "name": "Bến xe khách Điện Biên Phủ"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.4161937,
+        "lon": 103.0081565
+      },
+      "id": 1529280326,
+      "tags": {
+        "amenity": "school",
+        "education": "school",
+        "isced:level": "1;2",
+        "name": "Trường Tiểu học - Trung học cơ sở Thanh Trường"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.401499299999998,
+        "lon": 103.00806865
+      },
+      "id": 1529280328,
+      "tags": {
+        "amenity": "school",
+        "education": "school",
+        "isced:level": "2",
+        "name": "Trường Trung học cơ sở Thanh Bình"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.300484349999998,
+        "lon": 103.00848675
+      },
+      "id": 1529974332,
+      "tags": {
+        "highway": "trunk",
+        "layer": "1",
+        "name": "Quốc lộ 279 - Quốc lộ 12",
+        "name:en": "National Highway 279 - National Highway 12",
+        "ref": "QL.279;QL.12",
+        "source": "GPS",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.381790549999998,
+        "lon": 103.01604605
+      },
+      "id": 1529974333,
+      "tags": {
+        "highway": "trunk",
+        "lit": "yes",
+        "name": "Hoàng Văn Thái",
+        "oneway": "yes",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.38183575,
+        "lon": 103.01597875
+      },
+      "id": 1529974334,
+      "tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "lit": "yes",
+        "maxspeed:type": "VN:urban",
+        "name": "Đường Võ Nguyên Giáp",
+        "name:en": "Vo Nguyen Giap Road",
+        "oneway": "yes",
+        "ref": "QL.279",
+        "sidewalk": "right",
+        "sidewalk:right:surface": "paving_stones",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.387014100000002,
+        "lon": 103.01560565
+      },
+      "id": 1529974335,
+      "tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "lit": "yes",
+        "maxspeed:type": "VN:urban",
+        "name": "Đường Võ Nguyên Giáp",
+        "name:en": "Vo Nguyen Giap Road",
+        "oneway": "yes",
+        "ref": "QL.279",
+        "sidewalk": "right",
+        "sidewalk:right:surface": "paving_stones",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 21.387051200000002,
+        "lon": 103.0157384
+      },
+      "id": 1529974336,
+      "tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "lit": "yes",
+        "maxspeed:type": "VN:urban",
+        "name": "Đường Võ Nguyên Giáp",
+        "name:en": "Vo Nguyen Giap Road",
+        "oneway": "yes",
+        "ref": "QL.279",
+        "sidewalk": "right",
+        "sidewalk:right:surface": "paving_stones",
+        "surface": "asphalt"
+      },
+      "type": "way"
+    }
+  ],
+  "fetched_at": "2026-08-18T10:28:10Z",
+  "province_id": "08",
+  "source": "pbf:vietnam-latest.osm.pbf"
+}

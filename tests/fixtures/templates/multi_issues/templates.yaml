@@ -1,0 +1,27 @@
+# Nhiều entry, mỗi entry một loại lỗi khác nhau + một entry sạch, để
+# test_collects_all_issues xác nhận TemplateError.issues gom đủ mọi lỗi
+# (không fail-fast ở lỗi đầu) và entry sạch không bị chặn oan.
+- template_id: multi_bad_digit
+  sentence_type: nav_command
+  register: neutral
+  length_class: short
+  slots: [entity]
+  text: "đi 123 đến {entity}"
+- template_id: multi_bad_hardcoded
+  sentence_type: search
+  register: neutral
+  length_class: short
+  slots: [entity]
+  text: "tìm giúp tôi Hồ Hoàn Kiếm với {entity}"
+- template_id: multi_bad_double_space
+  sentence_type: search
+  register: neutral
+  length_class: short
+  slots: [entity]
+  text: "tìm  giúp tôi {entity}"
+- template_id: multi_good_001
+  sentence_type: nav_command
+  register: neutral
+  length_class: short
+  slots: [entity]
+  text: "chỉ đường đến {entity}"

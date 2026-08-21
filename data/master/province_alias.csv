@@ -1,0 +1,70 @@
+province_id,alias,alias_type,weight,admin_prefix
+01,Hà Nội,legacy,1.0,thành phố
+01,Hà Tây,spoken,1.0,tỉnh
+01,thủ đô,spoken,1.0,
+02,thành phố Hồ Chí Minh,abbrev_expanded,1.0,
+02,Bà Rịa Vũng Tàu,legacy,1.0,tỉnh
+02,Bình Dương,legacy,1.0,tỉnh
+02,Hồ Chí Minh,legacy,1.0,thành phố
+02,Sài Gòn,spoken,1.0,thành phố
+02,thành phố mang tên Bác,spoken,1.0,
+03,Hải Dương,legacy,1.0,tỉnh
+03,Hải Phòng,legacy,1.0,thành phố
+04,Quảng Nam,legacy,1.0,tỉnh
+04,Đà Nẵng,legacy,1.0,thành phố
+05,Cần Thơ,legacy,1.0,thành phố
+05,Hậu Giang,legacy,1.0,tỉnh
+05,Sóc Trăng,legacy,1.0,tỉnh
+06,Thừa Thiên Huế,legacy,1.0,tỉnh
+06,cố đô,spoken,1.0,
+07,Lai Châu,legacy,1.0,tỉnh
+08,Điện Biên,legacy,1.0,tỉnh
+09,Sơn La,legacy,1.0,tỉnh
+10,Lạng Sơn,legacy,1.0,tỉnh
+11,Quảng Ninh,legacy,1.0,tỉnh
+12,Thanh Hóa,legacy,1.0,tỉnh
+13,Nghệ An,legacy,1.0,tỉnh
+14,Hà Tĩnh,legacy,1.0,tỉnh
+15,Cao Bằng,legacy,1.0,tỉnh
+16,Hà Giang,legacy,1.0,tỉnh
+16,Tuyên Quang,legacy,1.0,tỉnh
+17,Lào Cai,legacy,1.0,tỉnh
+17,Yên Bái,legacy,1.0,tỉnh
+18,Bắc Kạn,legacy,1.0,tỉnh
+18,Thái Nguyên,legacy,1.0,tỉnh
+19,Hòa Bình,legacy,1.0,tỉnh
+19,Phú Thọ,legacy,1.0,tỉnh
+19,Vĩnh Phúc,legacy,1.0,tỉnh
+20,Bắc Giang,legacy,1.0,tỉnh
+20,Bắc Ninh,legacy,1.0,tỉnh
+21,Hưng Yên,legacy,1.0,tỉnh
+21,Thái Bình,legacy,1.0,tỉnh
+22,Hà Nam,legacy,1.0,tỉnh
+22,Nam Định,legacy,1.0,tỉnh
+22,Ninh Bình,legacy,1.0,tỉnh
+23,Quảng Bình,legacy,1.0,tỉnh
+23,Quảng Trị,legacy,1.0,tỉnh
+24,Kon Tum,legacy,1.0,tỉnh
+24,Quảng Ngãi,legacy,1.0,tỉnh
+25,Bình Định,legacy,1.0,tỉnh
+25,Gia Lai,legacy,1.0,tỉnh
+26,Khánh Hòa,legacy,1.0,tỉnh
+26,Ninh Thuận,legacy,1.0,tỉnh
+27,Bình Thuận,legacy,1.0,tỉnh
+27,Lâm Đồng,legacy,1.0,tỉnh
+27,Đắk Nông,legacy,1.0,tỉnh
+28,Phú Yên,legacy,1.0,tỉnh
+28,Đắk Lắk,legacy,1.0,tỉnh
+29,Bình Phước,legacy,1.0,tỉnh
+29,Đồng Nai,legacy,1.0,tỉnh
+30,Long An,legacy,1.0,tỉnh
+30,Tây Ninh,legacy,1.0,tỉnh
+31,Bến Tre,legacy,1.0,tỉnh
+31,Trà Vinh,legacy,1.0,tỉnh
+31,Vĩnh Long,legacy,1.0,tỉnh
+32,Tiền Giang,legacy,1.0,tỉnh
+32,Đồng Tháp,legacy,1.0,tỉnh
+33,Bạc Liêu,legacy,1.0,tỉnh
+33,Cà Mau,legacy,1.0,tỉnh
+34,An Giang,legacy,1.0,tỉnh
+34,Kiên Giang,legacy,1.0,tỉnh

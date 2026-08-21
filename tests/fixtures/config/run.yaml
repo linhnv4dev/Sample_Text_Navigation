@@ -1,0 +1,12 @@
+global_seed: 1
+paths:
+  raw_dir: "tests/fixtures/raw"
+  master_dir: "unused_in_tests"
+admin_invariants:
+  expected_province_count: 2
+  expected_legacy_alias_count: 3
+qc_thresholds:
+  length_bounds:
+    short: [5, 40]
+    medium: [30, 90]
+    long: [70, 160]

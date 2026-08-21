@@ -1,0 +1,7 @@
+# slots khai báo [entity] nhưng text có thêm {closer} không khai báo.
+- template_id: bad_slot_mismatch_001
+  sentence_type: nav_command
+  register: neutral
+  length_class: short
+  slots: [entity]
+  text: "chỉ đường đến {entity}{closer}"

@@ -1,0 +1,12 @@
+{
+  "province_id": "01",
+  "bbox": [0.0, 0.0, 1.0, 1.0],
+  "fetched_at": "2026-08-15T00:00:00Z",
+  "overpass_url": "https://overpass-api.de/api/interpreter",
+  "element_count": 3,
+  "elements": [
+    {"type": "node", "id": 1, "tags": {"amenity": "hospital", "name": "Bệnh Viện Test"}},
+    {"type": "way", "id": 2, "tags": {"highway": "residential", "name": "Đường Test"}},
+    {"type": "way", "id": 3, "tags": {"highway": "residential", "name": "Đường Test"}}
+  ]
+}

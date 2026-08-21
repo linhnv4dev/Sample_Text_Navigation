@@ -1,0 +1,132 @@
+# Sampling quota — mọi con số phân bổ sống ở đây, không hardcode trong code
+# (hard rule #8). Xem docs/sampling.md#distribution-caps cho ý nghĩa từng
+# trần/sàn. Đây là điểm khởi đầu — điều chỉnh sau khi xem balance của
+# prototype 1k (phase 8), không phải số cố định vĩnh viễn.
+#
+# data/master/ hiện phủ đủ 34/34 tỉnh ở cả street/POI lẫn phường/xã (xem
+# docs/data-model.md#nguồn-dữ-liệu--build) — KHÔNG còn "thin slice" như giai
+# đoạn đầu. category_weights.admin_unit=0.14 vốn được đặt cao hơn trực giác
+# cho giai đoạn đó (31 tỉnh chỉ sinh được cell admin_unit); lý do ấy đã hết,
+# nhưng số này giữ nguyên vì giờ pool admin_unit đã đủ giàu (~3.3k phường/xã)
+# để hấp thụ, và `navtext plan --target 100000` PASS. Cân nhắc hạ lại sau khi
+# xem balance của prototype 1k (phase 8), không phải bây giờ.
+
+target_size: 100000
+oversample_factor: 1.3   # phase 10: candidate ~130k
+min_cell_size: 1         # cell dưới ngưỡng này bị gộp mass về block cha
+
+# Số template tối thiểu mỗi ô (sentence_type × variation_profile) của template
+# bank. Dưới ngưỡng này thì diversity trong ô đó quá nghèo và template dễ bị
+# ép vượt caps.template.max_share. Sống ở đây chứ không hardcode trong
+# stats.py/test (hard rule #8). Xem docs/generation.md#template-bank.
+min_templates_per_cell: 10
+
+province_weights:
+  by_tier:
+    1: 6.0
+    2: 2.0
+    3: 1.0
+  municipality_bonus: 1.5
+  # Hệ số tinh chỉnh theo TỪNG tỉnh, nhân vào SAU by_tier × municipality_bonus.
+  # Thang tier chỉ có 3 bậc — không đủ để nói "Đà Nẵng nổi bật thật, nhưng
+  # chưa ngang Hà Nội/TP.HCM". Không có override thì cả ba cùng chạm trần
+  # caps.province.max_share=0.12 và nuốt 36% dataset.
+  # Key là province_id (chuỗi, giữ số 0 đầu) — sai key thì build_plan raise
+  # PlanError chứ không im lặng bỏ qua. KHÔNG áp vào entity_weights (tầng
+  # generator) — chỉ ảnh hưởng share tỉnh ở tầng plan.
+  overrides:
+    "04": 0.7   # Đà Nẵng — tier 1 nhưng ~0.81x Hà Nội sau khi kẹp trần
+
+# Trọng số chọn ENTITY CỤ THỂ bên trong một cell (generator.py, phase 6) —
+# khác province_weights (chọn tỉnh nào cho cell, ở tầng plan). Dùng cho
+# weighted sampling without replacement (Efraimidis–Spirakis): entity tier
+# cao (tỉnh/quận nổi tiếng) được ưu tiên hơn nhưng mọi entity trong pool
+# đều có cơ hội xuất hiện — không phải random.choice() lặp lại thuần tuý
+# (anti-pattern, xem CLAUDE.md).
+#
+# Tier 1 nâng lên 5.0 (từ 3.0): trước khi có data/raw/admin/landmarks.yaml
+# (POI manual, source=manual), MỌI POI từ OSM hardcode popularity_tier=2 —
+# trục này chưa từng có hiệu lực thật với POI (chỉ admin_unit dùng tới).
+# Giờ landmark nổi tiếng (tier 1, ~170 entry) trộn chung pool với hàng
+# nghìn POI vô danh (tier 2) — 3.0 không đủ để chúng nổi lên; 5.0 để Hồ
+# Hoàn Kiếm/Bà Nà Hills thực sự xuất hiện thường hơn "Ao Ngõ Cống", vẫn bị
+# chặn bởi caps.entity.max_share (docs/sampling.md).
+entity_weights:
+  by_tier:
+    1: 5.0
+    2: 2.0
+    3: 1.0
+
+category_weights:
+  admin_unit: 0.14
+  street: 0.22
+  address: 0.10
+  landmark: 0.08
+  transport: 0.05
+  public_facility: 0.12
+  commercial: 0.20
+  poi_other: 0.09
+
+# Quota subcategory BÊN TRONG category admin_unit — sinh MỚI vì
+# entity_weights.by_tier (trên) chỉ nghiêng xác suất, không đảm bảo tỷ
+# trọng: pool admin_unit của một tỉnh có ĐÚNG 1 entity province nhưng có
+# thể tới hàng trăm ward (nguồn wards_osm.csv, xem docs/data-model.md) —
+# weighted-shuffle đơn thuần khiến tên tỉnh gần như không bao giờ được rút
+# (đo thực tế: 6/3000 sample, 6/34 tỉnh). generator.py phân hoạch
+# cell.target_count theo quota này TRƯỚC, rồi mới weighted-shuffle bên
+# trong từng nhóm (hard rule #3 — quota-driven, random chỉ xảy ra bên
+# trong cell/nhóm). Nhóm rỗng (tỉnh chưa có district) tự renormalize sang
+# nhóm còn lại, không lỗi.
+#
+# province: 0.30 -> ~4,2% dataset (0.14 * 0.30), ~120 câu/tỉnh ở target
+# 100k — đủ để 63/63 legacy alias (docs/data-model.md#mô-hình-34--63)
+# xuất hiện chắc chắn thay vì trông chờ may rủi.
+admin_unit_subcategory_weights:
+  province: 0.30
+  district: 0.05
+  ward: 0.65
+
+sentence_type_weights:
+  nav_command: 0.22
+  search: 0.20
+  route_question: 0.16
+  conversational: 0.16
+  short_command: 0.14
+  contextual: 0.12
+
+variation_profiles:
+  - name: formal_medium
+    register: formal
+    length_class: medium
+    weight: 0.15
+  - name: neutral_short
+    register: neutral
+    length_class: short
+    weight: 0.25
+  - name: neutral_medium
+    register: neutral
+    length_class: medium
+    weight: 0.25
+  - name: casual_short
+    register: casual
+    length_class: short
+    weight: 0.20
+  - name: casual_long
+    register: casual
+    length_class: long
+    weight: 0.15
+
+caps:
+  province:
+    max_share: 0.12
+    min_share: 0.003
+  category:
+    max_share: 0.30
+    min_share: 0.03
+  sentence_type:
+    max_share: 0.35
+    min_share: 0.08
+  template:
+    max_share: 0.015
+  entity:
+    max_share: 0.0015

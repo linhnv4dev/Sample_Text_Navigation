@@ -1,0 +1,121 @@
+# Mapping OSM tag -> (category, subcategory), dùng bởi scripts/fetch_osm.py
+# để build Overpass query, và bởi build_master.py để map JSON snapshot
+# thành pois.csv. Xem taxonomy đầy đủ ở docs/data-model.md#taxonomy và
+# src/navtext/schema.py.
+#
+# Mỗi entry: một OSM tag (key=value) trỏ tới đúng một (category, subcategory)
+# trong SUBCATEGORIES. Chỉ chọn tag đủ "sạch" để tin cậy (loại tourism=attraction
+# nói chung vì lẫn nhiều noise không phải POI navigation thật, ví dụ chuồng
+# thú trong sở thú) — build_master sẽ reject bất kỳ record nào có tag không
+# nằm trong bảng này.
+#
+# streets (category=street) không nằm trong bảng này: build_master lấy trực
+# tiếp từ way có tag `highway` + `name`, map subcategory theo highway value
+# riêng (xem STREET_HIGHWAY_MAP bên dưới).
+
+poi_tags:
+  - osm_tag: "natural=water"
+    category: landmark
+    subcategory: lake
+    extra_filter: "water=lake"  # chỉ nhận water=lake, không nhận sông/kênh
+  - osm_tag: "man_made=bridge"
+    category: landmark
+    subcategory: bridge
+  - osm_tag: "historic=monument"
+    category: landmark
+    subcategory: monument
+  - osm_tag: "historic=memorial"
+    category: landmark
+    subcategory: monument
+  - osm_tag: "historic=heritage"
+    category: landmark
+    subcategory: heritage_site
+  - osm_tag: "historic=fort"
+    category: landmark
+    subcategory: heritage_site
+  - osm_tag: "historic=citywalls"
+    category: landmark
+    subcategory: heritage_site
+  - osm_tag: "amenity=marketplace"
+    category: landmark
+    subcategory: market
+  - osm_tag: "aeroway=aerodrome"
+    category: transport
+    subcategory: airport
+  - osm_tag: "railway=station"
+    category: transport
+    subcategory: railway_station
+    exclude_if: "station=subway"  # subway station đi vào metro_station riêng
+  - osm_tag: "railway=station"
+    category: transport
+    subcategory: metro_station
+    require_if: "station=subway"
+  - osm_tag: "amenity=bus_station"
+    category: transport
+    subcategory: bus_terminal
+  - osm_tag: "amenity=ferry_terminal"
+    category: transport
+    subcategory: ferry_terminal
+  - osm_tag: "amenity=school"
+    category: public_facility
+    subcategory: school
+  - osm_tag: "amenity=university"
+    category: public_facility
+    subcategory: university
+  - osm_tag: "amenity=college"
+    category: public_facility
+    subcategory: university
+  - osm_tag: "amenity=hospital"
+    category: public_facility
+    subcategory: hospital
+  - osm_tag: "office=government"
+    category: public_facility
+    subcategory: government_office
+  - osm_tag: "amenity=townhall"
+    category: public_facility
+    subcategory: government_office
+  - osm_tag: "shop=mall"
+    category: commercial
+    subcategory: shopping_mall
+  - osm_tag: "shop=supermarket"
+    category: commercial
+    subcategory: supermarket
+  - osm_tag: "tourism=hotel"
+    category: commercial
+    subcategory: hotel
+  - osm_tag: "amenity=restaurant"
+    category: commercial
+    subcategory: restaurant
+  - osm_tag: "amenity=fuel"
+    category: commercial
+    subcategory: gas_station
+  - osm_tag: "amenity=bank"
+    category: commercial
+    subcategory: bank
+  - osm_tag: "leisure=park"
+    category: poi_other
+    subcategory: park
+  - osm_tag: "leisure=stadium"
+    category: poi_other
+    subcategory: stadium
+  - osm_tag: "landuse=industrial"
+    category: poi_other
+    subcategory: industrial_zone
+  - osm_tag: "amenity=place_of_worship"
+    category: poi_other
+    subcategory: worship_place
+
+street_highway_map:
+  # highway=* -> subcategory (category luôn là "street")
+  primary: highway
+  secondary: highway
+  trunk: highway
+  residential: street
+  tertiary: street
+  unclassified: street
+  living_street: alley
+
+# fetch_osm.py chỉ nhận way/node có "name" khác rỗng — không tên thì không
+# dùng được làm entity trong template (hard rule #6: entity đi qua slot,
+# nhưng phải có tên thật để verbalize).
+require_name: true

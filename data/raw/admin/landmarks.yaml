@@ -1,0 +1,403 @@
+# Địa danh nổi tiếng curate tay — nguồn MANUAL duy nhất cho POI, bù cho
+# thin-slice OSM (chỉ 3/34 tỉnh, xem SOURCES.md). Quy trình: soạn draft
+# (LLM offline, hard rule #5) rồi người review đối chiếu từng tên trước khi
+# commit — KHÔNG phải nguồn tự động, nên không re-run được như fetch_osm.py.
+#
+# NGUỒN & ĐỘ TIN CẬY: xem data/raw/admin/SOURCES.md. Đây là kiến thức phổ
+# thông (địa danh cấp quốc gia/tỉnh ai cũng biết), CHƯA đối chiếu toạ độ
+# hay văn bản xếp hạng di tích chính thức — cần rà soát trước khi coi là
+# ground truth cho môi trường sản xuất.
+#
+# Quy ước:
+#   province_id : khớp đúng data/raw/admin/provinces.yaml (tỉnh HIỆN HÀNH,
+#                 sau sáp nhập 1/7/2025) — landmark của tỉnh cũ đã sáp nhập
+#                 (vd Hội An thuộc Quảng Nam cũ) được gộp vào đúng
+#                 province_id mới (04 Đà Nẵng), không tạo province_id riêng.
+#   name        : tên đầy đủ, không viết tắt (hard rule #1) — build_master
+#                 chỉ normalize_name(), KHÔNG viết hoa/sửa chính tả hộ.
+#   subcategory : một giá trị schema.Subcategory hợp lệ cho Category.LANDMARK
+#                 (lake/bridge/monument/heritage_site/market/mountain/beach/
+#                 museum/tourist_attraction) — build_master.validate() reject
+#                 nếu parse sai.
+#   fame_tier   : 1 = nổi tiếng cấp quốc gia (ai cũng biết dù chưa tới tỉnh
+#                 đó), 2 = nổi tiếng cấp tỉnh/vùng. Map thẳng sang
+#                 pois.csv#popularity_tier, khác OSM POI (hardcode "2").
+
+- province_id: "01"
+  landmarks:
+    - {name: "Hồ Hoàn Kiếm", subcategory: lake, fame_tier: 1}
+    - {name: "Văn Miếu Quốc Tử Giám", subcategory: heritage_site, fame_tier: 1}
+    - {name: "Chùa Một Cột", subcategory: heritage_site, fame_tier: 1}
+    - {name: "Lăng Chủ tịch Hồ Chí Minh", subcategory: monument, fame_tier: 1}
+    - {name: "Hồ Tây", subcategory: lake, fame_tier: 1}
+    - {name: "Hoàng thành Thăng Long", subcategory: heritage_site, fame_tier: 1}
+    - {name: "Nhà thờ Lớn Hà Nội", subcategory: tourist_attraction, fame_tier: 2}
+    - {name: "Chợ Đồng Xuân", subcategory: market, fame_tier: 2}
+    - {name: "Cầu Long Biên", subcategory: bridge, fame_tier: 1}
+    - {name: "Bảo tàng Dân tộc học Việt Nam", subcategory: museum, fame_tier: 2}
+
+- province_id: "02"
+  landmarks:
+    - {name: "Dinh Độc Lập", subcategory: tourist_attraction, fame_tier: 1, legacy_alias: "Hồ Chí Minh"}
+    - {name: "Nhà thờ Đức Bà Sài Gòn", subcategory: heritage_site, fame_tier: 1, legacy_alias: "Hồ Chí Minh"}
+    - {name: "Chợ Bến Thành", subcategory: market, fame_tier: 1, legacy_alias: "Hồ Chí Minh"}
+    - {name: "Bưu điện Trung tâm Sài Gòn", subcategory: heritage_site, fame_tier: 2, legacy_alias: "Hồ Chí Minh"}
+    - {name: "Landmark 81", subcategory: tourist_attraction, fame_tier: 1, legacy_alias: "Hồ Chí Minh"}
+    - {name: "Địa đạo Củ Chi", subcategory: heritage_site, fame_tier: 1, legacy_alias: "Hồ Chí Minh"}
+    - {name: "Bãi biển Vũng Tàu", subcategory: beach, fame_tier: 2, legacy_alias: "Bà Rịa Vũng Tàu"}
+    - {name: "Tượng Chúa Kitô Vua Vũng Tàu", subcategory: monument, fame_tier: 2, legacy_alias: "Bà Rịa Vũng Tàu"}
+    - {name: "Chùa Bà Thiên Hậu", subcategory: tourist_attraction, fame_tier: 2, legacy_alias: "Bình Dương"}
+
+- province_id: "03"
+  landmarks:
+    - {name: "Đảo Cát Bà", subcategory: tourist_attraction, fame_tier: 1, legacy_alias: "Hải Phòng"}
+    - {name: "Vịnh Lan Hạ", subcategory: tourist_attraction, fame_tier: 2, legacy_alias: "Hải Phòng"}
+    - {name: "Bãi biển Đồ Sơn", subcategory: beach, fame_tier: 2, legacy_alias: "Hải Phòng"}
+    - {name: "Đền thờ Trạng Trình Nguyễn Bỉnh Khiêm", subcategory: heritage_site, fame_tier: 2, legacy_alias: "Hải Phòng"}
+    - {name: "Côn Sơn Kiếp Bạc", subcategory: heritage_site, fame_tier: 1, legacy_alias: "Hải Dương"}
+    - {name: "Văn miếu Mao Điền", subcategory: heritage_site, fame_tier: 2, legacy_alias: "Hải Dương"}
+    - {name: "Chùa Dư Hàng", subcategory: heritage_site, fame_tier: 2, legacy_alias: "Hải Phòng"}
+    - {name: "Bến tàu không số K15", subcategory: heritage_site, fame_tier: 2, legacy_alias: "Hải Phòng"}
+
+- province_id: "04"
+  landmarks:
+    - {name: "Cầu Rồng", subcategory: bridge, fame_tier: 1, legacy_alias: "Đà Nẵng"}
+    - {name: "Ngũ Hành Sơn", subcategory: mountain, fame_tier: 1, legacy_alias: "Đà Nẵng"}
+    - {name: "Bà Nà Hills", subcategory: tourist_attraction, fame_tier: 1, legacy_alias: "Đà Nẵng"}
+    - {name: "Cầu Vàng", subcategory: tourist_attraction, fame_tier: 1, legacy_alias: "Đà Nẵng"}
+    - {name: "Biển Mỹ Khê", subcategory: beach, fame_tier: 1, legacy_alias: "Đà Nẵng"}
+    - {name: "Bán đảo Sơn Trà", subcategory: mountain, fame_tier: 2, legacy_alias: "Đà Nẵng"}
+    - {name: "Phố cổ Hội An", subcategory: heritage_site, fame_tier: 1, legacy_alias: "Quảng Nam"}
+    - {name: "Thánh địa Mỹ Sơn", subcategory: heritage_site, fame_tier: 1, legacy_alias: "Quảng Nam"}
+    - {name: "Chợ Cồn", subcategory: market, fame_tier: 2, legacy_alias: "Đà Nẵng"}
+    - {name: "Chùa Linh Ứng", subcategory: tourist_attraction, fame_tier: 2, legacy_alias: "Đà Nẵng"}
+
+- province_id: "05"
+  landmarks:
+    - {name: "Chợ nổi Cái Răng", subcategory: market, fame_tier: 1, legacy_alias: "Cần Thơ"}
+    - {name: "Bến Ninh Kiều", subcategory: tourist_attraction, fame_tier: 1, legacy_alias: "Cần Thơ"}
+    - {name: "Chùa Ông Cần Thơ", subcategory: tourist_attraction, fame_tier: 2, legacy_alias: "Cần Thơ"}
+    - {name: "Nhà cổ Bình Thủy", subcategory: heritage_site, fame_tier: 2, legacy_alias: "Cần Thơ"}
+    - {name: "Chùa Dơi", subcategory: tourist_attraction, fame_tier: 2, legacy_alias: "Sóc Trăng"}
+    - {name: "Chợ nổi Ngã Bảy", subcategory: market, fame_tier: 2, legacy_alias: "Hậu Giang"}
+    - {name: "Vườn cò Bằng Lăng", subcategory: tourist_attraction, fame_tier: 2, legacy_alias: "Cần Thơ"}
+    - {name: "Chùa Kh'leang", subcategory: heritage_site, fame_tier: 2, legacy_alias: "Sóc Trăng"}
+
+- province_id: "06"
+  landmarks:
+    - {name: "Đại Nội Huế", subcategory: heritage_site, fame_tier: 1}
+    - {name: "Chùa Thiên Mụ", subcategory: heritage_site, fame_tier: 1}
+    - {name: "Lăng Tự Đức", subcategory: heritage_site, fame_tier: 2}
+    - {name: "Lăng Khải Định", subcategory: heritage_site, fame_tier: 2}
+    - {name: "Cầu Tràng Tiền", subcategory: bridge, fame_tier: 1}
+    - {name: "Sông Hương", subcategory: tourist_attraction, fame_tier: 1}
+    - {name: "Biển Lăng Cô", subcategory: beach, fame_tier: 2}
+    - {name: "Cầu ngói Thanh Toàn", subcategory: heritage_site, fame_tier: 2}
+
+- province_id: "07"
+  landmarks:
+    - {name: "Đèo Ô Quy Hồ", subcategory: mountain, fame_tier: 2}
+    - {name: "Cao nguyên Sìn Hồ", subcategory: tourist_attraction, fame_tier: 2}
+    - {name: "Động Pu Sam Cáp", subcategory: tourist_attraction, fame_tier: 2}
+    - {name: "Bản Sin Suối Hồ", subcategory: tourist_attraction, fame_tier: 2}
+    - {name: "Cầu kính Rồng Mây", subcategory: tourist_attraction, fame_tier: 2}
+    - {name: "Chợ phiên Dào San", subcategory: market, fame_tier: 2}
+    - {name: "Thác Tác Tình", subcategory: tourist_attraction, fame_tier: 2}
+    - {name: "Bản Sì Thâu Chải", subcategory: tourist_attraction, fame_tier: 2}
+
+- province_id: "08"
+  landmarks:
+    - {name: "Đồi A1", subcategory: heritage_site, fame_tier: 1}
+    - {name: "Hầm Đờ Cát", subcategory: heritage_site, fame_tier: 1}
+    - {name: "Bảo tàng Chiến thắng lịch sử Điện Biên Phủ", subcategory: museum, fame_tier: 1}
+    - {name: "Cánh đồng Mường Thanh", subcategory: tourist_attraction, fame_tier: 2}
+    - {name: "Tượng đài Chiến thắng Điện Biên Phủ", subcategory: monument, fame_tier: 1}
+    - {name: "Đèo Pha Đin", subcategory: mountain, fame_tier: 2}
+    - {name: "Hồ Pá Khoang", subcategory: lake, fame_tier: 2}
+    - {name: "Thành Bản Phủ", subcategory: heritage_site, fame_tier: 2}
+
+- province_id: "09"
+  landmarks:
+    - {name: "Nhà tù Sơn La", subcategory: heritage_site, fame_tier: 1}
+    - {name: "Cao nguyên Mộc Châu", subcategory: tourist_attraction, fame_tier: 1}
+    - {name: "Rừng thông bản Áng", subcategory: tourist_attraction, fame_tier: 2}
+    - {name: "Thủy điện Sơn La", subcategory: tourist_attraction, fame_tier: 2}
+    - {name: "Thác Dải Yếm", subcategory: tourist_attraction, fame_tier: 2}
+    - {name: "Cầu kính Bạch Long", subcategory: tourist_attraction, fame_tier: 2}
+    - {name: "Ngã ba Cò Nòi", subcategory: heritage_site, fame_tier: 2}
+    - {name: "Hang Dơi Mộc Châu", subcategory: tourist_attraction, fame_tier: 2}
+
+- province_id: "10"
+  landmarks:
+    - {name: "Động Tam Thanh", subcategory: tourist_attraction, fame_tier: 1}
+    - {name: "Ải Chi Lăng", subcategory: heritage_site, fame_tier: 1}
+    - {name: "Núi Nàng Tô Thị", subcategory: mountain, fame_tier: 2}
+    - {name: "Chợ Đông Kinh", subcategory: market, fame_tier: 2}
+    - {name: "Cửa khẩu Hữu Nghị", subcategory: tourist_attraction, fame_tier: 1}
+    - {name: "Mẫu Sơn", subcategory: mountain, fame_tier: 1}
+    - {name: "Đền Kỳ Cùng", subcategory: heritage_site, fame_tier: 2}
+    - {name: "Chợ Kỳ Lừa", subcategory: market, fame_tier: 2}
+
+- province_id: "11"
+  landmarks:
+    - {name: "Vịnh Hạ Long", subcategory: tourist_attraction, fame_tier: 1}
+    - {name: "Chùa Yên Tử", subcategory: heritage_site, fame_tier: 1}
+    - {name: "Đảo Cô Tô", subcategory: tourist_attraction, fame_tier: 2}
+    - {name: "Đảo Tuần Châu", subcategory: tourist_attraction, fame_tier: 2}
+    - {name: "Bãi Cháy", subcategory: beach, fame_tier: 2}
+    - {name: "Cầu Bãi Cháy", subcategory: bridge, fame_tier: 2}
+    - {name: "Chùa Ba Vàng", subcategory: heritage_site, fame_tier: 1}
+    - {name: "Bãi tắm Trà Cổ", subcategory: beach, fame_tier: 2}
+
+- province_id: "12"
+  landmarks:
+    - {name: "Thành nhà Hồ", subcategory: heritage_site, fame_tier: 1}
+    - {name: "Biển Sầm Sơn", subcategory: beach, fame_tier: 1}
+    - {name: "Suối cá thần Cẩm Lương", subcategory: tourist_attraction, fame_tier: 2}
+    - {name: "Khu di tích Lam Kinh", subcategory: heritage_site, fame_tier: 2}
+    - {name: "Động Từ Thức", subcategory: tourist_attraction, fame_tier: 2}
+    - {name: "Cầu Hàm Rồng", subcategory: bridge, fame_tier: 1}
+    - {name: "Pù Luông", subcategory: mountain, fame_tier: 2}
+    - {name: "Đền Bà Triệu", subcategory: heritage_site, fame_tier: 2}
+
+- province_id: "13"
+  landmarks:
+    - {name: "Khu di tích Kim Liên", subcategory: heritage_site, fame_tier: 1}
+    - {name: "Biển Cửa Lò", subcategory: beach, fame_tier: 1}
+    - {name: "Đền Cuông", subcategory: tourist_attraction, fame_tier: 2}
+    - {name: "Vườn quốc gia Pù Mát", subcategory: tourist_attraction, fame_tier: 2}
+    - {name: "Quảng trường Hồ Chí Minh", subcategory: monument, fame_tier: 2}
+    - {name: "Đảo Chè Thanh Chương", subcategory: tourist_attraction, fame_tier: 2}
+    - {name: "Thác Khe Kèm", subcategory: tourist_attraction, fame_tier: 2}
+    - {name: "Chùa Đại Tuệ", subcategory: heritage_site, fame_tier: 2}
+
+- province_id: "14"
+  landmarks:
+    - {name: "Ngã ba Đồng Lộc", subcategory: heritage_site, fame_tier: 1}
+    - {name: "Chùa Hương Tích", subcategory: tourist_attraction, fame_tier: 2}
+    - {name: "Khu di tích Nguyễn Du", subcategory: heritage_site, fame_tier: 2}
+    - {name: "Biển Thiên Cầm", subcategory: beach, fame_tier: 2}
+    - {name: "Đèo Ngang", subcategory: mountain, fame_tier: 2}
+    - {name: "Biển Xuân Thành", subcategory: beach, fame_tier: 2}
+    - {name: "Hồ Kẻ Gỗ", subcategory: lake, fame_tier: 2}
+    - {name: "Khu di tích Hải Thượng Lãn Ông", subcategory: heritage_site, fame_tier: 2}
+
+- province_id: "15"
+  landmarks:
+    - {name: "Thác Bản Giốc", subcategory: tourist_attraction, fame_tier: 1}
+    - {name: "Động Ngườm Ngao", subcategory: tourist_attraction, fame_tier: 2}
+    - {name: "Hồ Thang Hen", subcategory: lake, fame_tier: 2}
+    - {name: "Khu di tích Pác Bó", subcategory: heritage_site, fame_tier: 1}
+    - {name: "Rừng Trần Hưng Đạo", subcategory: heritage_site, fame_tier: 1}
+    - {name: "Núi Mắt Thần", subcategory: mountain, fame_tier: 2}
+    - {name: "Chùa Phật Tích Trúc Lâm Bản Giốc", subcategory: heritage_site, fame_tier: 2}
+    - {name: "Đèo Mã Phục", subcategory: mountain, fame_tier: 2}
+
+- province_id: "16"
+  landmarks:
+    - {name: "Khu di tích Tân Trào", subcategory: heritage_site, fame_tier: 1, legacy_alias: "Tuyên Quang"}
+    - {name: "Thành nhà Mạc", subcategory: heritage_site, fame_tier: 2, legacy_alias: "Tuyên Quang"}
+    - {name: "Cao nguyên đá Đồng Văn", subcategory: tourist_attraction, fame_tier: 1, legacy_alias: "Hà Giang"}
+    - {name: "Đèo Mã Pí Lèng", subcategory: mountain, fame_tier: 1, legacy_alias: "Hà Giang"}
+    - {name: "Cột cờ Lũng Cú", subcategory: monument, fame_tier: 1, legacy_alias: "Hà Giang"}
+    - {name: "Thác Bản Ba", subcategory: tourist_attraction, fame_tier: 2, legacy_alias: "Tuyên Quang"}
+    - {name: "Phố cổ Đồng Văn", subcategory: heritage_site, fame_tier: 1, legacy_alias: "Hà Giang"}
+    - {name: "Ruộng bậc thang Hoàng Su Phì", subcategory: tourist_attraction, fame_tier: 2, legacy_alias: "Hà Giang"}
+
+- province_id: "17"
+  landmarks:
+    - {name: "Sa Pa", subcategory: tourist_attraction, fame_tier: 1, legacy_alias: "Lào Cai"}
+    - {name: "Đỉnh Fansipan", subcategory: mountain, fame_tier: 1, legacy_alias: "Lào Cai"}
+    - {name: "Ruộng bậc thang Mù Cang Chải", subcategory: tourist_attraction, fame_tier: 1, legacy_alias: "Yên Bái"}
+    - {name: "Nhà thờ đá Sa Pa", subcategory: tourist_attraction, fame_tier: 2, legacy_alias: "Lào Cai"}
+    - {name: "Chợ tình Bắc Hà", subcategory: market, fame_tier: 2, legacy_alias: "Lào Cai"}
+    - {name: "Bản Cát Cát", subcategory: tourist_attraction, fame_tier: 2, legacy_alias: "Lào Cai"}
+    - {name: "Y Tý", subcategory: tourist_attraction, fame_tier: 2, legacy_alias: "Lào Cai"}
+    - {name: "Suối Giàng", subcategory: tourist_attraction, fame_tier: 2, legacy_alias: "Yên Bái"}
+
+- province_id: "18"
+  landmarks:
+    - {name: "Hồ Núi Cốc", subcategory: lake, fame_tier: 1, legacy_alias: "Thái Nguyên"}
+    - {name: "Hồ Ba Bể", subcategory: lake, fame_tier: 1, legacy_alias: "Bắc Kạn"}
+    - {name: "Khu di tích ATK Định Hóa", subcategory: heritage_site, fame_tier: 2, legacy_alias: "Thái Nguyên"}
+    - {name: "Bảo tàng Văn hóa các dân tộc Việt Nam", subcategory: museum, fame_tier: 2, legacy_alias: "Thái Nguyên"}
+    - {name: "Đền Đuổm", subcategory: heritage_site, fame_tier: 2, legacy_alias: "Thái Nguyên"}
+    - {name: "Khu di tích Núi Văn Núi Võ", subcategory: heritage_site, fame_tier: 2, legacy_alias: "Thái Nguyên"}
+    - {name: "Động Puông", subcategory: tourist_attraction, fame_tier: 2, legacy_alias: "Bắc Kạn"}
+    - {name: "Thác Nà Khoang", subcategory: tourist_attraction, fame_tier: 2, legacy_alias: "Bắc Kạn"}
+
+- province_id: "19"
+  landmarks:
+    - {name: "Đền Hùng", subcategory: heritage_site, fame_tier: 1, legacy_alias: "Phú Thọ"}
+    - {name: "Tam Đảo", subcategory: mountain, fame_tier: 1, legacy_alias: "Vĩnh Phúc"}
+    - {name: "Thủy điện Hòa Bình", subcategory: tourist_attraction, fame_tier: 2, legacy_alias: "Hòa Bình"}
+    - {name: "Đầm Ao Châu", subcategory: lake, fame_tier: 2, legacy_alias: "Phú Thọ"}
+    - {name: "Khu du lịch nước khoáng nóng Thanh Thủy", subcategory: tourist_attraction, fame_tier: 2, legacy_alias: "Phú Thọ"}
+    - {name: "Thiền viện Trúc Lâm Tây Thiên", subcategory: heritage_site, fame_tier: 1, legacy_alias: "Vĩnh Phúc"}
+    - {name: "Bản Lác Mai Châu", subcategory: tourist_attraction, fame_tier: 1, legacy_alias: "Hòa Bình"}
+    - {name: "Hồ Hòa Bình", subcategory: lake, fame_tier: 2, legacy_alias: "Hòa Bình"}
+
+- province_id: "20"
+  landmarks:
+    - {name: "Đền Đô", subcategory: heritage_site, fame_tier: 1, legacy_alias: "Bắc Ninh"}
+    - {name: "Chùa Bút Tháp", subcategory: heritage_site, fame_tier: 1, legacy_alias: "Bắc Ninh"}
+    - {name: "Chùa Dâu", subcategory: heritage_site, fame_tier: 2, legacy_alias: "Bắc Ninh"}
+    - {name: "Khu du lịch tâm linh Tây Yên Tử", subcategory: tourist_attraction, fame_tier: 2, legacy_alias: "Bắc Giang"}
+    - {name: "Chùa Phật Tích", subcategory: heritage_site, fame_tier: 2, legacy_alias: "Bắc Ninh"}
+    - {name: "Đền Bà Chúa Kho", subcategory: heritage_site, fame_tier: 2, legacy_alias: "Bắc Ninh"}
+    - {name: "Suối Mỡ", subcategory: tourist_attraction, fame_tier: 2, legacy_alias: "Bắc Giang"}
+    - {name: "Chùa Vĩnh Nghiêm", subcategory: heritage_site, fame_tier: 1, legacy_alias: "Bắc Giang"}
+
+- province_id: "21"
+  landmarks:
+    - {name: "Phố Hiến", subcategory: heritage_site, fame_tier: 1, legacy_alias: "Hưng Yên"}
+    - {name: "Chùa Chuông", subcategory: heritage_site, fame_tier: 2, legacy_alias: "Hưng Yên"}
+    - {name: "Chùa Keo", subcategory: heritage_site, fame_tier: 1, legacy_alias: "Thái Bình"}
+    - {name: "Đền Đa Hòa", subcategory: heritage_site, fame_tier: 2, legacy_alias: "Hưng Yên"}
+    - {name: "Văn miếu Xích Đằng", subcategory: heritage_site, fame_tier: 2, legacy_alias: "Hưng Yên"}
+    - {name: "Làng Nôm - Chùa Nôm", subcategory: heritage_site, fame_tier: 2, legacy_alias: "Hưng Yên"}
+    - {name: "Biển Đồng Châu", subcategory: beach, fame_tier: 2, legacy_alias: "Thái Bình"}
+    - {name: "Khu di tích đền Trần Thái Bình", subcategory: heritage_site, fame_tier: 2, legacy_alias: "Thái Bình"}
+
+- province_id: "22"
+  landmarks:
+    - {name: "Quần thể danh thắng Tràng An", subcategory: tourist_attraction, fame_tier: 1, legacy_alias: "Ninh Bình"}
+    - {name: "Tam Cốc Bích Động", subcategory: tourist_attraction, fame_tier: 1, legacy_alias: "Ninh Bình"}
+    - {name: "Chùa Bái Đính", subcategory: heritage_site, fame_tier: 1, legacy_alias: "Ninh Bình"}
+    - {name: "Cố đô Hoa Lư", subcategory: heritage_site, fame_tier: 1, legacy_alias: "Ninh Bình"}
+    - {name: "Đền Trần Nam Định", subcategory: heritage_site, fame_tier: 1, legacy_alias: "Nam Định"}
+    - {name: "Chùa Tam Chúc", subcategory: heritage_site, fame_tier: 1, legacy_alias: "Hà Nam"}
+    - {name: "Nhà thờ đá Phát Diệm", subcategory: heritage_site, fame_tier: 1, legacy_alias: "Ninh Bình"}
+    - {name: "Vườn quốc gia Cúc Phương", subcategory: tourist_attraction, fame_tier: 1, legacy_alias: "Ninh Bình"}
+
+- province_id: "23"
+  landmarks:
+    - {name: "Động Phong Nha", subcategory: tourist_attraction, fame_tier: 1, legacy_alias: "Quảng Bình"}
+    - {name: "Động Thiên Đường", subcategory: tourist_attraction, fame_tier: 1, legacy_alias: "Quảng Bình"}
+    - {name: "Thành cổ Quảng Trị", subcategory: heritage_site, fame_tier: 1, legacy_alias: "Quảng Trị"}
+    - {name: "Cầu Hiền Lương", subcategory: bridge, fame_tier: 1, legacy_alias: "Quảng Trị"}
+    - {name: "Địa đạo Vịnh Mốc", subcategory: heritage_site, fame_tier: 2, legacy_alias: "Quảng Trị"}
+    - {name: "Nghĩa trang liệt sĩ Trường Sơn", subcategory: heritage_site, fame_tier: 1, legacy_alias: "Quảng Trị"}
+    - {name: "Sông Bến Hải", subcategory: tourist_attraction, fame_tier: 1, legacy_alias: "Quảng Trị"}
+    - {name: "Suối nước Moọc", subcategory: tourist_attraction, fame_tier: 2, legacy_alias: "Quảng Bình"}
+
+- province_id: "24"
+  landmarks:
+    - {name: "Đảo Lý Sơn", subcategory: tourist_attraction, fame_tier: 1, legacy_alias: "Quảng Ngãi"}
+    - {name: "Khu chứng tích Sơn Mỹ", subcategory: heritage_site, fame_tier: 2, legacy_alias: "Quảng Ngãi"}
+    - {name: "Nhà thờ gỗ Kon Tum", subcategory: tourist_attraction, fame_tier: 1, legacy_alias: "Kon Tum"}
+    - {name: "Núi Ngọc Linh", subcategory: mountain, fame_tier: 2, legacy_alias: "Kon Tum"}
+    - {name: "Bãi biển Sa Huỳnh", subcategory: beach, fame_tier: 2, legacy_alias: "Quảng Ngãi"}
+    - {name: "Núi Thiên Ấn", subcategory: mountain, fame_tier: 2, legacy_alias: "Quảng Ngãi"}
+    - {name: "Nhà rông Kon Klor", subcategory: heritage_site, fame_tier: 2, legacy_alias: "Kon Tum"}
+    - {name: "Cầu treo Kon Klor", subcategory: bridge, fame_tier: 2, legacy_alias: "Kon Tum"}
+
+- province_id: "25"
+  landmarks:
+    - {name: "Biển Quy Nhơn", subcategory: beach, fame_tier: 1, legacy_alias: "Bình Định"}
+    - {name: "Tháp Đôi", subcategory: heritage_site, fame_tier: 2, legacy_alias: "Bình Định"}
+    - {name: "Kỳ Co", subcategory: beach, fame_tier: 2, legacy_alias: "Bình Định"}
+    - {name: "Biển Hồ Pleiku", subcategory: lake, fame_tier: 1, legacy_alias: "Gia Lai"}
+    - {name: "Thác Phú Cường", subcategory: tourist_attraction, fame_tier: 2, legacy_alias: "Gia Lai"}
+    - {name: "Tháp Chăm Dương Long", subcategory: heritage_site, fame_tier: 2, legacy_alias: "Bình Định"}
+    - {name: "Eo Gió Quy Nhơn", subcategory: tourist_attraction, fame_tier: 1, legacy_alias: "Bình Định"}
+    - {name: "Núi lửa Chư Đăng Ya", subcategory: mountain, fame_tier: 2, legacy_alias: "Gia Lai"}
+
+- province_id: "26"
+  landmarks:
+    - {name: "Vịnh Nha Trang", subcategory: beach, fame_tier: 1, legacy_alias: "Khánh Hòa"}
+    - {name: "Tháp Bà Ponagar", subcategory: heritage_site, fame_tier: 1, legacy_alias: "Khánh Hòa"}
+    - {name: "VinWonders Nha Trang", subcategory: tourist_attraction, fame_tier: 2, legacy_alias: "Khánh Hòa"}
+    - {name: "Tháp Chàm Poklong Garai", subcategory: heritage_site, fame_tier: 1, legacy_alias: "Ninh Thuận"}
+    - {name: "Đảo Bình Ba", subcategory: tourist_attraction, fame_tier: 2, legacy_alias: "Khánh Hòa"}
+    - {name: "Vịnh Cam Ranh", subcategory: tourist_attraction, fame_tier: 2, legacy_alias: "Khánh Hòa"}
+    - {name: "Vịnh Vĩnh Hy", subcategory: tourist_attraction, fame_tier: 2, legacy_alias: "Ninh Thuận"}
+    - {name: "Đồi cát Nam Cương", subcategory: tourist_attraction, fame_tier: 2, legacy_alias: "Ninh Thuận"}
+
+- province_id: "27"
+  landmarks:
+    - {name: "Hồ Xuân Hương", subcategory: lake, fame_tier: 1, legacy_alias: "Lâm Đồng"}
+    - {name: "Thác Datanla", subcategory: tourist_attraction, fame_tier: 2, legacy_alias: "Lâm Đồng"}
+    - {name: "Đồi chè Cầu Đất", subcategory: tourist_attraction, fame_tier: 2, legacy_alias: "Lâm Đồng"}
+    - {name: "Đồi cát Mũi Né", subcategory: tourist_attraction, fame_tier: 1, legacy_alias: "Bình Thuận"}
+    - {name: "Thác Dray Sap", subcategory: tourist_attraction, fame_tier: 2, legacy_alias: "Đắk Nông"}
+    - {name: "Thác Pongour", subcategory: tourist_attraction, fame_tier: 1, legacy_alias: "Lâm Đồng"}
+    - {name: "Bàu Trắng", subcategory: tourist_attraction, fame_tier: 2, legacy_alias: "Bình Thuận"}
+    - {name: "Vườn quốc gia Tà Đùng", subcategory: tourist_attraction, fame_tier: 1, legacy_alias: "Đắk Nông"}
+
+- province_id: "28"
+  landmarks:
+    - {name: "Hồ Lắk", subcategory: lake, fame_tier: 1, legacy_alias: "Đắk Lắk"}
+    - {name: "Thác Dray Nur", subcategory: tourist_attraction, fame_tier: 2, legacy_alias: "Đắk Lắk"}
+    - {name: "Buôn Đôn", subcategory: tourist_attraction, fame_tier: 2, legacy_alias: "Đắk Lắk"}
+    - {name: "Gành Đá Đĩa", subcategory: tourist_attraction, fame_tier: 1, legacy_alias: "Phú Yên"}
+    - {name: "Vịnh Xuân Đài", subcategory: beach, fame_tier: 2, legacy_alias: "Phú Yên"}
+    - {name: "Thác Krông Kmar", subcategory: tourist_attraction, fame_tier: 2, legacy_alias: "Đắk Lắk"}
+    - {name: "Bãi Xép", subcategory: tourist_attraction, fame_tier: 2, legacy_alias: "Phú Yên"}
+    - {name: "Tháp Nhạn", subcategory: heritage_site, fame_tier: 1, legacy_alias: "Phú Yên"}
+
+- province_id: "29"
+  landmarks:
+    - {name: "Vườn quốc gia Nam Cát Tiên", subcategory: tourist_attraction, fame_tier: 1, legacy_alias: "Đồng Nai"}
+    - {name: "Thác Giang Điền", subcategory: tourist_attraction, fame_tier: 2, legacy_alias: "Đồng Nai"}
+    - {name: "Núi Bà Rá", subcategory: mountain, fame_tier: 2, legacy_alias: "Bình Phước"}
+    - {name: "Chùa Ông Đồng Nai", subcategory: heritage_site, fame_tier: 2, legacy_alias: "Đồng Nai"}
+    - {name: "Văn miếu Trấn Biên", subcategory: heritage_site, fame_tier: 1, legacy_alias: "Đồng Nai"}
+    - {name: "Hồ Trị An", subcategory: lake, fame_tier: 2, legacy_alias: "Đồng Nai"}
+    - {name: "Vườn quốc gia Bù Gia Mập", subcategory: tourist_attraction, fame_tier: 2, legacy_alias: "Bình Phước"}
+    - {name: "Sóc Bom Bo", subcategory: heritage_site, fame_tier: 2, legacy_alias: "Bình Phước"}
+
+- province_id: "30"
+  landmarks:
+    - {name: "Núi Bà Đen", subcategory: mountain, fame_tier: 1, legacy_alias: "Tây Ninh"}
+    - {name: "Toà Thánh Cao Đài Tây Ninh", subcategory: heritage_site, fame_tier: 1, legacy_alias: "Tây Ninh"}
+    - {name: "Hồ Dầu Tiếng", subcategory: lake, fame_tier: 1, legacy_alias: "Tây Ninh"}
+    - {name: "Khu du lịch Làng nổi Tân Lập", subcategory: tourist_attraction, fame_tier: 2, legacy_alias: "Long An"}
+    - {name: "Căn cứ Trung ương Cục miền Nam", subcategory: heritage_site, fame_tier: 1, legacy_alias: "Tây Ninh"}
+    - {name: "Vườn quốc gia Lò Gò Xa Mát", subcategory: tourist_attraction, fame_tier: 2, legacy_alias: "Tây Ninh"}
+    - {name: "Khu di tích Vàm Nhựt Tảo", subcategory: heritage_site, fame_tier: 2, legacy_alias: "Long An"}
+    - {name: "Chùa Tôn Thạnh", subcategory: heritage_site, fame_tier: 2, legacy_alias: "Long An"}
+
+- province_id: "31"
+  landmarks:
+    - {name: "Cù lao An Bình", subcategory: tourist_attraction, fame_tier: 2, legacy_alias: "Vĩnh Long"}
+    - {name: "Cồn Phụng", subcategory: tourist_attraction, fame_tier: 1, legacy_alias: "Bến Tre"}
+    - {name: "Ao Bà Om", subcategory: lake, fame_tier: 1, legacy_alias: "Trà Vinh"}
+    - {name: "Chùa Âng", subcategory: heritage_site, fame_tier: 2, legacy_alias: "Trà Vinh"}
+    - {name: "Chợ nổi Trà Ôn", subcategory: market, fame_tier: 2, legacy_alias: "Vĩnh Long"}
+    - {name: "Biển Ba Động", subcategory: beach, fame_tier: 2, legacy_alias: "Trà Vinh"}
+    - {name: "Khu di tích Nguyễn Đình Chiểu", subcategory: heritage_site, fame_tier: 2, legacy_alias: "Bến Tre"}
+    - {name: "Văn Thánh Miếu Vĩnh Long", subcategory: heritage_site, fame_tier: 2, legacy_alias: "Vĩnh Long"}
+
+- province_id: "32"
+  landmarks:
+    - {name: "Vườn quốc gia Tràm Chim", subcategory: tourist_attraction, fame_tier: 1, legacy_alias: "Đồng Tháp"}
+    - {name: "Khu di tích Xẻo Quýt", subcategory: heritage_site, fame_tier: 2, legacy_alias: "Đồng Tháp"}
+    - {name: "Chợ nổi Cái Bè", subcategory: market, fame_tier: 1, legacy_alias: "Tiền Giang"}
+    - {name: "Cù lao Thới Sơn", subcategory: tourist_attraction, fame_tier: 2, legacy_alias: "Tiền Giang"}
+    - {name: "Làng hoa Sa Đéc", subcategory: tourist_attraction, fame_tier: 1, legacy_alias: "Đồng Tháp"}
+    - {name: "Khu di tích Gò Tháp", subcategory: heritage_site, fame_tier: 2, legacy_alias: "Đồng Tháp"}
+    - {name: "Chùa Vĩnh Tràng", subcategory: heritage_site, fame_tier: 1, legacy_alias: "Tiền Giang"}
+    - {name: "Trại rắn Đồng Tâm", subcategory: tourist_attraction, fame_tier: 2, legacy_alias: "Tiền Giang"}
+
+- province_id: "33"
+  landmarks:
+    - {name: "Mũi Cà Mau", subcategory: tourist_attraction, fame_tier: 1, legacy_alias: "Cà Mau"}
+    - {name: "Rừng U Minh Hạ", subcategory: tourist_attraction, fame_tier: 1, legacy_alias: "Cà Mau"}
+    - {name: "Nhà công tử Bạc Liêu", subcategory: heritage_site, fame_tier: 1, legacy_alias: "Bạc Liêu"}
+    - {name: "Cánh đồng quạt gió Bạc Liêu", subcategory: tourist_attraction, fame_tier: 2, legacy_alias: "Bạc Liêu"}
+    - {name: "Hòn Đá Bạc", subcategory: tourist_attraction, fame_tier: 2, legacy_alias: "Cà Mau"}
+    - {name: "Chợ nổi Cà Mau", subcategory: market, fame_tier: 2, legacy_alias: "Cà Mau"}
+    - {name: "Vườn chim Bạc Liêu", subcategory: tourist_attraction, fame_tier: 2, legacy_alias: "Bạc Liêu"}
+    - {name: "Quán âm Phật đài Bạc Liêu", subcategory: heritage_site, fame_tier: 2, legacy_alias: "Bạc Liêu"}
+
+- province_id: "34"
+  landmarks:
+    - {name: "Miếu Bà Chúa Xứ Núi Sam", subcategory: heritage_site, fame_tier: 1, legacy_alias: "An Giang"}
+    - {name: "Rừng tràm Trà Sư", subcategory: tourist_attraction, fame_tier: 1, legacy_alias: "An Giang"}
+    - {name: "Đảo Phú Quốc", subcategory: tourist_attraction, fame_tier: 1, legacy_alias: "Kiên Giang"}
+    - {name: "Chợ đêm Hà Tiên", subcategory: market, fame_tier: 2, legacy_alias: "Kiên Giang"}
+    - {name: "Núi Cấm", subcategory: mountain, fame_tier: 2, legacy_alias: "An Giang"}
+    - {name: "Đồi Tức Dụp", subcategory: tourist_attraction, fame_tier: 2, legacy_alias: "An Giang"}
+    - {name: "Bãi biển Hòn Chông", subcategory: beach, fame_tier: 2, legacy_alias: "Kiên Giang"}
+    - {name: "Quần đảo Nam Du", subcategory: tourist_attraction, fame_tier: 1, legacy_alias: "Kiên Giang"}

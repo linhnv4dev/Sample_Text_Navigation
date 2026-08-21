@@ -1,0 +1,1443 @@
+{
+  "bbox": [
+    8.0,
+    108.5514745,
+    12.8685237,
+    110.0
+  ],
+  "element_count": 100,
+  "elements": [
+    {
+      "id": 9469372316,
+      "lat": 10.5029286,
+      "lon": 108.9513145,
+      "tags": {
+        "amenity": "ferry_terminal",
+        "ferry": "yes",
+        "name": "Phú Quý",
+        "public_transport": "station"
+      },
+      "type": "node"
+    },
+    {
+      "id": 10793078957,
+      "lat": 9.9740011,
+      "lon": 109.0838682,
+      "tags": {
+        "historic": "memorial",
+        "material": "stone",
+        "memorial": "plaque",
+        "name": "Điểm cơ sở A6"
+      },
+      "type": "node"
+    },
+    {
+      "id": 11670580470,
+      "lat": 10.5455349,
+      "lon": 108.9561992,
+      "tags": {
+        "name": "Long Vi Hotel",
+        "tourism": "hotel"
+      },
+      "type": "node"
+    },
+    {
+      "id": 11670602269,
+      "lat": 10.553383,
+      "lon": 108.9440273,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "breakfast;coffee_shop;diner;fine_dining;fish;friture;international",
+        "internet_access": "wlan",
+        "name": "Sea La Vie Inspiring Phu Quy"
+      },
+      "type": "node"
+    },
+    {
+      "id": 12483918301,
+      "lat": 10.5287571,
+      "lon": 108.9571418,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "BBQ Bai Can."
+      },
+      "type": "node"
+    },
+    {
+      "id": 12483935301,
+      "lat": 10.5371837,
+      "lon": 108.9533203,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Do Re Mi"
+      },
+      "type": "node"
+    },
+    {
+      "center": {
+        "lat": 10.5241017,
+        "lon": 108.930262
+      },
+      "id": 454966062,
+      "tags": {
+        "highway": "tertiary",
+        "name": "Hùng Vương",
+        "name:en": "Hung Vuong Road",
+        "official_name": "Đường Hùng Vương",
+        "source": "mapbox"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 10.50644825,
+        "lon": 108.95634475
+      },
+      "id": 454966070,
+      "tags": {
+        "highway": "residential",
+        "name": "Trần Quý Cáp",
+        "source": "mapbox"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 10.5409497,
+        "lon": 108.92883549999999
+      },
+      "id": 454966076,
+      "tags": {
+        "highway": "tertiary",
+        "name": "Nguyễn Thị Minh Khai",
+        "name:en": "Nguyen Thi Minh Khai Road",
+        "official_name": "Đường Nguyễn Thị Minh Khai",
+        "source": "mapbox"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 10.529359450000001,
+        "lon": 108.93486825
+      },
+      "id": 454966078,
+      "tags": {
+        "highway": "tertiary",
+        "name": "Hoàng Hoa Thám",
+        "name:en": "Hoang Hoa Tham Road",
+        "official_name": "Đường Hoàng Hoa Thám",
+        "source": "mapbox"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 10.5157885,
+        "lon": 108.9588463
+      },
+      "id": 454966079,
+      "tags": {
+        "highway": "tertiary",
+        "name": "Trần Quý Cáp",
+        "source": "mapbox"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 10.5076809,
+        "lon": 108.9443698
+      },
+      "id": 454966080,
+      "tags": {
+        "highway": "residential",
+        "name": "Đoàn Thị Điểm",
+        "source": "mapbox;digitalglobe"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 10.52888315,
+        "lon": 108.92965079999999
+      },
+      "id": 454966082,
+      "tags": {
+        "highway": "residential",
+        "name": "Ngư Ông",
+        "name:en": "Ngu Ong Road",
+        "official_name": "Đường Ngư Ông",
+        "source": "mapbox"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 10.523973900000001,
+        "lon": 108.94777305
+      },
+      "id": 454966089,
+      "tags": {
+        "highway": "tertiary",
+        "name": "Trần Hưng Đạo",
+        "name:en": "Tran Hung Dao Road",
+        "official_name": "Đường Trần Hưng Đạo",
+        "source": "mapbox"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 10.507763650000001,
+        "lon": 108.94830569999999
+      },
+      "id": 454966090,
+      "tags": {
+        "highway": "residential",
+        "name": "Lý Thường Kiệt",
+        "source": "mapbox"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 10.5106503,
+        "lon": 108.94162449999999
+      },
+      "id": 454966092,
+      "tags": {
+        "highway": "residential",
+        "name": "Trần Hưng Đạo",
+        "name:en": "Tran Hung Dao Road",
+        "official_name": "Đường Trần Hưng Đạo",
+        "source": "mapbox"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 10.51147915,
+        "lon": 108.96028125
+      },
+      "id": 454966093,
+      "tags": {
+        "highway": "tertiary",
+        "name": "27 Tháng 4",
+        "name:en": "Vo Van Kiet Road",
+        "official_name": "Đường Võ Văn Kiệt",
+        "source": "mapbox"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 10.54808765,
+        "lon": 108.9502203
+      },
+      "id": 454966094,
+      "tags": {
+        "highway": "unclassified",
+        "name": "Lê Hồng Phong",
+        "name:en": "Le Hong Phong Road",
+        "official_name": "Đường Lê Hồng Phong",
+        "source": "mapbox"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 10.51568775,
+        "lon": 108.93350805
+      },
+      "id": 486600103,
+      "tags": {
+        "highway": "tertiary",
+        "name": "Tôn Đức Thắng",
+        "name:en": "Ton Duc Thang Road",
+        "official_name": "Đường Tôn Đức Thắng",
+        "oneway": "yes",
+        "source": "mapbox"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 10.548860399999999,
+        "lon": 108.9451277
+      },
+      "id": 582939787,
+      "tags": {
+        "highway": "tertiary",
+        "name": "Công Chúa Bàn Tranh",
+        "name:en": "Cong Chua Ban Tranh Road",
+        "official_name": "Đường Công Chúa Bàn Tranh",
+        "source": "mapbox"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 10.5293162,
+        "lon": 108.94202455000001
+      },
+      "id": 582939801,
+      "tags": {
+        "highway": "tertiary",
+        "name": "Tôn Đức Thắng",
+        "name:en": "Ton Duc Thang Road",
+        "official_name": "Đường Tôn Đức Thắng",
+        "source": "mapbox"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 10.538445849999999,
+        "lon": 108.95325120000001
+      },
+      "id": 582939803,
+      "tags": {
+        "highway": "residential",
+        "name": "Nguyễn Đình Chiểu"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 10.5382779,
+        "lon": 108.95091640000001
+      },
+      "id": 582939810,
+      "tags": {
+        "highway": "tertiary",
+        "name": "Nguyễn Thông",
+        "name:en": "Nguyen Thong Road",
+        "official_name": "Đường Nguyễn Thông"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 10.53686765,
+        "lon": 108.9539081
+      },
+      "id": 582939813,
+      "tags": {
+        "highway": "residential",
+        "name": "Trần Hưng Đạo",
+        "name:en": "Tran Hung Dao Road",
+        "official_name": "Đường Trần Hưng Đạo",
+        "source": "mapbox"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 10.5176172,
+        "lon": 108.93241635
+      },
+      "id": 582947972,
+      "tags": {
+        "highway": "residential",
+        "name": "Nguyễn Khuyến",
+        "name:en": "Nguyen Khuyen Road",
+        "official_name": "Đường Nguyễn Khuyến"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 10.526025,
+        "lon": 108.9296863
+      },
+      "id": 582947983,
+      "tags": {
+        "highway": "residential",
+        "name": "Trần Quang Diệu",
+        "name:en": "Tran Quang Dieu Road",
+        "official_name": "Đường Trần Quang Diệu"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 10.5511816,
+        "lon": 108.94139985
+      },
+      "id": 582951460,
+      "tags": {
+        "highway": "residential",
+        "name": "Yết Kiêu",
+        "name:en": "Yet Kieu Road",
+        "official_name": "Đường Yết Kiêu"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 10.55092285,
+        "lon": 108.9450331
+      },
+      "id": 582951488,
+      "tags": {
+        "highway": "residential",
+        "name": "Võ Thị Sáu"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 10.5422466,
+        "lon": 108.95373555
+      },
+      "id": 582951510,
+      "tags": {
+        "highway": "unclassified",
+        "name": "Lê Lai",
+        "name:en": "Le Lai Road",
+        "official_name": "Đường Lê Lai"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 10.5240709,
+        "lon": 108.9520632
+      },
+      "id": 582960973,
+      "tags": {
+        "highway": "unclassified",
+        "name": "Hoàng Hoa Thám",
+        "name:en": "Hoang Hoa Tham Road",
+        "official_name": "Đường Hoàng Hoa Thám",
+        "source": "mapbox"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 10.514033000000001,
+        "lon": 108.955232
+      },
+      "id": 582963802,
+      "tags": {
+        "highway": "unclassified",
+        "name": "Ngô Quyền"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 10.509250250000001,
+        "lon": 108.9432635
+      },
+      "id": 770229672,
+      "tags": {
+        "highway": "tertiary",
+        "name": "27 Tháng 4",
+        "source": "mapbox"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 10.50594115,
+        "lon": 108.95200115
+      },
+      "id": 770229674,
+      "tags": {
+        "highway": "unclassified",
+        "name": "Ngô Quyền",
+        "source": "mapbox"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 10.50440245,
+        "lon": 108.95182235
+      },
+      "id": 770229675,
+      "tags": {
+        "highway": "residential",
+        "name": "Ngô Quyền",
+        "source": "mapbox"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 10.50665225,
+        "lon": 108.9504676
+      },
+      "id": 770229677,
+      "tags": {
+        "highway": "residential",
+        "name": "Lương Định Của",
+        "source": "digitalglobe"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 10.516768200000001,
+        "lon": 108.9529576
+      },
+      "id": 770229698,
+      "tags": {
+        "highway": "unclassified",
+        "name": "Lý Thường Kiệt",
+        "source": "mapbox"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 10.51433145,
+        "lon": 108.93532970000001
+      },
+      "id": 770235955,
+      "tags": {
+        "highway": "tertiary",
+        "name": "Hồ Xuân Hương",
+        "name:en": "Ho Xuan Huong Road",
+        "official_name": "Đường Hồ Xuân Hương",
+        "source": "digitalglobe"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 10.5136896,
+        "lon": 108.9364442
+      },
+      "id": 770235959,
+      "tags": {
+        "highway": "tertiary",
+        "name": "Phan Chu Trinh",
+        "source": "digitalglobe"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 10.511670500000001,
+        "lon": 108.93989074999999
+      },
+      "id": 770235966,
+      "tags": {
+        "highway": "residential",
+        "name": "Phan Bội Châu",
+        "source": "digitalglobe"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 10.509359700000001,
+        "lon": 108.94566895
+      },
+      "id": 770235992,
+      "tags": {
+        "highway": "residential",
+        "name": "Đoàn Thị Điểm",
+        "source": "digitalglobe"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 10.5127579,
+        "lon": 108.93810555
+      },
+      "id": 770236012,
+      "tags": {
+        "highway": "residential",
+        "name": "Nguyễn Du",
+        "source": "digitalglobe"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 10.517111,
+        "lon": 108.93467670000001
+      },
+      "id": 772089433,
+      "tags": {
+        "highway": "tertiary",
+        "name": "Tôn Đức Thắng",
+        "name:en": "Ton Duc Thang Road",
+        "official_name": "Đường Tôn Đức Thắng",
+        "oneway": "yes",
+        "source": "mapbox"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 10.5171281,
+        "lon": 108.93466395
+      },
+      "id": 772089434,
+      "tags": {
+        "highway": "tertiary",
+        "name": "Tôn Đức Thắng",
+        "name:en": "Ton Duc Thang Road",
+        "official_name": "Đường Tôn Đức Thắng",
+        "oneway": "yes",
+        "source": "mapbox"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 10.5096664,
+        "lon": 108.9473341
+      },
+      "id": 772089436,
+      "tags": {
+        "highway": "tertiary",
+        "name": "Võ Văn Kiệt",
+        "name:en": "Vo Van Kiet Road",
+        "official_name": "Đường Võ Văn Kiệt",
+        "oneway": "yes",
+        "source": "mapbox"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 10.5143965,
+        "lon": 108.93815125
+      },
+      "id": 772089443,
+      "tags": {
+        "highway": "tertiary",
+        "name": "Võ Văn Kiệt",
+        "name:en": "Vo Van Kiet Road",
+        "official_name": "Đường Võ Văn Kiệt",
+        "oneway": "yes",
+        "source": "mapbox"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 10.514325549999999,
+        "lon": 108.9381126
+      },
+      "id": 772089446,
+      "tags": {
+        "highway": "tertiary",
+        "name": "Võ Văn Kiệt",
+        "name:en": "Vo Van Kiet Road",
+        "official_name": "Đường Võ Văn Kiệt",
+        "oneway": "yes",
+        "source": "mapbox"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 10.509596850000001,
+        "lon": 108.94729609999999
+      },
+      "id": 772089448,
+      "tags": {
+        "highway": "tertiary",
+        "name": "Võ Văn Kiệt",
+        "name:en": "Vo Van Kiet Road",
+        "official_name": "Đường Võ Văn Kiệt",
+        "oneway": "yes",
+        "source": "mapbox"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 10.5172281,
+        "lon": 108.9333742
+      },
+      "id": 772089449,
+      "tags": {
+        "highway": "tertiary",
+        "name": "Võ Văn Kiệt",
+        "name:en": "Vo Van Kiet Road",
+        "official_name": "Đường Võ Văn Kiệt",
+        "oneway": "yes",
+        "source": "mapbox"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 10.517193500000001,
+        "lon": 108.93335085
+      },
+      "id": 772089450,
+      "tags": {
+        "highway": "tertiary",
+        "name": "Võ Văn Kiệt",
+        "name:en": "Vo Van Kiet Road",
+        "official_name": "Đường Võ Văn Kiệt",
+        "oneway": "yes",
+        "source": "mapbox"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 10.51964085,
+        "lon": 108.93177305
+      },
+      "id": 772089451,
+      "tags": {
+        "highway": "residential",
+        "name": "Phạm Ngọc Thạch",
+        "name:en": "Pham Ngoc Thach Road",
+        "official_name": "Đường Phạm Ngọc Thạch",
+        "source": "mapbox"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 10.5051721,
+        "lon": 108.95288105
+      },
+      "id": 772089452,
+      "tags": {
+        "highway": "tertiary",
+        "name": "27 Tháng 4",
+        "source": "mapbox"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 10.51416915,
+        "lon": 108.93406455
+      },
+      "id": 772089454,
+      "tags": {
+        "highway": "tertiary",
+        "name": "27 Tháng 4",
+        "oneway": "yes",
+        "source": "mapbox"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 10.516136750000001,
+        "lon": 108.93248105
+      },
+      "id": 772089455,
+      "tags": {
+        "highway": "tertiary",
+        "name": "Hùng Vương",
+        "name:en": "Hung Vuong Road",
+        "official_name": "Đường Hùng Vương",
+        "oneway": "yes"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 10.51642695,
+        "lon": 108.93391399999999
+      },
+      "id": 772089458,
+      "tags": {
+        "highway": "tertiary",
+        "name": "Vòng Xoay Phú Quý 2",
+        "oneway": "yes"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 10.52442855,
+        "lon": 108.93154659999999
+      },
+      "id": 772089459,
+      "tags": {
+        "highway": "tertiary",
+        "name": "Võ Văn Kiệt",
+        "name:en": "Vo Van Kiet Road",
+        "official_name": "Đường Võ Văn Kiệt",
+        "source": "mapbox"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 10.51462965,
+        "lon": 108.93495385
+      },
+      "id": 772281195,
+      "tags": {
+        "highway": "tertiary",
+        "name": "Kim Đồng",
+        "name:en": "Kim Dong Road",
+        "official_name": "Đường Kim Đồng",
+        "source": "digitalglobe"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 10.55193395,
+        "lon": 108.93909385
+      },
+      "id": 774543187,
+      "tags": {
+        "highway": "residential",
+        "name": "Yết Kiêu",
+        "name:en": "Yet Kieu Road",
+        "official_name": "Đường Yết Kiêu",
+        "source": "mapbox"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 10.514100299999999,
+        "lon": 108.93401685
+      },
+      "id": 1014522041,
+      "tags": {
+        "highway": "tertiary",
+        "name": "27 Tháng 4",
+        "oneway": "yes",
+        "source": "mapbox"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 10.55053675,
+        "lon": 108.939315
+      },
+      "id": 1014522042,
+      "tags": {
+        "highway": "tertiary",
+        "name": "Hai Bà Trưng",
+        "name:en": "Hai Ba Trung Road",
+        "official_name": "Đường Hai Bà Trưng",
+        "source": "mapbox"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 10.530074800000001,
+        "lon": 108.95509415000001
+      },
+      "id": 1014522044,
+      "tags": {
+        "highway": "tertiary",
+        "name": "Nguyễn Thông",
+        "name:en": "Nguyen Thong Road",
+        "official_name": "Đường Nguyễn Thông",
+        "source": "mapbox"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 10.5161906,
+        "lon": 108.9325286
+      },
+      "id": 1014522045,
+      "tags": {
+        "highway": "tertiary",
+        "name": "Hùng Vương",
+        "name:en": "Hung Vuong Road",
+        "official_name": "Đường Hùng Vương",
+        "oneway": "yes",
+        "source": "mapbox"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 10.520485050000001,
+        "lon": 108.93316920000001
+      },
+      "id": 1014522047,
+      "tags": {
+        "addr:province": "Lâm Đồng",
+        "addr:street": "Võ Văn Kiệt",
+        "addr:subdistrict": "Đặc khu Phú Quý",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Trung tâm y tế Quân dân y Đặc khu Phú Quý"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 10.50661575,
+        "lon": 108.95525485
+      },
+      "id": 1014522048,
+      "tags": {
+        "highway": "tertiary",
+        "name": "Võ Văn Kiệt",
+        "name:en": "Vo Van Kiet Road",
+        "official_name": "Đường Võ Văn Kiệt",
+        "source": "mapbox"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 10.53443115,
+        "lon": 108.93788495
+      },
+      "id": 1014558240,
+      "tags": {
+        "highway": "unclassified",
+        "name": "Nguyễn Tri Phương",
+        "name:en": "Nguyen Tri Phuong Road",
+        "official_name": "Đường Nguyễn Tri Phương",
+        "source": "mapbox"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 10.51609465,
+        "lon": 108.9333823
+      },
+      "id": 1014974106,
+      "tags": {
+        "landuse": "commercial",
+        "name": "Chi cục Thi hành án huyện Phú Quý",
+        "office": "government"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 10.516923550000001,
+        "lon": 108.93309215
+      },
+      "id": 1014974113,
+      "tags": {
+        "landuse": "commercial",
+        "name": "Khối Mặt trận và các đoàn thể huyện Phú Quý",
+        "office": "government"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 10.5165428,
+        "lon": 108.93294789999999
+      },
+      "id": 1014974118,
+      "tags": {
+        "addr:province": "Lâm Đồng",
+        "addr:street": "Hùng Vương",
+        "addr:subdistrict": "Đặc khu Phú Quý",
+        "amenity": "townhall",
+        "landuse": "commercial",
+        "name": "HĐND - UBND Đặc khu Phú Quý",
+        "name:en": "People's Council - People's Committee of Phu Quy Special Zone",
+        "townhall:type": "district"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 10.517602,
+        "lon": 108.9342589
+      },
+      "id": 1014974121,
+      "tags": {
+        "amenity": "school",
+        "grades": "10-12",
+        "name": "Trường Trung học phổ thông Ngô Quyền",
+        "name:en": "Ngo Quyen High School"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 10.518101999999999,
+        "lon": 108.9337577
+      },
+      "id": 1014974123,
+      "tags": {
+        "addr:district": "Phú Quý",
+        "addr:province": "Bình Thuận",
+        "addr:street": "Võ Văn Kiệt",
+        "addr:subdistrict": "Ngũ Phụng",
+        "amenity": "school",
+        "grades": "1-5",
+        "name": "Trường Tiểu học Ngũ Phụng (cơ sở 3)",
+        "name:en": "Ngu Phung Primary School - Campus 3"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 10.517446499999998,
+        "lon": 108.93285145
+      },
+      "id": 1014974131,
+      "tags": {
+        "addr:district": "Phú Quý",
+        "addr:housenumber": "184",
+        "addr:province": "Bình Thuận",
+        "addr:street": "Võ Văn Kiệt",
+        "addr:subdistrict": "Ngũ Phụng",
+        "government": "yes",
+        "landuse": "commercial",
+        "name": "Trung tâm Dân số - Kế hoạch hóa gia đình huyện Phú Quý",
+        "office": "government"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 10.5172444,
+        "lon": 108.9329425
+      },
+      "id": 1014974133,
+      "tags": {
+        "landuse": "commercial",
+        "name": "Phòng Văn xã huyện Phú Quý",
+        "office": "government"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 10.51551095,
+        "lon": 108.93767975
+      },
+      "id": 1014974135,
+      "tags": {
+        "addr:province": "Lâm Đồng",
+        "addr:street": "Võ Văn Kiệt",
+        "addr:subdistrict": "Đặc khu Phú Quý",
+        "leisure": "stadium",
+        "name": "Sân vận động Đặc khu Phú Quý"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 10.515960549999999,
+        "lon": 108.93414425
+      },
+      "id": 1014974606,
+      "tags": {
+        "amenity": "bank",
+        "brand": "Agribank",
+        "brand:wikidata": "Q1924723",
+        "brand:wikipedia": "vi:Ngân hàng Nông nghiệp và Phát triển Nông thôn Việt Nam",
+        "landuse": "commercial",
+        "name": "Agribank",
+        "official_name": "Ngân hàng Nông nghiệp và Phát triển Nông thôn Việt Nam",
+        "official_name:en": "Vietnam Bank for Agriculture and Rural Development"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 10.5154635,
+        "lon": 108.93490159999999
+      },
+      "id": 1014974607,
+      "tags": {
+        "addr:province": "Lâm Đồng",
+        "addr:street": "Võ Văn Kiệt",
+        "addr:subdistrict": "Đặc khu Phú Quý",
+        "landuse": "commercial",
+        "name": "Phòng Kinh tế - Tài chính Đăc khu Phú Quý",
+        "office": "government"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 10.5145843,
+        "lon": 108.9352661
+      },
+      "id": 1014974608,
+      "tags": {
+        "landuse": "commercial",
+        "name": "Chi cục Thống kê huyện Phú Quý",
+        "office": "government"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 10.51610655,
+        "lon": 108.93393309999999
+      },
+      "id": 1014974609,
+      "tags": {
+        "government": "prosecutor",
+        "landuse": "commercial",
+        "name": "Viện Kiểm sát nhân dân huyện Phú Quý",
+        "office": "government"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 10.51038115,
+        "lon": 108.94494259999999
+      },
+      "id": 1014986358,
+      "tags": {
+        "amenity": "place_of_worship",
+        "landuse": "religious",
+        "name": "Chùa Linh Quang",
+        "name:en": "Linh Quang Pagoda",
+        "religion": "buddhist"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 10.514346199999999,
+        "lon": 108.9392373
+      },
+      "id": 1014986373,
+      "tags": {
+        "addr:district": "Phú Quý",
+        "addr:housenumber": "179",
+        "addr:province": "Bình Thuận",
+        "addr:street": "Võ Văn Kiệt",
+        "addr:subdistrict": "Tam Thanh",
+        "amenity": "school",
+        "grades": "1-5",
+        "name": "Trường Tiểu học Tam Thanh",
+        "name:en": "Tam Thanh Primary School"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 10.509999,
+        "lon": 108.94567405000001
+      },
+      "id": 1014986377,
+      "tags": {
+        "addr:street": "Võ Văn Kiệt",
+        "amenity": "school",
+        "grades": "6-9",
+        "name": "Trường Trung học cơ sở Tam Thanh",
+        "name:en": "Tam Thanh Secondary School"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 10.515197749999999,
+        "lon": 108.93522655000001
+      },
+      "id": 1014986378,
+      "tags": {
+        "government": "social_security",
+        "landuse": "commercial",
+        "name": "Bảo hiểm xã hội huyện Phú Quý",
+        "office": "government"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 10.524642,
+        "lon": 108.93344855000001
+      },
+      "id": 1015009537,
+      "tags": {
+        "amenity": "place_of_worship",
+        "building": "yes",
+        "name": "Nhà thờ Giáo xứ Phú Quý",
+        "religion": "christian"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 10.5277052,
+        "lon": 108.93084680000001
+      },
+      "id": 1015009545,
+      "tags": {
+        "amenity": "townhall",
+        "landuse": "commercial",
+        "name": "Đảng uỷ - HĐND - UBND xã Ngũ Phụng",
+        "townhall:type": "commune"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 10.531316449999998,
+        "lon": 108.9307786
+      },
+      "id": 1015009549,
+      "tags": {
+        "amenity": "school",
+        "name": "Trường Tiểu học Phú An"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 10.5264583,
+        "lon": 108.9311659
+      },
+      "id": 1015009552,
+      "tags": {
+        "amenity": "school",
+        "name": "Trường Trung học cơ sở Ngũ Phụng"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 10.5337556,
+        "lon": 108.92900205000001
+      },
+      "id": 1015158456,
+      "tags": {
+        "aeroway": "aerodrome",
+        "landuse": "military",
+        "military": "airfield",
+        "name": "Sân bay Phú Quý",
+        "name:en": "Phu Quy Military Airport"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 10.5065857,
+        "lon": 108.9500198
+      },
+      "id": 1015158469,
+      "tags": {
+        "amenity": "school",
+        "grades": "1-5",
+        "name": "Trường Tiểu học Triều Dương",
+        "name:en": "Trieu Duong Primary School"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 10.5074746,
+        "lon": 108.95053345
+      },
+      "id": 1015158474,
+      "tags": {
+        "amenity": "place_of_worship",
+        "building": "yes",
+        "denomination": "protestant",
+        "name": "Nhà thờ Tin lành Phú Quý",
+        "religion": "christian"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 10.504760999999998,
+        "lon": 108.95124795
+      },
+      "id": 1015158479,
+      "tags": {
+        "amenity": "place_of_worship",
+        "landuse": "religious",
+        "name": "Vạn An Thạnh"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 10.5052924,
+        "lon": 108.9520029
+      },
+      "id": 1015158482,
+      "tags": {
+        "amenity": "place_of_worship",
+        "landuse": "religious",
+        "name": "Chùa Liên Hoa",
+        "religion": "buddhist"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 10.512468,
+        "lon": 108.94273290000001
+      },
+      "id": 1015200888,
+      "tags": {
+        "government": "tax",
+        "landuse": "commercial",
+        "name": "Chi cục Thuế huyện Phú Quý",
+        "office": "government"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 10.51790915,
+        "lon": 108.93622930000001
+      },
+      "id": 1015200891,
+      "tags": {
+        "amenity": "school",
+        "name": "Trung tâm Giáo dục nghề nghiệp - Giáo dục thường xuyên huyện Phú Quý"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 10.509873200000001,
+        "lon": 108.94656169999999
+      },
+      "id": 1015372588,
+      "tags": {
+        "addr:district": "Phú Quý",
+        "addr:housenumber": "380",
+        "addr:province": "Bình Thuận",
+        "addr:street": "Võ Văn Kiệt",
+        "addr:subdistrict": "Tam Thanh",
+        "amenity": "townhall",
+        "landuse": "commercial",
+        "name": "Đảng uỷ - HĐND - UBND xã Tam Thanh",
+        "townhall:type": "commune"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 10.52708685,
+        "lon": 108.9341604
+      },
+      "id": 1015396437,
+      "tags": {
+        "amenity": "marketplace",
+        "name": "Chợ Ngũ Phụng"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 10.511359500000001,
+        "lon": 108.937742
+      },
+      "id": 1176839546,
+      "tags": {
+        "addr:housenumber": "04",
+        "addr:street": "27 Tháng 4",
+        "building": "yes",
+        "government": "village_office",
+        "name": "Nhà làm việc thôn Mỹ Khê",
+        "office": "government"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 10.5067165,
+        "lon": 108.9456345
+      },
+      "id": 1176839553,
+      "tags": {
+        "amenity": "marketplace",
+        "name": "Chợ Tam Thanh"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 10.544811500000002,
+        "lon": 108.95026255
+      },
+      "id": 1202456769,
+      "tags": {
+        "highway": "tertiary",
+        "name": "Tôn Đức Thắng",
+        "name:en": "Ton Duc Thang Road",
+        "official_name": "Đường Tôn Đức Thắng",
+        "source": "mapbox"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 10.5432806,
+        "lon": 108.9462111
+      },
+      "id": 1202456770,
+      "tags": {
+        "highway": "tertiary",
+        "name": "Nguyễn Thông",
+        "name:en": "Nguyen Thong Road",
+        "official_name": "Đường Nguyễn Thông"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 10.552212350000001,
+        "lon": 108.94371509999999
+      },
+      "id": 1202456771,
+      "tags": {
+        "highway": "tertiary",
+        "name": "Lê Hồng Phong",
+        "name:en": "Le Hong Phong Road",
+        "official_name": "Đường Lê Hồng Phong",
+        "source": "mapbox"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 10.51484475,
+        "lon": 108.93318055
+      },
+      "id": 1422091162,
+      "tags": {
+        "highway": "tertiary",
+        "name": "Vòng Xoay Phú Quý",
+        "oneway": "yes"
+      },
+      "type": "way"
+    },
+    {
+      "center": {
+        "lat": 10.5156434,
+        "lon": 108.93360985
+      },
+      "id": 1422091163,
+      "tags": {
+        "highway": "tertiary",
+        "name": "Tôn Đức Thắng",
+        "name:en": "Ton Duc Thang Road",
+        "official_name": "Đường Tôn Đức Thắng",
+        "oneway": "yes",
+        "source": "mapbox"
+      },
+      "type": "way"
+    }
+  ],
+  "fetched_at": "2026-08-18T10:28:10Z",
+  "province_id": "26",
+  "source": "pbf:vietnam-latest.osm.pbf"
+}

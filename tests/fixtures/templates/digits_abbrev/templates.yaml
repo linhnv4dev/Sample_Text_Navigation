@@ -1,0 +1,7 @@
+# Hard rule #1 violation (digit) + viết tắt Q. chưa expand, cùng một entry.
+- template_id: bad_digit_abbrev_001
+  sentence_type: nav_command
+  register: neutral
+  length_class: short
+  slots: [entity]
+  text: "đi Q.1 đến {entity}"

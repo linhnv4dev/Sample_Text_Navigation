@@ -1,0 +1,16 @@
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+#outputs/*
+#!outputs/.gitkeep
+#data/master/*
+data/raw/osm_pbf/vietnam-latest.osm.pbf
+#!data/master/.gitkeep
+#!data/master/README.md
+.pytest_cache/
+
+# Geofabrik extract toàn quốc (~320MB) — nguồn ingest chạy tay, tải lại bằng
+# lệnh trong data/raw/admin/SOURCES.md thay vì commit. Snapshot đã lọc
+# (data/raw/osm/*.json) mới là thứ được commit và build-master đọc.
+#data/raw/osm_pbf/
